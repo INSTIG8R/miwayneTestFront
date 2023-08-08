@@ -1,0 +1,525 @@
+11/28/2022 05:50:52 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:50:52 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:50:52 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/28/2022 05:50:52 PM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/28/2022 05:50:56 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of weights column
+11/28/2022 05:50:57 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of volumes column
+11/28/2022 05:51:18 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:51:49 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:51:49 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:51:49 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:52:11 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:52:11 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:52:11 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:54:15 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:54:15 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:54:15 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/28/2022 05:54:15 PM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/28/2022 05:54:19 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of weights column
+11/28/2022 05:54:20 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of volumes column
+11/28/2022 05:54:41 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:55:13 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:55:13 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:55:13 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:55:34 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:55:34 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:55:34 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:55:54 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:55:54 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:55:54 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:56:17 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:56:17 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:56:17 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:56:38 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:56:38 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:56:38 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:56:59 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 05:56:59 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:56:59 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 05:58:37 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:58:37 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:58:37 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/28/2022 05:58:37 PM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/28/2022 05:58:40 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of weights column
+11/28/2022 05:58:41 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of volumes column
+11/28/2022 05:59:02 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 05:59:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:59:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/28/2022 05:59:45 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/28/2022 05:59:45 PM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/28/2022 05:59:48 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of weights column
+11/28/2022 05:59:49 PM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of volumes column
+11/28/2022 06:00:10 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 06:00:10 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 06:00:10 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 06:00:30 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 06:00:30 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 06:00:30 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 06:00:49 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 06:00:49 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 06:00:49 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 06:01:09 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 06:01:09 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 06:01:09 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 06:01:29 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 06:01:29 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 06:01:29 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/28/2022 06:01:50 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/28/2022 06:01:50 PM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/28/2022 06:01:50 PM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:11:29 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/29/2022 09:11:29 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/29/2022 09:11:29 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/29/2022 09:11:29 AM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/29/2022 09:11:33 AM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of weights column
+11/29/2022 09:11:35 AM - TestStatus - INFO: ###Verfication Successful  ::calculated the sum of volumes column
+11/29/2022 09:11:56 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:11:56 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:11:56 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:12:18 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:12:18 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:12:18 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:12:39 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:12:39 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:12:39 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:13:01 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:13:01 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:13:01 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:13:20 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:13:20 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:13:20 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:13:41 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:13:41 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:13:41 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:13:59 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:13:59 AM - TestStatus - INFO: ###Verfication Successful  ::total consignment amount is same
+11/29/2022 09:13:59 AM - TestStatus - INFO: test_totalconsignments### TEST PASSED
+11/29/2022 09:39:51 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/29/2022 09:39:51 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/29/2022 09:39:51 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/29/2022 09:39:51 AM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/29/2022 09:40:06 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:40:11 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 1
+11/29/2022 09:40:11 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 1
+11/29/2022 09:40:11 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:11 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:40:11 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 166
+11/29/2022 09:40:11 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 166
+11/29/2022 09:40:11 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:11 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:40:12 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 0
+11/29/2022 09:40:12 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 0
+11/29/2022 09:40:12 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:19 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:40:26 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 10749
+11/29/2022 09:40:26 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 10749
+11/29/2022 09:40:26 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:26 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:40:27 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43457
+11/29/2022 09:40:27 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 43457
+11/29/2022 09:40:27 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:27 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:40:28 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 191
+11/29/2022 09:40:28 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 191
+11/29/2022 09:40:28 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:37 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:40:43 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 24
+11/29/2022 09:40:43 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 24
+11/29/2022 09:40:43 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:43 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:40:43 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 61001
+11/29/2022 09:40:43 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 61001
+11/29/2022 09:40:43 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:43 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:40:43 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 206
+11/29/2022 09:40:43 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 206
+11/29/2022 09:40:43 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:53 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:40:59 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2726
+11/29/2022 09:40:59 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 2726
+11/29/2022 09:40:59 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:59 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:40:59 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 11603
+11/29/2022 09:40:59 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 11603
+11/29/2022 09:40:59 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:40:59 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:40:59 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 67
+11/29/2022 09:40:59 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 67
+11/29/2022 09:40:59 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:07 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:41:13 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 4027
+11/29/2022 09:41:13 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 4027
+11/29/2022 09:41:13 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:13 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:41:14 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 19015
+11/29/2022 09:41:14 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 19015
+11/29/2022 09:41:14 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:14 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:41:14 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 139
+11/29/2022 09:41:14 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 139
+11/29/2022 09:41:14 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:24 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:41:30 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 24
+11/29/2022 09:41:30 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 24
+11/29/2022 09:41:30 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:30 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:41:30 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2333
+11/29/2022 09:41:30 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 2333
+11/29/2022 09:41:30 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:30 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:41:30 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 12
+11/29/2022 09:41:30 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 12
+11/29/2022 09:41:30 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:39 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:41:44 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 31
+11/29/2022 09:41:44 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 31
+11/29/2022 09:41:44 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:44 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:41:44 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18548
+11/29/2022 09:41:44 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 18548
+11/29/2022 09:41:44 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:41:44 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:41:45 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 83
+11/29/2022 09:41:45 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 83
+11/29/2022 09:41:45 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:03 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/29/2022 09:43:03 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/29/2022 09:43:03 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/29/2022 09:43:03 AM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/29/2022 09:43:18 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:43:23 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 1
+11/29/2022 09:43:23 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 1
+11/29/2022 09:43:23 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:23 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:43:23 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 166
+11/29/2022 09:43:23 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 166
+11/29/2022 09:43:23 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:23 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:43:23 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 0
+11/29/2022 09:43:23 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 0
+11/29/2022 09:43:23 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:23 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/29/2022 09:43:35 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:43:41 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 10749
+11/29/2022 09:43:41 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 10749
+11/29/2022 09:43:41 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:41 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:43:42 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43457
+11/29/2022 09:43:42 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 43457
+11/29/2022 09:43:42 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:42 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:43:42 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 191
+11/29/2022 09:43:42 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 191
+11/29/2022 09:43:42 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:43:42 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/29/2022 09:43:56 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:44:01 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 24
+11/29/2022 09:44:01 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 24
+11/29/2022 09:44:01 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:01 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:44:01 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 61001
+11/29/2022 09:44:01 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 61001
+11/29/2022 09:44:01 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:01 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:44:01 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 206
+11/29/2022 09:44:01 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 206
+11/29/2022 09:44:01 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:01 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/29/2022 09:44:15 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:44:21 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2726
+11/29/2022 09:44:21 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 2726
+11/29/2022 09:44:21 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:21 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:44:21 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 11603
+11/29/2022 09:44:21 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 11603
+11/29/2022 09:44:21 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:21 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:44:21 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 67
+11/29/2022 09:44:21 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 67
+11/29/2022 09:44:21 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:21 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/29/2022 09:44:33 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:44:40 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 4027
+11/29/2022 09:44:40 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 4027
+11/29/2022 09:44:40 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:40 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:44:40 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 19015
+11/29/2022 09:44:40 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 19015
+11/29/2022 09:44:40 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:40 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:44:40 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 139
+11/29/2022 09:44:40 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 139
+11/29/2022 09:44:40 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:44:40 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/29/2022 09:44:56 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:45:01 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 24
+11/29/2022 09:45:01 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 24
+11/29/2022 09:45:01 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:45:01 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:45:01 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2333
+11/29/2022 09:45:01 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 2333
+11/29/2022 09:45:01 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:45:01 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:45:02 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 12
+11/29/2022 09:45:02 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 12
+11/29/2022 09:45:02 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:45:02 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/29/2022 09:45:14 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/29/2022 09:45:19 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 31
+11/29/2022 09:45:19 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 31
+11/29/2022 09:45:19 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:45:19 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/29/2022 09:45:20 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18548
+11/29/2022 09:45:20 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 18548
+11/29/2022 09:45:20 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:45:20 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/29/2022 09:45:20 AM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 83
+11/29/2022 09:45:20 AM - TransactionPage - INFO: Expected Value From Calculations --> :: 83
+11/29/2022 09:45:20 AM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/29/2022 09:45:20 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:21:25 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/30/2022 02:21:25 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/30/2022 02:21:25 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/30/2022 02:21:25 PM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/30/2022 02:21:44 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:21:51 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:21:51 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:21:51 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:21:51 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:21:52 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:21:52 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:21:52 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:21:52 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:21:52 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:21:52 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:21:52 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:21:52 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:21:52 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:21:52 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:21:52 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:21:52 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:22:06 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:22:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:12 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:22:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:22:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:22:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:22:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:22:27 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:22:32 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:22:32 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:22:32 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:32 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:22:32 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:22:32 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:22:32 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:32 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:22:32 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:22:32 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:22:32 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:32 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:22:33 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:22:33 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:22:33 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:33 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:22:49 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:22:56 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:22:56 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:22:56 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:56 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:22:56 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:22:56 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:22:56 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:56 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:22:57 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:22:57 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:22:57 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:57 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:22:57 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:22:57 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:22:57 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:22:57 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:23:12 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:23:19 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:23:19 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:23:19 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:19 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:23:20 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:23:20 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:23:20 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:20 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:23:20 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:23:20 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:23:20 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:20 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:23:20 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:23:20 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:23:20 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:20 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:23:35 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:23:42 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:23:42 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:23:42 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:42 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:23:42 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:23:42 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:23:42 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:42 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:23:43 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:23:43 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:23:43 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:43 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:23:43 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:23:43 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:23:43 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:23:43 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:23:57 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:24:04 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 18919
+11/30/2022 02:24:04 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 18919
+11/30/2022 02:24:04 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:24:04 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:24:04 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 29102
+11/30/2022 02:24:04 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 29102
+11/30/2022 02:24:04 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:24:04 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:24:04 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 231
+11/30/2022 02:24:04 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 231
+11/30/2022 02:24:04 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:24:04 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:24:05 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 43
+11/30/2022 02:24:05 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 43
+11/30/2022 02:24:05 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:24:05 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:38:50 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/30/2022 02:38:50 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Transactions
+11/30/2022 02:38:50 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+11/30/2022 02:38:50 PM - TestStatus - INFO: ###Verfication Successful  ::Transactions page loaded
+11/30/2022 02:39:06 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 1
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 1
+11/30/2022 02:39:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:12 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 166
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 166
+11/30/2022 02:39:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 0
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 0
+11/30/2022 02:39:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2
+11/30/2022 02:39:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 2
+11/30/2022 02:39:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:39:24 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 10708
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 10708
+11/30/2022 02:39:30 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:30 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 21277
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 21277
+11/30/2022 02:39:30 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:30 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 82
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 82
+11/30/2022 02:39:30 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:30 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 14
+11/30/2022 02:39:30 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 14
+11/30/2022 02:39:30 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:30 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:39:43 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 24
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 24
+11/30/2022 02:39:49 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:49 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 61001
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 61001
+11/30/2022 02:39:49 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:49 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 206
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 206
+11/30/2022 02:39:49 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:49 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 106
+11/30/2022 02:39:49 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 106
+11/30/2022 02:39:49 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:39:49 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:40:03 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2706
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 2706
+11/30/2022 02:40:09 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:09 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 3744
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 3744
+11/30/2022 02:40:09 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:09 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 40
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 40
+11/30/2022 02:40:09 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:09 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 6
+11/30/2022 02:40:09 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 6
+11/30/2022 02:40:09 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:09 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:40:20 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:40:28 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 3998
+11/30/2022 02:40:28 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 3998
+11/30/2022 02:40:28 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:28 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:40:29 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 105321
+11/30/2022 02:40:29 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 105321
+11/30/2022 02:40:29 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:29 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:40:30 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 599
+11/30/2022 02:40:30 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 599
+11/30/2022 02:40:30 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:30 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:40:31 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 201
+11/30/2022 02:40:31 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 201
+11/30/2022 02:40:31 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:31 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:40:46 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:40:51 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 24
+11/30/2022 02:40:51 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 24
+11/30/2022 02:40:51 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:51 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:40:52 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 2333
+11/30/2022 02:40:52 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 2333
+11/30/2022 02:40:52 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:52 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:40:52 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 12
+11/30/2022 02:40:52 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 12
+11/30/2022 02:40:52 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:52 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:40:52 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 25
+11/30/2022 02:40:52 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 25
+11/30/2022 02:40:52 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:40:52 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+11/30/2022 02:41:05 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+11/30/2022 02:41:10 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 58
+11/30/2022 02:41:10 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 58
+11/30/2022 02:41:10 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:41:10 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+11/30/2022 02:41:11 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 14962
+11/30/2022 02:41:11 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 14962
+11/30/2022 02:41:11 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:41:11 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+11/30/2022 02:41:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 86
+11/30/2022 02:41:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 86
+11/30/2022 02:41:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:41:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+11/30/2022 02:41:12 PM - TransactionPage - INFO: Actual Value From Application Web UI --> :: 83
+11/30/2022 02:41:12 PM - TransactionPage - INFO: Expected Value From Calculations --> :: 83
+11/30/2022 02:41:12 PM - TransactionPage - INFO: ### VALUES MATCHED !!!
+11/30/2022 02:41:12 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same

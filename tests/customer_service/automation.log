@@ -1,0 +1,22 @@
+12/01/2022 05:06:12 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Draft Consignment
+12/01/2022 05:06:12 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Draft Consignment
+12/01/2022 05:06:12 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+12/01/2022 05:06:12 PM - TestStatus - INFO: ###Verfication Successful  ::Drafts page loaded
+12/01/2022 05:06:12 PM - TestStatus - INFO: Drafts Title verification### TEST PASSED
+12/01/2022 05:06:26 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Actual Value From Application Web UI --> :: 259
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Expected Value From Calculations --> :: 259
+12/01/2022 05:06:26 PM - DraftsPage - INFO: ### VALUES MATCHED !!!
+12/01/2022 05:06:26 PM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Actual Value From Application Web UI --> :: 0
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Expected Value From Calculations --> :: 0
+12/01/2022 05:06:26 PM - DraftsPage - INFO: ### VALUES MATCHED !!!
+12/01/2022 05:06:26 PM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Actual Value From Application Web UI --> :: 1
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Expected Value From Calculations --> :: 1
+12/01/2022 05:06:26 PM - DraftsPage - INFO: ### VALUES MATCHED !!!
+12/01/2022 05:06:26 PM - TestStatus - INFO: ###Verfication Successful  ::page total Items is same
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Actual Value From Application Web UI --> :: 1
+12/01/2022 05:06:26 PM - DraftsPage - INFO: Expected Value From Calculations --> :: 1
+12/01/2022 05:06:26 PM - DraftsPage - INFO: ### VALUES MATCHED !!!
+12/01/2022 05:06:26 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same

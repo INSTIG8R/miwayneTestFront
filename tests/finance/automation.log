@@ -1,0 +1,271 @@
+12/05/2022 10:13:40 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Invoice Run
+12/05/2022 10:13:40 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Invoice Run
+12/05/2022 10:13:40 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+12/05/2022 10:13:40 AM - TestStatus - INFO: ###Verfication Successful  ::Invoice Run page loaded
+12/05/2022 10:13:40 AM - TestStatus - INFO: Invoice Run Title verification### TEST PASSED
+12/05/2022 10:13:56 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:13:56 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 320
+12/05/2022 10:13:56 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 320
+12/05/2022 10:13:56 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:13:56 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:13:56 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:13:56 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:13:56 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:13:56 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:17:14 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Invoice Run
+12/05/2022 10:17:14 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Invoice Run
+12/05/2022 10:17:14 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+12/05/2022 10:17:14 AM - TestStatus - INFO: ###Verfication Successful  ::Invoice Run page loaded
+12/05/2022 10:17:14 AM - TestStatus - INFO: Invoice Run Title verification### TEST PASSED
+12/05/2022 10:17:30 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 320
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 320
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:17:30 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:17:30 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:17:30 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:17:30 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:48:13 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Invoice Run
+12/05/2022 10:48:13 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Invoice Run
+12/05/2022 10:48:13 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+12/05/2022 10:48:13 AM - TestStatus - INFO: ###Verfication Successful  ::Invoice Run page loaded
+12/05/2022 10:48:13 AM - TestStatus - INFO: Invoice Run Title verification### TEST PASSED
+12/05/2022 10:48:28 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 320
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 320
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:28 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:28 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:48:28 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:28 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:48:36 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:48:37 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 75661
+12/05/2022 10:48:37 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 75661
+12/05/2022 10:48:37 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:37 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:48:38 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 319
+12/05/2022 10:48:38 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 319
+12/05/2022 10:48:38 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:38 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:48:39 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 2623
+12/05/2022 10:48:39 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 2623
+12/05/2022 10:48:39 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:39 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:48:47 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:48:48 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 109549
+12/05/2022 10:48:48 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 109549
+12/05/2022 10:48:48 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:48 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:48:49 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 998
+12/05/2022 10:48:49 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 998
+12/05/2022 10:48:49 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:49 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:48:53 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 26185
+12/05/2022 10:48:53 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 26185
+12/05/2022 10:48:53 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:48:53 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:49:03 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:49:04 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 9868
+12/05/2022 10:49:04 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 9868
+12/05/2022 10:49:04 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:04 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:49:06 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 75
+12/05/2022 10:49:06 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 75
+12/05/2022 10:49:06 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:06 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:49:07 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 515
+12/05/2022 10:49:07 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 515
+12/05/2022 10:49:07 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:07 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:49:14 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:49:14 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 188
+12/05/2022 10:49:14 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 188
+12/05/2022 10:49:14 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:14 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:49:14 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:49:14 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:49:14 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:14 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:49:15 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:49:15 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:49:15 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:15 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:49:25 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:49:27 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 133333
+12/05/2022 10:49:27 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 133333
+12/05/2022 10:49:27 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:27 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:49:28 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 722
+12/05/2022 10:49:28 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 722
+12/05/2022 10:49:28 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:28 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:49:30 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 18920
+12/05/2022 10:49:30 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 18920
+12/05/2022 10:49:30 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:30 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:49:41 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:49:42 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 138876
+12/05/2022 10:49:42 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 138876
+12/05/2022 10:49:42 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:42 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:49:44 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 826
+12/05/2022 10:49:44 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 826
+12/05/2022 10:49:44 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:44 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:49:45 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 6568
+12/05/2022 10:49:45 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 6568
+12/05/2022 10:49:45 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:45 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:49:53 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:49:55 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 79396
+12/05/2022 10:49:55 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 79396
+12/05/2022 10:49:55 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:55 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:49:56 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 246
+12/05/2022 10:49:56 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 246
+12/05/2022 10:49:56 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:56 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:49:57 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 728
+12/05/2022 10:49:57 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 728
+12/05/2022 10:49:57 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:49:57 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:50:05 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 13000
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 13000
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:05 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 46
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 46
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:05 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 2
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 2
+12/05/2022 10:50:05 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:05 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:50:14 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1123
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1123
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:14 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 4
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 4
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:14 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1
+12/05/2022 10:50:14 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:14 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:50:22 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:50:24 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 333710
+12/05/2022 10:50:24 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 333710
+12/05/2022 10:50:24 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:24 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:50:25 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 1498
+12/05/2022 10:50:25 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 1498
+12/05/2022 10:50:25 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:25 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:50:26 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 3068
+12/05/2022 10:50:26 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 3068
+12/05/2022 10:50:26 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:26 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:50:34 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:50:36 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 120943
+12/05/2022 10:50:36 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 120943
+12/05/2022 10:50:36 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:36 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:50:38 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 641
+12/05/2022 10:50:38 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 641
+12/05/2022 10:50:38 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:38 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:50:39 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 10708
+12/05/2022 10:50:39 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 10708
+12/05/2022 10:50:39 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:39 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:50:46 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:50:48 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 158225
+12/05/2022 10:50:48 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 158225
+12/05/2022 10:50:48 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:48 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:50:49 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 666
+12/05/2022 10:50:49 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 666
+12/05/2022 10:50:49 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:49 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:50:49 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 89
+12/05/2022 10:50:49 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 89
+12/05/2022 10:50:49 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:49 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:50:57 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:50:58 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 106993
+12/05/2022 10:50:58 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 106993
+12/05/2022 10:50:58 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:50:58 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:51:00 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 603
+12/05/2022 10:51:00 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 603
+12/05/2022 10:51:00 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:00 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:51:02 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 3998
+12/05/2022 10:51:02 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 3998
+12/05/2022 10:51:02 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:02 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:51:10 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:51:12 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 102376
+12/05/2022 10:51:12 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 102376
+12/05/2022 10:51:12 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:12 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:51:14 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 567
+12/05/2022 10:51:14 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 567
+12/05/2022 10:51:14 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:14 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:51:15 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 4516
+12/05/2022 10:51:15 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 4516
+12/05/2022 10:51:15 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:15 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:51:23 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:51:25 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 92872
+12/05/2022 10:51:25 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 92872
+12/05/2022 10:51:25 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:25 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:51:26 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 565
+12/05/2022 10:51:26 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 565
+12/05/2022 10:51:26 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:26 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:51:27 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 8519
+12/05/2022 10:51:27 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 8519
+12/05/2022 10:51:27 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:27 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:51:35 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:51:36 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 55431
+12/05/2022 10:51:36 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 55431
+12/05/2022 10:51:36 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:36 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:51:38 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 211
+12/05/2022 10:51:38 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 211
+12/05/2022 10:51:38 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:38 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:51:39 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 2334
+12/05/2022 10:51:39 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 2334
+12/05/2022 10:51:39 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:39 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
+12/05/2022 10:51:46 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exists!!!
+12/05/2022 10:51:47 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 15754
+12/05/2022 10:51:47 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 15754
+12/05/2022 10:51:47 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:47 AM - TestStatus - INFO: ###Verfication Successful  ::page total weight is same
+12/05/2022 10:51:48 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 2660
+12/05/2022 10:51:48 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 2660
+12/05/2022 10:51:48 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:48 AM - TestStatus - INFO: ###Verfication Successful  ::page total Volume is same
+12/05/2022 10:51:48 AM - InvoiceRunPage - INFO: Actual Value From Application Web UI --> :: 43
+12/05/2022 10:51:48 AM - InvoiceRunPage - INFO: Expected Value From Calculations --> :: 43
+12/05/2022 10:51:48 AM - InvoiceRunPage - INFO: ### VALUES MATCHED !!!
+12/05/2022 10:51:48 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment amount is same
