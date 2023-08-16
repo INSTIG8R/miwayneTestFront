@@ -259,8 +259,11 @@ class ConsignmentForm(BasePage):
 
     def enterAccountName(self, accountName):
         self.waitForElement(self._account_name, "xpath")
-        self.sendKeys(accountName, self._account_name, "xpath")
         an = self.getElement(self._account_name, "xpath")
+        self.sendKeys(accountName, self._account_name, "xpath")
+        time.sleep(2)
+        an.send_keys(Keys.ARROW_DOWN)
+        an.send_keys(Keys.ARROW_DOWN)
         an.send_keys(Keys.ENTER)
 
     def enterStatus(self, status):
@@ -343,10 +346,13 @@ class ConsignmentForm(BasePage):
         # self.waitForElement(self._company_l, "xpath")
         # sce = self.getElement(self._company_l, "xpath")
         # self.elementClick("(//button[@title='Clear'])[5]", "xpath")
+        sc = self.getElement(self._company_l, "xpath")
         self.elementClick(self._company_l, "xpath")
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._company_l, "xpath"))
         self.sendKeys(senderCompanyName, self._company_l, "xpath")
-        sc = self.getElement(self._company_l, "xpath")
+        time.sleep(2)
+        sc.send_keys(Keys.ARROW_DOWN)
+        sc.send_keys(Keys.ARROW_DOWN)
         sc.send_keys(Keys.ENTER)
         time.sleep(2)
 
@@ -937,8 +943,12 @@ class ConsignmentForm(BasePage):
 
     def enterReceiverDetailsCompanyName(self, senderCompanyName):
         self.waitForElement(self._company_r, "xpath")
-        self.sendKeys(senderCompanyName, self._company_r, "xpath")
         rc = self.getElement(self._company_r, "xpath")
+        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._company_r, "xpath"))
+        self.sendKeys(senderCompanyName, self._company_r, "xpath")
+        time.sleep(2)
+        rc.send_keys(Keys.ARROW_DOWN)
+        rc.send_keys(Keys.ARROW_DOWN)
         rc.send_keys(Keys.ENTER)
 
     def checkReceiverAddressType(self):

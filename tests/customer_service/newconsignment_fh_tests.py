@@ -1,18 +1,12 @@
 import time
 
 from pages.customer_service.consignmentform_new23 import ConsignmentForm
-from pages.customer_service.newconsignment_page import NewConsignmentPage
 from pages.dashboard.dashboardtab import DashboardPage
 from pages.home.home_page import HomePage
 from pages.home.login_page import LoginPage
 from utilities.teststatus import TestStatus
 import unittest
 import pytest
-
-
-# from ddt import ddt, data, unpack
-# from utilities.read_data import getCSVData
-
 
 @pytest.mark.use_fixtures("oneTimeSetup", "setUp")
 # @ddt
@@ -29,7 +23,6 @@ class NewConsignmentFHTests(unittest.TestCase):
         self.lp = LoginPage(self.driver)
         self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
         self.db = self.hp.clickDashboard()
-        #self.nc = self.db.goToNewConsignmentPage()
         self.nc = self.db.gotoConsignmentForm()
         nc_res = self.nc.verifyNewConsignmentTitle()
         self.ts.markFinal("New Consignment Page load Check", nc_res, "New Consignment Page Loaded")

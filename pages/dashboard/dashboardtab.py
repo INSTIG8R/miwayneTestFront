@@ -2,7 +2,7 @@ import utilities.custom_logger as cl
 import logging
 from base.basepage import BasePage
 from pages.customer_service.consignmentform_new23 import ConsignmentForm
-from pages.customer_service.newconsignment_page import NewConsignmentPage
+#from pages.customer_service.newconsignment_page import NewConsignmentPage
 #  pages.dashboard.cservicereports_page import CustomerServicePage
 from pages.dashboard.transaction_page import TransactionPage
 
@@ -99,11 +99,7 @@ class DashboardPage(BasePage):
         # jp = JobsPage(self.driver)
         # return jp
 
-    def goToNewConsignmentPage(self):
-        self.waitForElement(self._create_consignment_btn, "xpath")
-        self.elementClick(self._create_consignment_btn, "xpath")
-        nc = NewConsignmentPage(self.driver)
-        return nc
+
 
 
 

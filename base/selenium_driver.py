@@ -124,7 +124,7 @@ class SeleniumDriver:
             return False
 
     def waitForElement(self, locator, locatorType="id",
-                       timeout=180, pollFrequency=1.25): # 15 1
+                       timeout=20, pollFrequency=1.25): # 15 1
         element = None
         try:
             byType = self.getByType(locatorType)

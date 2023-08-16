@@ -7,7 +7,7 @@ from base.basepage import BasePage
 from selenium.webdriver import Keys
 from selenium.webdriver.support.select import Select
 
-from pages.customer_service.newconsignment_page import NewConsignmentPage
+from pages.customer_service.consignmentform_new23 import ConsignmentForm
 
 
 class CurrentConsignmentPage(BasePage):
@@ -363,9 +363,9 @@ class CurrentConsignmentPage(BasePage):
         verval = self.verifyValues(actualVal, expectedVal)
         return verval
 
-    def gotoNewCosignment(self):
-        self.waitForElement(self._new_consignment_btn, "xpath")
-        self.elementClick(self._new_consignment_btn, "xpath")
-        # return new consignment page
-        nc = NewConsignmentPage(self.driver)
-        return nc
+    # def gotoNewCosignment(self):
+    #     self.waitForElement(self._new_consignment_btn, "xpath")
+    #     self.elementClick(self._new_consignment_btn, "xpath")
+    #     # return new consignment page
+    #     nc = NewConsignmentPage(self.driver)
+    #     return nc
