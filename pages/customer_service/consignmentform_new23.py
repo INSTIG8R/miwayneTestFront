@@ -36,7 +36,7 @@ class ConsignmentForm(BasePage):
     _assigned_to = "//input[@id = 'wayne_id_Assigned To']"
     _priority_level = "//input[@id = 'wayne_id_Priority Level']"
 
-    _data_fetched_popup = "//div[contains(text(),'Account Info Fetched')]"
+    _data_fetched_popup = "//div[contains(text(),'Address Info Fetched')]"
 
     # Sender Details
 
@@ -275,7 +275,8 @@ class ConsignmentForm(BasePage):
         st.send_keys(Keys.ENTER)
 
     def enterDateAllocated(self, dateAllocated):
-        self.sendKeys(dateAllocated, self._date_allocated, "xpath")
+        if dateAllocated:
+            self.sendKeys(dateAllocated, self._date_allocated, "xpath")
 
     def enterCustomerRef(self, customerRef):
         if customerRef:
@@ -355,6 +356,14 @@ class ConsignmentForm(BasePage):
         sc.send_keys(Keys.ARROW_DOWN)
         sc.send_keys(Keys.ENTER)
         time.sleep(2)
+
+    def checkSenderAddressClickable(self):
+        sa = self.getElement(self._company_l, "xpath")
+        sa_clickable = sa.isEnabled()
+        if not sa_clickable:
+            return False
+        else:
+            return True
 
     def checkSenderAddressType(self):
         self.waitForElement(self._addr_type_l, "xpath")

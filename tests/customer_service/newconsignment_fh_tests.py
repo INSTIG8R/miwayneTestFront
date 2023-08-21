@@ -30,17 +30,23 @@ class NewConsignmentFHTests(unittest.TestCase):
     @pytest.mark.order(2)
     def test_header(self):
         self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED')
-        data_fetched_test = self.nc.checkDataFetchedPopUp()
+        addressinfotest = self.nc.checkSenderAddressClickable()
         # print(data_fetched_test)
-        if data_fetched_test:
-            self.ts.markFinal("Data Fetching Test", True, "Data Fetched Without Issues")
+        if addressinfotest:
+            self.ts.markFinal("Address Fields are Open", True, "Data Fetched Without Issues")
         else:
-            self.ts.markFinal("Data Fetching Test", False, "Data Could not be fetched")
+            self.ts.markFinal("Address Fields are Closed", False, "Data Could not be fetched")
 
     @pytest.mark.order(3)
     def test_checkSenderDetails(self):
         _sd_val = False
-        self.nc.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
+        self.nc.enterSenderDetails(senderCompanyName='BELGOTEX TIDAL ROAD')
+        data_fetched_test = self.nc.checkDataFetchedPopUp()
+        # print(data_fetched_test)
+        if data_fetched_test:
+            self.ts.mark(True, "Data Fetched Without Issues")
+        else:
+            self.ts.mark(False, "Data Could not be fetched")
         time.sleep(5)
         print(self.nc.checkSenderAddressType())
         if self.nc.checkSenderAddressType():
@@ -96,7 +102,7 @@ class NewConsignmentFHTests(unittest.TestCase):
     def test_checkReceiverDetails(self):
         _rd_val = False
         # noinspection SpellCheckingInspection
-        self.nc.enterReceiverDetails(receiverCompanyName='FLOORING XTRA WARKWORTH')
+        self.nc.enterReceiverDetails(receiverCompanyName="FLOORING XTRA JB'S")
         time.sleep(5)
         print(self.nc.checkReceiverAddressType())
         if self.nc.checkReceiverAddressType():
@@ -152,7 +158,7 @@ class NewConsignmentFHTests(unittest.TestCase):
     @pytest.mark.order(5)
     def test_editSenderDetails(self):
 
-        res_values = self.nc.editSenderDetailsCompanyNameAndCheckRequiredFields(senderCompanyName="CARPET AND MATLAND HENDERSON")
+        res_values = self.nc.editSenderDetailsCompanyNameAndCheckRequiredFields(senderCompanyName="CARPET 2000 LTD")
         print(res_values)
         if res_values:
             self.ts.mark(res_values, "Required Fields are FILLED")
@@ -172,7 +178,7 @@ class NewConsignmentFHTests(unittest.TestCase):
 
     @pytest.mark.order(6)
     def test_editReceiverDetails(self):
-        res_values = self.nc.editReceiverDetailsCompanyName(receiverCompanyName="CARPET COURT PUKEKOHE - RESIDENTIAL")
+        res_values = self.nc.editReceiverDetailsCompanyName(receiverCompanyName="ESSENTIAL FLOORS LTD")
         print(res_values)
         if res_values:
             self.ts.mark(res_values, "Required Fields are FILLED")
