@@ -1308,8 +1308,11 @@ class ConsignmentForm(BasePage):
     def enterItem_2(self, item):
         if item:
             self.waitForElement(self._item2, "xpath")
-            self.sendKeys(item, self._item2, "xpath")
             it2 = self.getElement(self._item2, "xpath")
+            self.sendKeys(item, self._item2, "xpath")
+            time.sleep(2)
+            it2.send_keys(Keys.ARROW_DOWN)
+            it2.send_keys(Keys.ARROW_DOWN)
             it2.send_keys(Keys.ENTER)
 
     def enterCommodity_2(self, commodity):
@@ -1648,18 +1651,27 @@ class ConsignmentForm(BasePage):
             self.waitForElement(self._carrier1, "xpath")
             it1 = self.getElement(self._carrier1, "xpath")
             self.sendKeys(carrier, self._carrier1, "xpath")
+            time.sleep(2)
+            it1.send_keys(Keys.ARROW_DOWN)
+            it1.send_keys(Keys.ARROW_DOWN)
             it1.send_keys(Keys.ENTER)
         else:
             self.waitForElement("//input[@id='wayne_id_Carrier0']", "xpath")
             it1 = self.getElement("//input[@id='wayne_id_Carrier0']", "xpath")
             self.sendKeys(carrier, "//input[@id='wayne_id_Carrier0']", "xpath")
+            time.sleep(2)
+            it1.send_keys(Keys.ARROW_DOWN)
+            it1.send_keys(Keys.ARROW_DOWN)
             it1.send_keys(Keys.ENTER)
 
     def enterCarrier2(self, carrier):
         if self.isElementPresent(self._carrier2, "xpath"):
             self.waitForElement(self._carrier2, "xpath")
+            ca2 = self.getElement(self._carrier2,"xpath")
             self.sendKeys(carrier, self._carrier2, "xpath")
-            ca2 = self.getElement(self._carrier2, "xpath")
+            time.sleep(2)
+            ca2.send_keys(Keys.ARROW_DOWN)
+            ca2.send_keys(Keys.ARROW_DOWN)
             ca2.send_keys(Keys.ENTER)
 
 
@@ -1670,20 +1682,30 @@ class ConsignmentForm(BasePage):
                 de1 = self.getElement(self._depot1, "xpath")
                 self.elementClick(self._depot1, "xpath")
                 self.sendKeys(depot, self._depot1, "xpath")
+                time.sleep(2)
+                de1.send_keys(Keys.ARROW_DOWN)
+                de1.send_keys(Keys.ARROW_DOWN)
                 de1.send_keys(Keys.ENTER)
             else:
                 self.waitForElement("//input[@id='wayne_id_Depot0']", "xpath")
                 de1 = self.getElement("//input[@id='wayne_id_Depot0']", "xpath")
                 self.elementClick(self._depot1, "xpath")
                 self.sendKeys(depot, self._depot1, "xpath")
+                time.sleep(2)
+                de1.send_keys(Keys.ARROW_DOWN)
+                de1.send_keys(Keys.ARROW_DOWN)
                 de1.send_keys(Keys.ENTER)
 
     def enterDepot2(self, depot):
         if depot:
             self.waitForElement(self._depot2, "xpath")
             self.elementClick(self._depot2, "xpath")
+            de2 = self.getElement(self._depot2, "xpath")
             self.sendKeys(depot, self._depot2, "xpath")
             de2 = self.getElement(self._depot2, "xpath")
+            time.sleep(2)
+            de2.send_keys(Keys.ARROW_DOWN)
+            de2.send_keys(Keys.ARROW_DOWN)
             de2.send_keys(Keys.ENTER)
 
     def enterType1(self):  # select type
@@ -1710,8 +1732,11 @@ class ConsignmentForm(BasePage):
     def enterFrom1(self, frm):
         if self.isElementPresent("//strong[normalize-space()=2]", "xpath"):
             self.waitForElement(self._from1, "xpath")
-            self.sendKeys(frm, self._from1, "xpath")
             fr1 = self.getElement(self._from1, "xpath")
+            self.sendKeys(frm, self._from1, "xpath")
+            time.sleep(2)
+            fr1.send_keys(Keys.ARROW_DOWN)
+            fr1.send_keys(Keys.ARROW_DOWN)
             fr1.send_keys(Keys.ENTER)
         else:
             self.waitForElement("//input[@id='wayne_id_from0']", "xpath")
@@ -1722,8 +1747,11 @@ class ConsignmentForm(BasePage):
     def enterFrom2(self, frm):
         if frm:
             self.waitForElement(self._from2, "xpath")
-            self.sendKeys(frm, self._from2, "xpath")
             fr1 = self.getElement(self._from2, "xpath")
+            self.sendKeys(frm, self._from2, "xpath")
+            time.sleep(2)
+            fr1.send_keys(Keys.ARROW_DOWN)
+            fr1.send_keys(Keys.ARROW_DOWN)
             fr1.send_keys(Keys.ENTER)
 
     def enterTo1(self, to):  # returning when the source and destination locations are same in LEGGING 1

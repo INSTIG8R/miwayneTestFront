@@ -1,7 +1,6 @@
 import time
 
 from pages.customer_service.consignmentform_new23 import ConsignmentForm
-from pages.customer_service.newconsignment_page import NewConsignmentPage
 from pages.dashboard.dashboardtab import DashboardPage
 from pages.home.home_page import HomePage
 from pages.home.login_page import LoginPage
