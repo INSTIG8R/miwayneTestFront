@@ -1260,9 +1260,12 @@ class ConsignmentForm(BasePage):
         it1.send_keys(Keys.ENTER)
 
     def enterCommodity_1(self, commodity):
+        cm1 = self.getElement(self._commodity1, "xpath")
         self.elementClick(self._commodity1, "xpath")
         self.sendKeys(commodity, self._commodity1, "xpath")
-        cm1 = self.getElement(self._commodity1, "xpath")
+        time.sleep(2)
+        cm1.send_keys(Keys.ARROW_DOWN)
+        cm1.send_keys(Keys.ARROW_DOWN)
         cm1.send_keys(Keys.ENTER)
 
     def enterDescription_1(self, description):
@@ -1318,11 +1321,13 @@ class ConsignmentForm(BasePage):
     def enterCommodity_2(self, commodity):
         if commodity:
             self.waitForElement(self._commodity2, "xpath")
+            cmd2 = self.getElement(self._commodity2, "xpath")
             self.elementClick(self._commodity2, "xpath")
             self.sendKeys(commodity, self._commodity2, "xpath")
-            cmd2 = self.getElement(self._commodity2, "xpath")
-            cmd2.send_keys(Keys.ENTER)
             time.sleep(2)
+            cmd2.send_keys(Keys.ARROW_DOWN)
+            cmd2.send_keys(Keys.ARROW_DOWN)
+            cmd2.send_keys(Keys.ENTER)
 
     def enterDescription_2(self, description):
         if description:
@@ -1378,7 +1383,7 @@ class ConsignmentForm(BasePage):
     def findTotalWeight(self):
         self.waitForElement(self._total_weight)
         tw = self.getElement(self._total_weight)
-        reg_res = re.findall(r'\b\d+\.\d+\b', tw.text)
+        reg_res = re.findall(r'[\d\.\d]+', tw.text)
         print(reg_res[0])
         res = round(float(reg_res[0]), 3)
         return res
@@ -1387,7 +1392,7 @@ class ConsignmentForm(BasePage):
         time.sleep(3)
         self.waitForElement(self._total_volume)
         tv = self.getElement(self._total_volume)
-        reg_res = re.findall(r'\b\d+\.\d+\b', tv.text)
+        reg_res = re.findall(r'[\d\.\d]+', tv.text)
         print(reg_res[0])
         res = round(float(reg_res[0]), 3)
         return res
@@ -1740,8 +1745,11 @@ class ConsignmentForm(BasePage):
             fr1.send_keys(Keys.ENTER)
         else:
             self.waitForElement("//input[@id='wayne_id_from0']", "xpath")
-            self.sendKeys(frm, "//input[@id='wayne_id_from0']", "xpath")
             fr1 = self.getElement("//input[@id='wayne_id_from0']", "xpath")
+            self.sendKeys(frm, "//input[@id='wayne_id_from0']", "xpath")
+            time.sleep(2)
+            fr1.send_keys(Keys.ARROW_DOWN)
+            fr1.send_keys(Keys.ARROW_DOWN)
             fr1.send_keys(Keys.ENTER)
 
     def enterFrom2(self, frm):
@@ -1756,35 +1764,44 @@ class ConsignmentForm(BasePage):
 
     def enterTo1(self, to):  # returning when the source and destination locations are same in LEGGING 1
         if self.isElementPresent("//strong[normalize-space()=2]", "xpath"):
-            self.waitForElement(self._to1, "xpath")
-            self.sendKeys(to, self._to1, "xpath")
             frm = self.getElement(self._from1, "xpath").get_attribute("value")
+            self.waitForElement(self._to1, "xpath")
+            to1 = self.getElement(self._to1, "xpath")
             if frm == to:
                 self.log.error("### Source and Destination can't be same!!!")
                 return
-            to1 = self.getElement(self._to1, "xpath")
+            self.sendKeys(to, self._to1, "xpath")
+            time.sleep(2)
+            to1.send_keys(Keys.ARROW_DOWN)
+            to1.send_keys(Keys.ARROW_DOWN)
             to1.send_keys(Keys.ENTER)
         else:
             self.waitForElement("//input[@id='wayne_id_to0']", "xpath")
-            self.sendKeys(to, self._to1, "xpath")
             frm = self.getElement(self._from1, "xpath").get_attribute("value")
             if frm == to:
                 self.log.error("### Source and Destination can't be same!!!")
                 return
             to1 = self.getElement(self._to1, "xpath")
+            self.sendKeys(to, self._to1, "xpath")
+            time.sleep(2)
+            to1.send_keys(Keys.ARROW_DOWN)
+            to1.send_keys(Keys.ARROW_DOWN)
             to1.send_keys(Keys.ENTER)
 
 
     def enterTo2(self, to):
         if to:
             self.waitForElement(self._to2, "xpath")
-            self.sendKeys(to, self._to2, "xpath")
+            to2 = self.getElement(self._to2, "xpath")
             frm = self.getElement(self._from2, "xpath").get_attribute("value")
             if frm == to:
                 self.log.error("### Source and Destination can't be same!!!")
                 return
-            to1 = self.getElement(self._to2, "xpath")
-            to1.send_keys(Keys.ENTER)
+            self.sendKeys(to, self._to2, "xpath")
+            time.sleep(2)
+            to2.send_keys(Keys.ARROW_DOWN)
+            to2.send_keys(Keys.ARROW_DOWN)
+            to2.send_keys(Keys.ENTER)
 
     def enterCarrierRef1(self, carrRef):
         if carrRef:
