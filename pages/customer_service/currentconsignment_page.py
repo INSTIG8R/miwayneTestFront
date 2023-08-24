@@ -27,10 +27,10 @@ class CurrentConsignmentPage(BasePage):
     _date_pickup_from = "wayne_id_date pickup from"
     _date_pickup_to = "wayne_id_date pickup to"
     _account_name = "//input[@id = 'wayne_id_account name']"
-    _status = "//select[@id='wayne_id_status']"
-    _service = "//select[@id='wayne_id_service']"
+    _status = "//input[@id='wayne_id_status']"
+    _service = "//input[@id='wayne_id_service']"
     _customer_reference = "wayne_id_customer Ref"
-    _booked_by = "wayne_id_booked By"
+    _booked_by = "wayne_id_booked by"
     _pickup_city = "//input[@id = 'wayne_id_pickup City']"
     _delivery_city = "//input[@id = 'wayne_id_delivery City']"
     _sender = "wayne_id_sender"
@@ -38,7 +38,7 @@ class CurrentConsignmentPage(BasePage):
     _container_number="wayne_id_Container Number"
     _priority_level = "wayne_id_priority level"
     _assigned_to = "wayne_id_assigned to"
-    _carrier = "wayne_id_carriers"
+    _carrier = "wayne_id_carrier"
     _estimated_delivery = "wayne_id_estimated Delivery"
     _inactive_transactions = "wayne_id_INACTIVE Consignments "
 
@@ -62,7 +62,7 @@ class CurrentConsignmentPage(BasePage):
     ''' Fields '''
 
     def verifyCurrentConsignmentTitle(self):
-        return self.verifyPageTitle("Express Cargo Ltd. | Consignment")
+        return self.verifyPageTitle("Express Cargo Ltd. | Consignments")
 
     def enterConnote(self, connote):
         if connote:
@@ -87,24 +87,32 @@ class CurrentConsignmentPage(BasePage):
     def enterAccountName(self, accountName):
         if accountName == "":
             return
+        an = self.getElement(self._account_name, "xpath")
         self.sendKeys(accountName, self._account_name, "xpath")
         time.sleep(2)
-        an = self.getElement(self._account_name, "xpath")
+        an.send_keys(Keys.ARROW_DOWN)
+        an.send_keys(Keys.ARROW_DOWN)
         an.send_keys(Keys.ENTER)
 
     def clickStatus(self, option):
         if not option:
             return
-        select = Select(self.getElement(self._status, "xpath"))
-        time.sleep(1)
-        select.select_by_index(option)
+        sel = self.getElement(self._status, "xpath")
+        self.sendKeys(option, self._status,"xpath")
+        time.sleep(2)
+        sel.send_keys(Keys.ARROW_DOWN)
+        sel.send_keys(Keys.ARROW_DOWN)
+        sel.send_keys(Keys.ENTER)
 
     def clickService(self, service):
         if not service:
             return
-        select = Select(self.getElement(self._service, "xpath"))
-        time.sleep(1)
-        select.select_by_index(service)
+        sel = self.getElement(self._service, "xpath")
+        self.sendKeys(service, self._service, "xpath")
+        time.sleep(2)
+        sel.send_keys(Keys.ARROW_DOWN)
+        sel.send_keys(Keys.ARROW_DOWN)
+        sel.send_keys(Keys.ENTER)
 
     def enterCustomerReference(self, customerReference):
         if customerReference:
@@ -112,24 +120,31 @@ class CurrentConsignmentPage(BasePage):
 
     def enterBookedBy(self, booked_by):
         if booked_by != "":
-            self.sendKeys(booked_by, self._booked_by)
             bb = self.getElement(self._booked_by)
+            self.sendKeys(booked_by, self._booked_by)
+            time.sleep(2)
+            bb.send_keys(Keys.ARROW_DOWN)
+            bb.send_keys(Keys.ARROW_DOWN)
             bb.send_keys(Keys.ENTER)
 
     def enterPickupCity(self, pickup_city):
         if pickup_city == "":
             return
-        self.sendKeys(pickup_city, self._pickup_city, "xpath")
-        time.sleep(3)
         pc = self.getElement(self._pickup_city, "xpath")
+        self.sendKeys(pickup_city, self._pickup_city, "xpath")
+        time.sleep(2)
+        pc.send_keys(Keys.ARROW_DOWN)
+        pc.send_keys(Keys.ARROW_DOWN)
         pc.send_keys(Keys.ENTER)
 
     def enterDeliveryCity(self, delivery_city):
         if delivery_city == "":
             return
-        self.sendKeys(delivery_city, self._delivery_city, "xpath")
-        time.sleep(3)
         dc = self.getElement(self._delivery_city, "xpath")
+        self.sendKeys(delivery_city, self._delivery_city, "xpath")
+        time.sleep(2)
+        dc.send_keys(Keys.ARROW_DOWN)
+        dc.send_keys(Keys.ARROW_DOWN)
         dc.send_keys(Keys.ENTER)
 
     def enterSender(self, sender):
@@ -147,17 +162,21 @@ class CurrentConsignmentPage(BasePage):
     def enterCarrier(self, carrier):
         if carrier == "":
             return
-        self.sendKeys(carrier, self._carrier)
-        time.sleep(3)
         ca = self.getElement(self._carrier)
+        self.sendKeys(carrier, self._carrier)
+        time.sleep(2)
+        ca.send_keys(Keys.ARROW_DOWN)
+        ca.send_keys(Keys.ARROW_DOWN)
         ca.send_keys(Keys.ENTER)
 
     def enterAssignedTo(self, assigned_to):
         if assigned_to == "":
             return
-        self.sendKeys(assigned_to, self._assigned_to)
-        time.sleep(3)
         ca = self.getElement(self._assigned_to)
+        self.sendKeys(assigned_to, self._assigned_to)
+        time.sleep(2)
+        ca.send_keys(Keys.ARROW_DOWN)
+        ca.send_keys(Keys.ARROW_DOWN)
         ca.send_keys(Keys.ENTER)
 
     def enterEstimatedDelivery(self, estimated_delivery):
@@ -363,9 +382,4 @@ class CurrentConsignmentPage(BasePage):
         verval = self.verifyValues(actualVal, expectedVal)
         return verval
 
-    # def gotoNewCosignment(self):
-    #     self.waitForElement(self._new_consignment_btn, "xpath")
-    #     self.elementClick(self._new_consignment_btn, "xpath")
-    #     # return new consignment page
-    #     nc = NewConsignmentPage(self.driver)
-    #     return nc
+

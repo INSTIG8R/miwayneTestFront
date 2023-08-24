@@ -28,7 +28,7 @@ class CurrentConsignmentTests(unittest.TestCase):
         self.ts.markFinal("Current Consignment Title verification", result1, "Current Consignment page loaded")
 
     @pytest.mark.order(2)
-    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\currentconsignment_data.csv"))
+    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\data\\currentconsignment_data.csv"))
     @unpack
     def test_ccsv(self, connote, dateReadyFrom, dateReadyTo, datePickUpFrom, datePickUpTo, accountName, option, service, customerReference,
                   booked_by, pickup_city, delivery_city, sender, receiver, container_number, priority_level,

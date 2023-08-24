@@ -26,9 +26,9 @@ class HomePage(BasePage):
     _no_reference_text_locator = "//p[@class = 'MuiFormHelperText-root']//strong"  # to check if the reference_text field is empty
     _dashboard_btn = "//p[normalize-space()='Dashboard']"
     _customer_service_btn = "//p[normalize-space()='Customer Service']"
-    _current_consignment_btn = "//p[normalize-space() = 'Consignment']"
-    _awaiting_pods_btn = "//p[normalize-space() = 'Awaiting Pod Consignment']"
-    _drafts_btn = "//p[normalize-space() = 'Draft Consignment']"
+    _current_consignment_btn = "//p[normalize-space() = 'Consignments']"
+    _awaiting_pods_btn = "//p[normalize-space() = 'Awaiting Pods']"
+    _drafts_btn = "//p[normalize-space() = 'Draft Consignments']"
     _finance_btn = "//p[normalize-space() = 'Finance']"
     _invoice_run_btn = "//p[normalize-space() = 'Invoice Run']"
     _system_administration_btn = "//p[normalize-space() = 'Master Data']"
