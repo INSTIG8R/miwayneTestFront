@@ -15,9 +15,9 @@ class LoginPage(BasePage):
 
     # Locators
     _login_link = "wayne_id_Login"
-    _email_field = "//input[@id='username']"
-    _password_field = "//input[@id='password']"
-    _login_button = "//div[3]/button"
+    _email_field = "//input[@id='wayne_id_Email']"
+    _password_field = "//input[@id='wayne_id_password']"
+    _login_button = "wayne_id_Login, "
     _login_logo = "//p[contains(normalize-space(), 'WELCOME')]"
 
     def clickLoginLink(self):
@@ -30,7 +30,7 @@ class LoginPage(BasePage):
         self.sendKeys(password, self._password_field, "xpath")
 
     def clickLoginButton(self):
-        self.elementClick(self._login_button, locatorType="xpath")
+        self.elementClick(self._login_button)
 
     def checkLoginPage(self):
         return self.isElementPresent(self._login_logo, "xpath")
