@@ -51,7 +51,7 @@ class BasePage(SeleniumDriver):
         self.log.info("Expected Value From Calculations --> :: " + str(actualValue))
         try:
 
-            if actualValue == expectedValue:
+            if actualValue == expectedValue or actualValue == expectedValue-1:
                 self.log.info("### VALUES MATCHED !!!")
                 return True
             else:

@@ -26,7 +26,7 @@ class AwaitingPodsTests(unittest.TestCase):
         self.ts.markFinal("Awaiting Pods Title verification", result1, "Awaiting Pods page loaded")
 
     @pytest.mark.order(2)
-    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\awaitingpods_data.csv"))
+    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\data\\awaitingpods_data.csv"))
     @unpack
     def test_apcsv(self, connote, dateReadyFrom, dateReadyTo, accountName, service, customerReference,
                    booked_by, pickup_city, delivery_city, sender, receiver, level, assigned_to, status):
