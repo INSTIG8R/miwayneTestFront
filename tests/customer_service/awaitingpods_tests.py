@@ -31,6 +31,7 @@ class AwaitingPodsTests(unittest.TestCase):
     def test_apcsv(self, connote, dateReadyFrom, dateReadyTo, accountName, service, customerReference,
                    booked_by, pickup_city, delivery_city, sender, receiver, level, assigned_to, status):
 
+        errs = []
         self.ap.find_consignment(connote=connote, dateReadyFrom=dateReadyFrom, dateReadyTo=dateReadyTo,
                                  accountName=accountName,
                                  service=service, customerReference=customerReference, booked_by=booked_by,
@@ -39,6 +40,7 @@ class AwaitingPodsTests(unittest.TestCase):
                                  assigned_to=assigned_to, status=status)
         if self.ap.infonotpresent():
             self.ts.markFinal("Test_dataPresence", False, "###What you are looking for doesn't exist###")
+            errs.append(False)
         else:
             self.ts.mark(True, "Data Exists!!!")
 
@@ -46,18 +48,27 @@ class AwaitingPodsTests(unittest.TestCase):
             self.ts.mark(True, "page total weight is same")
         else:
             self.ts.mark(False, "page total Weight is NOT same!!")
+            errs.append(False)
 
         if self.ap.pgtotVolumeVerification():
             self.ts.mark(True, "page total Volume is same")
         else:
             self.ts.mark(False, "page total Volume is NOT same!!")
+            errs.append(False)
 
         if self.ap.pgtotlItemsVerification():
             self.ts.mark(True, "page total Items is same")
         else:
             self.ts.mark(False, "page total Items is NOT same!!")
+            errs.append(False)
 
         if self.ap.totalConsVerification():
-            self.ts.markFinal("totalconsignment_test", True, "Consignment amount is same")
+            self.ts.mark(True, "Consignment amount is same")
         else:
-            self.ts.markFinal("totalconsignment_test", False, "Consignment amount is NOT same!!")
+            self.ts.mark(False, "Consignment amount is NOT same!!")
+            errs.append(False)
+
+        if False in errs:
+            self.ts.markFinal("Test_valueEquality", False, "###Error in values!!!")
+        else:
+            self.ts.markFinal("Test_equality", True, "###No Issues Found!!")
