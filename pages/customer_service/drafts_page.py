@@ -16,16 +16,16 @@ class DraftsPage(BasePage):
         self.driver = driver
 
     # Locators
-    _connote_field = "wayne_id_consignment Note"
-    _date_ready_from = "wayne_id_date ready from"
-    _date_ready_to = "wayne_id_date ready to"
+    _connote_field = "//input[@id='wayne_id_consignment Note']"
+    _date_ready_from = "//input[@id='wayne_id_date ready from']"
+    _date_ready_to = "//input[@id='wayne_id_date ready to']"
     _account_name = "//input[@id = 'wayne_id_account name']"
-    _service = "//select[@id='wayne_id_service']"
-    _customer_reference = "wayne_id_customer Ref-label"
-    _pickup_city = "//input[@id = 'wayne_id_pickup City']"
+    _service = "//input[@id='wayne_id_service']"
+    _customer_reference = "//input[@id='wayne_id_customer Ref']"
+    _pickup_city = "//input[@id='wayne_id_pickup City']"
     _delivery_city = "//input[@id = 'wayne_id_delivery City']"
-    _sender = "wayne_id_sender"
-    _receiver = "wayne_id_receiver"
+    _sender = "//input[@id='wayne_id_sender']"
+    _receiver = "//input[@id='wayne_id_receiver']"
     _converted_consignments = "wayne_id_converted To Consignment"
     _inactive_drafts = "wayne_id_INACTIVE Drafts "
 
@@ -33,7 +33,7 @@ class DraftsPage(BasePage):
     _clear_filter_btn = "wayne_id_Clear, "
 
     # footers
-    _page_size = "wayne_id_Page Size-label wayne_id_Page Size"
+    _page_size = "//div[@id='wayne_id_Page Size']"
     _page_total = "//p[@id = 'wayne_id_PAGE TOTAL']"
     _page_total_items = "wayne_id_PAGE TOTAL ITEMS"
     _page_total_weight = "//p[@id= 'wayne_id_PAGE TOTAL WEIGHT']"
@@ -50,15 +50,15 @@ class DraftsPage(BasePage):
 
     def enterConnote(self, connote):
         if connote:
-            self.sendKeys(connote, self._connote_field)
+            self.sendKeys(connote, self._connote_field, "xpath")
 
     def enterDateReadyFrom(self, dateReadyFrom):
         if dateReadyFrom:
-            self.sendKeys(dateReadyFrom, self._date_ready_from)
+            self.sendKeys(dateReadyFrom, self._date_ready_from, "xpath")
 
     def enterDateReadyTo(self, dateReadyTo):
         if dateReadyTo:
-            self.sendKeys(dateReadyTo, self._date_ready_to)
+            self.sendKeys(dateReadyTo, self._date_ready_to, "xpath")
 
     def enterAccountName(self, accountName):
         if accountName is "":
@@ -71,9 +71,12 @@ class DraftsPage(BasePage):
     def clickService(self, service):
         if not service:
             return
-        select = Select(self.getElement(self._service, "xpath"))
-        time.sleep(1)
-        select.select_by_index(service)
+        select = self.getElement(self._service, "xpath")
+        self.sendKeys(service, self._service, "xpath")
+        time.sleep(2)
+        select.send_keys(Keys.ARROW_DOWN)
+        select.send_keys(Keys.ARROW_DOWN)
+        select.send_keys(Keys.ENTER)
 
     def enterCustomerReference(self, customerReference):
         if customerReference:
@@ -208,27 +211,24 @@ class DraftsPage(BasePage):
         return int(sum)
 
     def calcpagetotalitems(self):
-        pgitems = self.calculateSumOfColumn(12)
+        pgitems = self.calculateSumOfColumn(15)
         return pgitems
 
     def calcpagetotalweight(self):
-        pgweight = self.calculateSumOfColumn(13)
+        pgweight = self.calculateSumOfColumn(16)
         return pgweight
 
     def calcpagetotalvolume(self):
-        pgvol = self.calculateSumOfColumn(14)
+        pgvol = self.calculateSumOfColumn(17)
         return pgvol
 
     # Page Size element is not accessible
     def calcpagesize(self):
-        select = Select(self.getElement(self._page_size))
-        element = select.first_selected_option
-        page_size = int(element.text)
+        select = self.getElement(self._page_size, "xpath")
+        page_size = int(select.text)
         return page_size
 
     def calclastpagetotalrows(self):
-        # self.driver.execute_script("arguments[0].scrollIntoView(true);",
-        #                            self.getElement(self._goto_last_page_btn))
         self.elementClick(self._goto_last_page_btn, "xpath")
         self.waitForElement(self._page_total_items)
         rws = self.getElements("//table/tbody/tr", "xpath")
@@ -237,8 +237,6 @@ class DraftsPage(BasePage):
 
     def calculatetotalconsignment(self):
         self.waitForElement(self._connote_field)
-        # self.driver.execute_script("arguments[0].scrollIntoView(true);",
-        #                            self.getElement(self._goto_last_page_btn, "xpath"))
         lpb = self.getElement(self._goto_last_page_btn, "xpath")
         if lpb.is_enabled():
             pgsz = self.calcpagesize()

@@ -26,11 +26,12 @@ class DraftsTests(unittest.TestCase):
         self.ts.markFinal("Drafts Title verification", result1, "Drafts page loaded")
 
     @pytest.mark.order(2)
-    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\drafts_data.csv"))
+    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\data\\drafts_data.csv"))
     @unpack
     def test_dpcsv(self, connote, dateReadyFrom, dateReadyTo, accountName, service, customerReference,
                    pickup_city, delivery_city, sender, receiver, converted_cons, status):
 
+        errs = []
         self.dp.findConsignments(connote=connote, dateReadyFrom=dateReadyFrom, dateReadyTo=dateReadyTo,
                                  accountName=accountName,
                                  service=service, customerReference=customerReference,
@@ -39,6 +40,7 @@ class DraftsTests(unittest.TestCase):
                                  converted_cons=converted_cons, status=status)
         if self.dp.infonotpresent():
             self.ts.markFinal("Test_dataPresence", False, "###What you are looking for doesn't exist###")
+            errs.append(False)
         else:
             self.ts.mark(True, "Data Exists!!!")
 
@@ -46,18 +48,27 @@ class DraftsTests(unittest.TestCase):
             self.ts.mark(True, "page total weight is same")
         else:
             self.ts.mark(False, "page total Weight is NOT same!!")
+            errs.append(False)
 
         if self.dp.pgtotVolumeVerification():
             self.ts.mark(True, "page total Volume is same")
         else:
             self.ts.mark(False, "page total Volume is NOT same!!")
+            errs.append(False)
 
         if self.dp.pgtotlItemsVerification():
             self.ts.mark(True, "page total Items is same")
         else:
             self.ts.mark(False, "page total Items is NOT same!!")
+            errs.append(False)
 
         if self.dp.totalConsVerification():
-            self.ts.markFinal("totalconsignment_test", True, "Consignment amount is same")
+            self.ts.mark(True, "Consignment amount is same")
         else:
-            self.ts.markFinal("totalconsignment_test", False, "Consignment amount is NOT same!!")
+            self.ts.mark(False, "Consignment amount is NOT same!!")
+            errs.append(False)
+
+        if False in errs:
+            self.ts.markFinal("Test_valueEquality", False, "###Error in values!!!")
+        else:
+            self.ts.markFinal("Test_equality", True, "###No Issues Found!!")
