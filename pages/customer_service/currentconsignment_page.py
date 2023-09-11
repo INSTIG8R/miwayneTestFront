@@ -98,8 +98,12 @@ class CurrentConsignmentPage(BasePage):
         if not option:
             return
         sel = self.getElement(self._status, "xpath")
-        self.sendKeys(option, self._status,"xpath")
+        self.sendKeys(option, self._status, "xpath")
         time.sleep(2)
+        if option == "ALLOCATED":
+            sel.send_keys(Keys.ARROW_DOWN)
+            sel.send_keys(Keys.ENTER)
+            return
         sel.send_keys(Keys.ARROW_DOWN)
         sel.send_keys(Keys.ARROW_DOWN)
         sel.send_keys(Keys.ENTER)

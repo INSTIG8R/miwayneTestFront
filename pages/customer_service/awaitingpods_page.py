@@ -5,8 +5,6 @@ import utilities.custom_logger as cl
 import logging
 from base.basepage import BasePage
 from selenium.webdriver import Keys
-from selenium.webdriver.support.select import Select
-
 
 class AwaitingPodsPage(BasePage):
     log = cl.customLogger(logging.DEBUG)

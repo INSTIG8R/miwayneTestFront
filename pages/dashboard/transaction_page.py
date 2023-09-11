@@ -1,5 +1,4 @@
 import re
-
 from selenium.webdriver import Keys
 from selenium.webdriver.support.select import Select
 import utilities.custom_logger as cl
@@ -19,37 +18,39 @@ class TransactionPage(BasePage):
 
     # Locators
 
-    _connote_field = "wayne_id_Connote"
-    _date_ready_from = "wayne_id_Date Ready From"
-    _date_ready_to = "wayne_id_Date Ready To"
-    _account_name = "//input[@id = 'wayne_id_Account Name']"
-    _customer_reference = "wayne_id_Customer Ref."
+    _connote_field = "//input[@id='wayne_id_consignment Note']"
+    _date_ready_from = "//input[@id='wayne_id_date ready from']"
+    _date_ready_to = "//input[@id='wayne_id_date ready to']"
+    _account_name = "//input[@id = 'wayne_id_account name']"
+    _date_pickup_from = "//input[@id='wayne_id_date pickup from']"
+    _date_pickup_to = "//input[@id='wayne_id_date pickup to']"
+    _customer_reference = "//input[@id='wayne_id_customer Ref']"
     _carrier = "//input[@id = 'wayne_id_Carrier']"
     _carrier_invoice = "//input[@id = 'wayne_id_Carrier Invoice']"
     _carrier_reference = "//input[@id = 'wayne_id_Carrier Ref.']"
-    _manifest = "wayne_id_Manifest"
-    _pickup_city = "//input[@id = 'wayne_id_Pickup City']"
-    _delivery_city = "//input[@id = 'wayne_id_Delivery City']"
-    _sender = "wayne_id_Sender"
-    _receiver = "wayne_id_Receiver"
-    _status = "//select[@id='wayne_id_Status']"
-    _status_element = "//select[@id='wayne_id_Status']//option[normalize-space() = '%s']"
-    _service = "//select[@id='wayne_id_Service']"
-    _receiver_reference = "wayne_id_Receiver Ref."
-    _booked_by = "wayne_id_Booked By"
-    _no_charge = "wayne_id_No Charge"
-    _zero_sell_charge = "wayne_id_Zero Sell Charge"
-    _zero_cost_rate = "wayne_id_Zero Cost Rate"
-    _invoiced = "wayne_id_Invoiced"
-    _checked_by = "wayne_id_Checked By"
-    _first_matched = "wayne_id_Fms Matched"
-    _inactive_transactions = "wayne_id_Inactive Transactions?"
+    _manifest = "//input[@id='wayne_id_manifest']"
+    _pickup_city = "//input[@id = 'wayne_id_Pickup city']"
+    _delivery_city = "//input[@id = 'wayne_id_delivery City']"
+    _sender = "//input[@id='wayne_id_sender']"
+    _receiver = "//input[@id='wayne_id_receiver']"
+    _status = "//input[@id='wayne_id_status']"
+    _service = "//input[@id='wayne_id_service']"
+    _receiver_reference = "//input[@id='wayne_id_receiver ref']"
+    _booked_by = "//input[@id='wayne_id_booked By']"
+    _no_charge = "//div[@id='wayne_id_no Charge']"
+    _pricing_notes = "//div[@id='wayne_id_Pricing Notes']"
+    _zero_sell_charge = "//div[@id='wayne_id_zero sell charge']"
+    _zero_cost_rate = "//div[@id='wayne_id_zero cost rate']"
+    _invoiced = "//div[@id='wayne_id_invoiced']"
+    _checked_by = "//div[@id='wayne_id_checked']"
+    _fms_matched = "//div[@id='wayne_id_fms Matched']"
+    _inactive_transactions = "wayne_id_INACTIVE Transactions "
 
-    _find_consignment_btn = "wayne_id_Find Consignments"
-    _clear_filter_btn = "wayne_id_Clear Filter"
+    _find_consignment_btn = "wayne_id_Find, "
+    _clear_filter_btn = "wayne_id_Clear, "
 
     # footers
-    _page_size = "wayne_id_Page Size"
+    _page_size = "//div[@id='wayne_id_Page Size']"
     _page_total = "//p[@id = 'wayne_id_PAGE TOTAL']"
     _page_total_items = "wayne_id_PAGE TOTAL ITEMS"
     _page_total_weight = "//p[@id= 'wayne_id_PAGE TOTAL WEIGHT']"
@@ -67,34 +68,46 @@ class TransactionPage(BasePage):
 
     def enterConnote(self, connote):
         if connote:
-            self.sendKeys(connote, self._connote_field)
+            self.sendKeys(connote, self._connote_field, "xpath")
 
     def enterDateReadyFrom(self, dateReadyFrom):
         if dateReadyFrom:
-            self.sendKeys(dateReadyFrom, self._date_ready_from)
+            self.sendKeys(dateReadyFrom, self._date_ready_from, "xpath")
 
     def enterDateReadyTo(self, dateReadyTo):
         if dateReadyTo:
-            self.sendKeys(dateReadyTo, self._date_ready_to)
+            self.sendKeys(dateReadyTo, self._date_ready_to, "xpath")
+
+    def enterDatePickupFrom(self, datePickupFrom):
+        if datePickupFrom:
+            self.sendKeys(datePickupFrom, self._date_pickup_from, "xpath")
+
+    def enterDatePickupTo(self, datePickupTo):
+        if datePickupTo:
+            self.sendKeys(datePickupTo, self._date_pickup_to, "xpath")
 
     def enterAccountName(self, accountName):
         if accountName is "":
             return
+        an = self.getElement(self._account_name, "xpath")
         self.sendKeys(accountName, self._account_name, "xpath")
         time.sleep(2)
-        an = self.getElement(self._account_name, "xpath")
+        an.send_keys(Keys.ARROW_DOWN)
+        an.send_keys(Keys.ARROW_DOWN)
         an.send_keys(Keys.ENTER)
 
     def enterCustomerReference(self, customerReference):
         if customerReference:
-            self.sendKeys(customerReference, self._customer_reference)
+            self.sendKeys(customerReference, self._customer_reference, "xpath")
 
     def enterCarrier(self, carrier):
         if carrier is "":
             return
-        self.sendKeys(carrier, self._carrier, "xpath")
-        time.sleep(3)
         ca = self.getElement(self._carrier, "xpath")
+        self.sendKeys(carrier, self._carrier, "xpath")
+        time.sleep(2)
+        ca.send_keys(Keys.ARROW_DOWN)
+        ca.send_keys(Keys.ARROW_DOWN)
         ca.send_keys(Keys.ENTER)
 
     def enterCarrierInvoice(self, carrierInvoices):
@@ -107,92 +120,125 @@ class TransactionPage(BasePage):
 
     def enterManifest(self, manifest):
         if manifest is not "":
-            self.sendKeys(manifest, self._manifest)
+            self.sendKeys(manifest, self._manifest, "xpath")
 
     def enterPickupCity(self, pickup_city):
         if pickup_city is "":
             return
-        self.sendKeys(pickup_city, self._pickup_city, "xpath")
-        time.sleep(3)
         pc = self.getElement(self._pickup_city, "xpath")
+        self.sendKeys(pickup_city, self._pickup_city, "xpath")
+        time.sleep(2)
+        pc.send_keys(Keys.ARROW_DOWN)
+        pc.send_keys(Keys.ARROW_DOWN)
         pc.send_keys(Keys.ENTER)
 
     def enterDeliveryCity(self, delivery_city):
         if delivery_city is "":
             return
-        self.sendKeys(delivery_city, self._delivery_city, "xpath")
-        time.sleep(3)
         dc = self.getElement(self._delivery_city, "xpath")
+        self.sendKeys(delivery_city, self._delivery_city, "xpath")
+        time.sleep(2)
+        dc.send_keys(Keys.ARROW_DOWN)
+        dc.send_keys(Keys.ARROW_DOWN)
         dc.send_keys(Keys.ENTER)
 
     def enterSender(self, sender):
         if sender:
-            self.sendKeys(sender, self._sender)
+            self.sendKeys(sender, self._sender, "xpath")
 
     def enterReceiver(self, receiver):
         if receiver:
-            self.sendKeys(receiver, self._receiver)
+            self.sendKeys(receiver, self._receiver, "xpath")
 
     def clickStatus(self, option):
         if not option:
             return
-        select = Select(self.getElement(self._status, "xpath"))
-        time.sleep(1)
-        select.select_by_index(option)
+        select = self.getElement(self._status, "xpath")
+        self.sendKeys(option, self._status, "xpath")
+        time.sleep(2)
+        if option == "ALLOCATED":
+            select.send_keys(Keys.ARROW_DOWN)
+            select.send_keys(Keys.ENTER)
+            return
+        select.send_keys(Keys.ARROW_DOWN)
+        select.send_keys(Keys.ARROW_DOWN)
+        select.send_keys(Keys.ENTER)
 
     def clickService(self, service):
         if not service:
             return
-        select = Select(self.getElement(self._service, "xpath"))
-        time.sleep(1)
-        select.select_by_index(service)
+        select = self.getElement(self._service, "xpath")
+        self.sendKeys(service, self._service, "xpath")
+        time.sleep(2)
+        if service == "ECONOMY":
+            select.send_keys(Keys.ARROW_DOWN)
+            select.send_keys(Keys.ENTER)
+            return
+        select.send_keys(Keys.ARROW_DOWN)
+        select.send_keys(Keys.ARROW_DOWN)
+        select.send_keys(Keys.ENTER)
 
     def enterReceiverReference(self, receiver_reference):
         if receiver_reference:
-            self.sendKeys(receiver_reference, self._receiver_reference)
+            self.sendKeys(receiver_reference, self._receiver_reference, "xpath")
 
     def enterBookedBy(self, booked_by):
 
         if booked_by is not "":
-            self.sendKeys(booked_by, self._booked_by)
-            bb = self.getElement(self._booked_by)
+            bb = self.getElement(self._booked_by, "xpath")
+            self.sendKeys(booked_by, self._booked_by, "xpath")
+            time.sleep(2)
+            bb.send_keys(Keys.ARROW_DOWN)
+            bb.send_keys(Keys.ARROW_DOWN)
             bb.send_keys(Keys.ENTER)
 
     def clickNoCharge(self, nocharge):
 
         if nocharge is not "":
-            select = Select(self.getElement(self._no_charge))
-            select.select_by_visible_text(f'{nocharge}')
+            select = self.getElement(self._no_charge)
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'" + nocharge.upper() + "')]", "xpath")
+
+    def clickPricingNotes(self, pricingNotes):
+        if pricingNotes:
+            pn = self.getElement(self._pricing_notes, "xpath")
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'" + pricingNotes.upper() + "')]", "xpath")
 
     def clickZeroSellCharge(self, zerosellcharge):
 
         if zerosellcharge is not "":
-            select = Select(self.getElement(self._zero_sell_charge))
-            select.select_by_visible_text(f'{zerosellcharge}')
+            select = self.getElement(self._zero_sell_charge, "xpath")
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'" + zerosellcharge.upper() + "')]", "xpath")
 
     def clickZeroCostRate(self, zerocostrate):
 
         if zerocostrate is not "":
-            select = Select(self.getElement(self._zero_cost_rate))
-            select.select_by_visible_text(f'{zerocostrate}')
+            select = self.getElement(self._zero_cost_rate, "xpath")
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'" + zerocostrate.upper() + "')]", "xpath")
 
     def clickInvoiced(self, invoiced):
 
         if invoiced is not "":
-            select = Select(self.getElement(self._invoiced))
-            select.select_by_visible_text(f'{invoiced}')
+            select = self.getElement(self._invoiced, "xpath")
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'"+invoiced.upper()+"')]", "xpath")
 
     def clickCheckedBy(self, checked_by):
 
         if checked_by is not "":
-            select = Select(self.getElement(self._checked_by))
-            select.select_by_visible_text(f'{checked_by}')
+            select = self.getElement(self._checked_by, "xpath")
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'" + checked_by.upper() + "')]", "xpath")
 
     def clickFMSMatched(self, fmsMatched):
 
         if fmsMatched is not "":
-            select = Select(self.getElement(self._first_matched))
-            select.select_by_visible_text(f'{fmsMatched}')
+            select = self.getElement(self._fms_matched, "xpath")
+            self.waitForElement("//div/ul/li[contains(normalize-space(),'YES')]", "xpath")
+            self.elementClick("//div/ul/li[contains(normalize-space(),'" + fmsMatched.upper() + "')]", "xpath")
 
     def clickInactiveTransactions(self, status):
         if status:
