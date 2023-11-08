@@ -30,7 +30,7 @@ class TransactionTests(unittest.TestCase):
 
 
     @pytest.mark.order(2)
-    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\transaction_data.csv"))
+    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\data\\transaction_data.csv"))
     @unpack
     def test_csv(self, connote, dateReadyFrom, dateReadyTo, accountName, customerReference,
                  carrier, carrierInvoices, carrierReference, manifest, pickup_city,

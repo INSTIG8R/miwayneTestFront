@@ -25,9 +25,9 @@ class DashboardPage(BasePage):
 
     _create_consignment_btn= "//span[normalize-space() = 'CREATE']"
     _reports_btn = "//img[@alt = 'i-Reports']"
-    _transactions_btn = "//img[@alt = 'Transactions']"
-    _sales_btn = "//img[@alt = 'Sales']"
-    _finance_btn = "//img[@alt = 'Finance']"
+    _transactions_btn = "//p[normalize-space()='Transactions']"
+    _sales_btn = "//p[normalize-space()='Sales']"
+    _finance_btn = "//p[normalize-space()='Finance']"
     _current_btn = "//img[@alt = 'Current Reports']"
     _jobs_btn = "//img[@alt = 'Create Connote']"
     _customer_serrvice_reports = ""
@@ -70,6 +70,9 @@ class DashboardPage(BasePage):
         return self.verifyPageTitle("Express Cargo Ltd. | POD")
 
     def goToTransactions(self):
+        self.elementClick(self._hamburger_icon, "xpath")
+        self.waitForElement(locator=self._finance_btn, locatorType="xpath")
+        self.elementClick(self._finance_btn, "xpath")
         self.waitForElement(locator=self._transactions_btn, locatorType="xpath")
         self.elementClick(locator=self._transactions_btn, locatorType="xpath")
         tp = TransactionPage(self.driver)

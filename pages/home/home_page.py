@@ -19,14 +19,19 @@ class HomePage(BasePage):
         self.driver = driver
 
     # Locators
-    _reference_text = "//input[@type = 'text']"
-    _track_reference = "//span[text() = 'Track']"
-    _valid_check_locator = "//span[normalize-space() = 'Track Found']"  # to check if the reference is valid
-    _invalid_check_locator = "//span[@id = 'client-snackbar']"
+    _reference_text = "//input[@id='wayne_id_Reference']"
+    _track_reference = "//button[@id='wayne_id_Track']"
+
+
+
+    _valid_check_locator = "//div[contains(text(),'Track Found!')]"
+
+    _invalid_check_locator = "//div[contains(text(),'Consignment with reference')]"
     _no_reference_text_locator = "//p[@class = 'MuiFormHelperText-root']//strong"  # to check if the reference_text field is empty
     _dashboard_btn = "//p[normalize-space()='Dashboard']"
     _customer_service_btn = "//p[normalize-space()='Customer Service']"
-    _current_consignment_btn = "//p[normalize-space() = 'Consignments']"
+
+    _current_consignment_btn = "//a[@href='/customer-service/current-consignments']//div[@role='button']"
     _awaiting_pods_btn = "//p[normalize-space() = 'Awaiting Pods']"
     _drafts_btn = "//p[normalize-space() = 'Draft Consignments']"
     _finance_btn = "//p[normalize-space() = 'Finance']"
@@ -41,9 +46,11 @@ class HomePage(BasePage):
 
     ''' The Following code is for tracking references'''
     def enterReference(self, reference_text):
+        self.waitForElement(locator=self._reference_text, locatorType="xpath")
         self.sendKeys(reference_text, self._reference_text, locatorType="xpath")
 
     def clickTrackButton(self):
+        self.waitForElement(locator=self._track_reference, locatorType="xpath")
         self.elementClick(self._track_reference, locatorType="xpath")
 
     # API
@@ -52,20 +59,21 @@ class HomePage(BasePage):
         self.enterReference(enterReference)
         self.clickTrackButton()
 
+
     def clearFields(self):
-        referenceField = self.getElement(locator=self._reference_text, locatorType="xpath")
-        referenceField.clear()
+        self.waitForElement(locator=self._reference_text, locatorType="xpath")
+        self.elementClick(self._reference_text, "xpath")
+
+        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._reference_text, "xpath")) #check this later use for clear field
 
     def verifyTrackSuccessful(self):
         result = self.isElementPresent(locator=self._valid_check_locator, locatorType="xpath")
         return result
 
     def verifyTrackUnsuccessful(self):
-        referenceField = self.elementClick(locator=self._reference_text, locatorType="xpath")
-        if referenceField.text is None:
-            result = self.isElementPresent(locator=self._no_reference_text_locator, locatorType="xpath")
-            return result
+        self.waitForElement(self._invalid_check_locator, locatorType="xpath")
         result = self.isElementPresent(locator=self._invalid_check_locator, locatorType="xpath")
+        print(result)
         time.sleep(2)
         return result
 

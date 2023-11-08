@@ -11,7 +11,7 @@ Example:
 
 '''
 
-import traceback
+# import traceback
 from selenium import webdriver
 
 
@@ -39,19 +39,19 @@ class WebDriverFactory:
          Returns:
              WebDriver Instance
         '''
+        driver = None
         baseURL = "https://dev.test-wayne.com/"
         if self.browser == "iexplorer":
             # Set ie Driver
             pass
         elif self.browser == "Chrome":
-            #Set Chrome Driver
+         #Set Chrome Driver
             driver = webdriver.Chrome()
         elif self.browser == "Edge":
             driver = webdriver.Edge()
         else:
             driver = webdriver.Edge()
         #Setting Driver implicit timeout for an Element
-
         driver.implicitly_wait(3)
         driver.maximize_window()
         driver.get(baseURL)
