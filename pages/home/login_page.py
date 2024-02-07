@@ -17,7 +17,7 @@ class LoginPage(BasePage):
     _login_link = "wayne_id_Login"
     _email_field = "//input[@id='username']"
     _password_field = "//input[@id='password']"
-    _login_button = " //div[@class='c6d5cc3be']"
+    _login_button = " //div[@class='c90212864']"
     _login_logo = "//p[contains(normalize-space(), 'WELCOME')]"
 
     def clickLoginLink(self):

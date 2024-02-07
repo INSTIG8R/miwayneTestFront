@@ -13,6 +13,7 @@ import allure
 @pytest.mark.use_fixtures("oneTimeSetup", "setUp")
 @ddt
 class CurrentConsignmentTests(unittest.TestCase):
+    final_test: bool = True
     @pytest.fixture(autouse=True)
     def objectSetup(self, oneTimeSetUp):
         self.hp = HomePage(self.driver)
@@ -24,6 +25,7 @@ class CurrentConsignmentTests(unittest.TestCase):
         self.lp = LoginPage(self.driver)
         self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
         self.cc = self.hp.gotoCurrentConsignment()
+        time.sleep(2)
         result1 = self.cc.verifyCurrentConsignmentTitle()
         self.ts.markFinal("Current Consignment Title verification", result1, "Current Consignment page loaded")
 
@@ -34,6 +36,7 @@ class CurrentConsignmentTests(unittest.TestCase):
                   booked_by, pickup_city, delivery_city, sender, receiver, container_number, priority_level,
                   assigned_to, carrier,
                   estimated_delivery, status):
+
         self.cc.find_consignment(connote=connote, dateReadyFrom=dateReadyFrom, dateReadyTo=dateReadyTo, datePickUpFrom=datePickUpFrom, datePickUpTo=datePickUpTo,
                                  accountName=accountName, option=option, service=service,
                                  customerReference=customerReference, booked_by=booked_by,
@@ -47,18 +50,26 @@ class CurrentConsignmentTests(unittest.TestCase):
         else:
             self.ts.mark(True, "Data Exist!!!")
 
+        self.cc.scrollTableHorizontally()
+        time.sleep(3)
+
         if self.cc.pgtotWeightVerification():
             self.ts.mark(True, "page total weight is same")
         else:
             self.ts.mark(False, "page total Weight is NOT same!!")
+            self.final_test = False
 
         if self.cc.pgtotVolumeVerification():
             self.ts.mark(True, "page total Volume is same")
         else:
             self.ts.mark(False, "page total Volume is NOT same!!")
+            self.final_test = False
 
         if self.cc.pgtotlItemsVerification():
             self.ts.mark(True, "page total Items is same")
         else:
             self.ts.mark(False, "page total Items is NOT same!!")
+            self.final_test = False
 
+        if not self.final_test:
+            self.ts.markFinal("Final Test", False, "Error in footer values!!!")
