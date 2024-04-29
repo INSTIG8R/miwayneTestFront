@@ -8,7 +8,13 @@ from pages.customer_service.drafts_page import DraftsPage
 from pages.dashboard.dashboardtab import DashboardPage
 from pages.customer_service.currentconsignment_page import CurrentConsignmentPage
 from pages.finance.invoicerun_page import InvoiceRunPage
-from pages.system_admin.systemadmin_page import SystemAdminPage
+from pages.sales.acceptedquote_page import AcceptedQuotePage
+from pages.sales.estimatedquote_page import EstimatedQuotePage
+from pages.sales.quoteform_page import QuoteForm
+from pages.sales.verifiedquote_page import VerifiedQuotePage
+
+
+# from pages.system_admin.systemadmin_page import SystemAdminPage
 
 
 class HomePage(BasePage):
@@ -35,13 +41,17 @@ class HomePage(BasePage):
     _awaiting_pods_btn = "//p[normalize-space() = 'Awaiting Pods']"
     _drafts_btn = "//p[normalize-space() = 'Draft Consignments']"
     _finance_btn = "//p[normalize-space() = 'Finance']"
+    _sales_btn = "//p[normalize-space() = 'Sales']"
+    _estimatedquote_btn = "//p[normalize-space() = 'ESTIMATED QUOTE']"
+    _acceptedquote_btn = "//p[normalize-space() = 'ACCEPTED QUOTE']"
+    _verifiedquote_btn = "//p[normalize-space() = 'VERIFIED QUOTE']"
     _invoice_run_btn = "//p[normalize-space() = 'Invoice Run']"
     _system_administration_btn = "//p[normalize-space() = 'Master Data']"
     _hamburger_icon = "//*[name()='path' and contains(@d,'M3 18h18v-')]"
     _close_hamburger_icon = "(.//*[normalize-space(text()) and normalize-space(.)='consignment Note'])[1]/preceding::*[name()='svg'][5]"
     _create_consignment_form_btn = "//button[@tabindex='0'][contains(@id, 'wayne_id_CREATE')]"
 
-
+    _createQuoteBtn = "/html[1]/body[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/button[1]/*[name()='svg'][1]"
 
 
     ''' The Following code is for tracking references'''
@@ -103,6 +113,54 @@ class HomePage(BasePage):
         cconsignment = CurrentConsignmentPage(self.driver)
         return cconsignment
 
+    def gotoEstimatedQuotePage(self):
+        self.elementClick(self._hamburger_icon, "xpath")
+
+        self.waitForElement(locator=self._sales_btn, locatorType='xpath')
+        self.elementClick(locator=self._sales_btn, locatorType='xpath')
+        self.waitForElement(self._estimatedquote_btn, "xpath")
+        self.elementClick(self._estimatedquote_btn, "xpath")
+        # return Current-ConsignmentPage  object
+        self.elementClick(self._close_hamburger_icon, "xpath")
+        eqPage = EstimatedQuotePage(self.driver)
+        return eqPage
+
+    def gotoQuoteForm(self):
+        self.elementClick(self._hamburger_icon, "xpath")
+        self.waitForElement(locator=self._sales_btn, locatorType='xpath')
+        self.elementClick(locator=self._sales_btn, locatorType='xpath')
+        self.waitForElement(self._estimatedquote_btn, "xpath")
+        self.elementClick(self._estimatedquote_btn, "xpath")
+        self.elementClick(self._close_hamburger_icon, "xpath")
+        self.waitForElement(self._createQuoteBtn, "xpath")
+        self.elementClick(self._createQuoteBtn, "xpath")
+        qf = QuoteForm(self.driver)
+        return qf
+
+    def gotoAcceptedQuotePage(self):
+        self.elementClick(self._hamburger_icon, "xpath")
+
+        self.waitForElement(locator=self._sales_btn, locatorType='xpath')
+        self.elementClick(locator=self._sales_btn, locatorType='xpath')
+        self.waitForElement(self._acceptedquote_btn, "xpath")
+        self.elementClick(self._acceptedquote_btn, "xpath")
+        # return Current-ConsignmentPage  object
+        self.elementClick(self._close_hamburger_icon, "xpath")
+        eqPage = AcceptedQuotePage(self.driver)
+        return eqPage
+
+    def gotoVerifiedQuotePage(self):
+        self.elementClick(self._hamburger_icon, "xpath")
+
+        self.waitForElement(locator=self._sales_btn, locatorType='xpath')
+        self.elementClick(locator=self._sales_btn, locatorType='xpath')
+        self.waitForElement(self._verifiedquote_btn, "xpath")
+        self.elementClick(self._verifiedquote_btn, "xpath")
+        # return Current-ConsignmentPage  object
+        self.elementClick(self._close_hamburger_icon, "xpath")
+        eqPage = VerifiedQuotePage(self.driver)
+        return eqPage
+
     def gotoAwaitingPods(self):
         self.elementClick(self._hamburger_icon, "xpath")
 
@@ -136,13 +194,13 @@ class HomePage(BasePage):
         invoice = InvoiceRunPage(self.driver)
         return invoice
 
-    def gotoSystemAdministration(self):
-        self.elementClick(self._hamburger_icon, "xpath")
-
-        self.waitForElement(locator=self._dashboard_btn, locatorType='xpath')
-        self.elementClick(locator=self._system_administration_btn, locatorType='xpath')
-        systemadmin = SystemAdminPage(self.driver)
-        return systemadmin
+    # def gotoSystemAdministration(self):
+    #     self.elementClick(self._hamburger_icon, "xpath")
+    #
+    #     self.waitForElement(locator=self._dashboard_btn, locatorType='xpath')
+    #     self.elementClick(locator=self._system_administration_btn, locatorType='xpath')
+    #     systemadmin = SystemAdminPage(self.driver)
+    #     return systemadmin
 
     def verifyCustomerServiceClicked(self):
         result = self.isElementPresent(locator=" //div[@title = 'POD']", locatorType = 'xpath')

@@ -14,7 +14,7 @@ from pages.system_admin.finance_master_data.charges_page import ChargesPage
 from pages.system_admin.finance_master_data.chargetypes_page import ChargeTypesPage
 from pages.system_admin.finance_master_data.customers_page import CustomersPage
 from pages.system_admin.finance_master_data.invoices_page import InvoicesPage
-from pages.system_admin.finance_master_data.surcharge_page import SurchargePage
+
 from pages.system_admin.finance_master_data.users_page import UsersPage
 
 from pages.system_admin.operations_master_data.agencies_page import AgenciesPage

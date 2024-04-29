@@ -15,4 +15,4 @@ class UsersPage(BasePage):
         self.driver = driver
 
     def verifyUsersTitle(self):
-        return self.verifyPageTitle("Express Cargo Ltd. | Current Users")
+        return self.verifyPageTitle("Express Cargo Ltd. | User")

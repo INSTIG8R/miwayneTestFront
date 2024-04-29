@@ -254,7 +254,7 @@ class InvoiceRunPage(BasePage):
     def getNumberOfRows(self):
         self.waitForElement(self._find_consignment_btn)
         # self.driver.execute_script("arguments[0].scrollIntoView(true);",
-        #                            self.getElement(self._find_consignment_btn))
+        #                            self.getElement(self._find_quote_btn))
         rws = self.getElements("//table/tbody/tr", "xpath")
         return len(rws)
 

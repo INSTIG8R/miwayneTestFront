@@ -29,7 +29,7 @@ class NewConsignmentSHTests(unittest.TestCase):
         self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
         self.db = self.hp.clickDashboard()
         self.nc = self.db.gotoConsignmentForm()
-        nc_res = self.nc.verifyNewConsignmentTitle()
+        nc_res = self.nc.verifyNewQuoteTitle()
         self.ts.markFinal("New Consignment Page load Check", nc_res, "New Consignment Page Loaded")
 
     @pytest.mark.order(2)
@@ -105,7 +105,7 @@ class NewConsignmentSHTests(unittest.TestCase):
     def test_sellRating(self):
         _res = False
         self.nc.enterSellRating()
-        # err_logs = self.nc.returnErrorLogs()
+        # err_logs = self.qf.returnErrorLogs()
         srg_test = self.nc.checkSRGenerated()
         if srg_test:
             self.ts.mark(True, "Sell Rate Generated!!!")

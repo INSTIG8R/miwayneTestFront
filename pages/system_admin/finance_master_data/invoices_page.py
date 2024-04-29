@@ -15,4 +15,4 @@ class InvoicesPage(BasePage):
         self.driver = driver
 
     def verifyInvoicesTitle(self):
-        return self.verifyPageTitle("Express Cargo Ltd. | Invoices Type")
+        return self.verifyPageTitle("Express Cargo Ltd. | Invoice type")

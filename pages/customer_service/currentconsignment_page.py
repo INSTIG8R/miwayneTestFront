@@ -1,10 +1,12 @@
 import re
 import time
-
+from typing import Set
 import utilities.custom_logger as cl
 import logging
 from base.basepage import BasePage
 from selenium.webdriver import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+
 from selenium.webdriver.support.select import Select
 
 from pages.customer_service.consignmentform_new23 import ConsignmentForm
@@ -296,7 +298,7 @@ class CurrentConsignmentPage(BasePage):
     def getNumberOfRows(self):
         self.waitForElement(self._find_consignment_btn)
         # self.driver.execute_script("arguments[0].scrollIntoView(true);",
-        #                            self.getElement(self._find_consignment_btn))
+        #                            self.getElement(self._find_quote_btn))
         rws = self.getElements("//table/tbody/tr", "xpath")
         return len(rws)
 
@@ -320,7 +322,7 @@ class CurrentConsignmentPage(BasePage):
         amounts.append(first_row_val)
         for i in range(2, 16):
             ele = self.getElement("//div[@id='root']/div/main/div[3]/div[2]/div/table/tbody/tr["+str(i)+"]/td["+str(col_number)+"]", "xpath")
-            el_value = float(ele.txt)
+            el_value = float(ele.text)
             self.log.info(el_value)
             amounts.append(el_value)
         #print(col_number, str(col_number), "div[title='"+str(col_number)+"']")
@@ -357,7 +359,7 @@ class CurrentConsignmentPage(BasePage):
     #     return len(rws)
 
     # def calculatetotalconsignment(self):
-    #     self.waitForElement(self._connote_field)
+    #     self.waitForElement(self._quote_field)
     #     # self.driver.execute_script("arguments[0].scrollIntoView(true);",
     #     #                            self.getElement(self._goto_last_page_btn, "xpath"))
     #     lpb = self.getElement(self._goto_last_page_btn, "xpath")
@@ -403,6 +405,61 @@ class CurrentConsignmentPage(BasePage):
         print(expectedVal, actualVal)
         verval = self.verifyValues(actualVal, expectedVal)
         return verval
+
+    def storedConsignments(self):
+        #store the consignments in an array and return the array. This fn is called by checkDuplicates fn
+        connote_Array = []
+        self.waitForElement("(.//*[normalize-space(text()) and normalize-space(.)='Filters'])[1]/following::*[name()='svg'][1]", "xpath")
+        self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Filters'])[1]/following::*[name()='svg'][1]", "xpath")
+        #window scrolling first
+        self.waitForElement("/html[1]/body[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]", "xpath")
+        table_body = self.getElement("/html[1]/body[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[2]/div[1]", "xpath")
+        print(table_body)
+        self.driver.execute_script("window.scroll(0, 300)")
+        actions = ActionChains(self.driver)
+        actions.move_to_element(table_body).click_and_hold().move_by_offset(0, 100).release().perform()
+        time.sleep(5)
+        verical_ordinate = 100
+        for i in range(0, 28):
+            self.waitForElement("//tr[@data-index='"+str(i)+"']/td[@data-index='2']/span", "xpath")
+            ele = self.getElement("//tr[@data-index='"+str(i)+"']/td[@data-index='2']/span", "xpath")
+            ele_val = ele.text.strip()
+            print(ele_val)
+            connote_Array.append(ele_val)
+        time.sleep(10)
+        self.waitForElement("//tr[@data-index='35']/td[@data-index='2']/span", "xpath")
+        for i in range(29, 39):
+            self.waitForElement("//tr[@data-index='"+str(i)+"']/td[@data-index='2']/span", "xpath")
+            ele = self.getElement("//tr[@data-index='"+str(i)+"']/td[@data-index='2']/span", "xpath")
+            ele_val = ele.text.strip()
+            print(ele_val)
+            connote_Array.append(ele_val)
+
+        self.driver.execute_script("arguments[0].scrollTop = arguments[1]", table_body, verical_ordinate)
+        # # 30th one. wait for x sec
+        # time.sleep(20)
+        # self.waitForElement("//tr[@data-index='38']/td[@data-index='2']/span", "xpath")
+        # ele = self.getElement("//tr[@data-index='38']/td[@data-index='2']/span", "xpath")
+        # ele_val = ele.text.strip()
+        # print(ele_val)
+        # connote_Array.append(ele_val)
+        # print(connote_Array)
+        # dd = self.driver.execute_script("arguments[0].scrollLeft = arguments[0].scrollWidth", table_body)
+        # print(dd)
+        return connote_Array
+
+    def checkDuplicates(self):
+        #array of 30 consignments
+        duplicateFound = False
+        connotes = self.storedConsignments()
+        cons_set: Set[str] = set()
+        for i in connotes:
+            if i in cons_set:
+                self.log.warning(f'Duplicate string detected: {i}')
+                duplicateFound = True
+            else:
+                cons_set.add(i)
+        return duplicateFound
 
     def scrollTableHorizontally(self):
         hScrollTable = self.getElement("//div[@id='root']/div/main/div[3]/div[2]/div/table", "xpath")

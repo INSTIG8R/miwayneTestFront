@@ -30,7 +30,7 @@ class NewConsignmentDDTTests(unittest.TestCase):
         self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
         self.db = self.hp.clickDashboard()
         self.nc = self.db.gotoConsignmentForm()
-        nc_res = self.nc.verifyNewConsignmentTitle()
+        nc_res = self.nc.verifyNewQuoteTitle()
         self.ts.markFinal("New Consignment Page load Check", nc_res, "New Consignment Page Loaded")
 
     @pytest.mark.order(2)
@@ -56,27 +56,27 @@ class NewConsignmentDDTTests(unittest.TestCase):
         self.nc.enterSenderDetails(senderCompanyName=senderCompanyName)
 
         # ###
-        # if self.nc.checkSenderAddressType():
+        # if self.qf.checkSenderAddressType():
         #     self.ts.mark(True, "Sender Address Type has field value")
         # else:
         #     self.ts.mark(False, "Sender Address Type IS EMPTY!!!!")
-        # if self.nc.checkSenderRoad():
+        # if self.qf.checkSenderRoad():
         #     self.ts.mark(True, "Sender Road has field value")
         # else:
         #     self.ts.mark(False, "Sender Road IS EMPTY!!!!")
-        # if self.nc.checkSenderStreet():
+        # if self.qf.checkSenderStreet():
         #     self.ts.mark(True, "Sender Street has field value")
         # else:
         #     self.ts.mark(False, "Sender Street IS EMPTY!!!")
-        # if self.nc.checkSenderCity():
+        # if self.qf.checkSenderCity():
         #     self.ts.mark(True, "Sender City has field value")
         # else:
         #     self.ts.mark(False, "Sender City IS EMPTY!!!")
-        # if self.nc.checkSenderState():
+        # if self.qf.checkSenderState():
         #     self.ts.mark(True, "Sender State has field value")
         # else:
         #     self.ts.mark(True, "Sender State IS EMPTY!!!")
-        # if self.nc.checkSenderPostCode():
+        # if self.qf.checkSenderPostCode():
         #     self.ts.mark(True, "Sender Post Code has field value")
         # else:
         #     self.ts.mark(True, "Sender Post Code IS EMPTY!!!")
@@ -85,27 +85,27 @@ class NewConsignmentDDTTests(unittest.TestCase):
         self.nc.enterReceiverDetails(receiverCompanyName=receiverCompanyName)
         #
         # ###
-        # if self.nc.checkReceiverAddressType():
+        # if self.qf.checkReceiverAddressType():
         #     self.ts.mark(True, "Receiver Address Type has field value")
         # else:
         #     self.ts.mark(False, "Receiver Address Type IS EMPTY!!!!")
-        # if self.nc.checkReceiverRoad():
+        # if self.qf.checkReceiverRoad():
         #     self.ts.mark(True, "Receiver Road has field value")
         # else:
         #     self.ts.mark(False, "Receiver Road IS EMPTY!!!!")
-        # if self.nc.checkReceiverStreet():
+        # if self.qf.checkReceiverStreet():
         #     self.ts.mark(True, "Receiver Street has field value")
         # else:
         #     self.ts.mark(False, "Receiver Street IS EMPTY!!!")
-        # if self.nc.checkReceiverCity():
+        # if self.qf.checkReceiverCity():
         #     self.ts.mark(True, "Receiver City has field value")
         # else:
         #     self.ts.mark(False, "Receiver City IS EMPTY!!!")
-        # if self.nc.checkReceiverState():
+        # if self.qf.checkReceiverState():
         #     self.ts.mark(True, "Receiver State has field value")
         # else:
         #     self.ts.mark(True, "Receiver State IS EMPTY!!!")
-        # if self.nc.checkReceiverPostCode():
+        # if self.qf.checkReceiverPostCode():
         #     self.ts.mark(True, "Receiver Post Code has field value")
         # else:
         #     self.ts.mark(True, "Receiver Post Code IS EMPTY!!!")
@@ -124,7 +124,7 @@ class NewConsignmentDDTTests(unittest.TestCase):
         print(cr_con)
         # goes to Dashboard when form created, Need to route back to form (?)
         self.nc = self.db.gotoConsignmentForm()
-        nct = self.nc.verifyNewConsignmentTitle()
+        nct = self.nc.verifyNewQuoteTitle()
         print(nct)
 
         if cr_con:
