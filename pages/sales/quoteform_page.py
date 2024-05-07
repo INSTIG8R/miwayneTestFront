@@ -1586,7 +1586,6 @@ class QuoteForm(BasePage):
     def clickPricingNotes(self, pricingNotes):
         if pricingNotes:
             self.elementClick(self._pricing_notes, "xpath")
-            time.sleep(2)
             # enabled = self.getElement("//div[3]/div/div/div/div/div/div/div[2]/div[2]/button", "xpath").is_enabled()
             self._pn_f = self.isElementPresent(
                 "(//span[normalize-space() = 'Atleast 1 Pricing Notes Required']", "xpath")
@@ -1613,7 +1612,6 @@ class QuoteForm(BasePage):
     def checkSellRateFields(self):
         self.waitForElement("(.//*[normalize-space(text()) and normalize-space(.)='Estimated Sell Rate'])[2]/following::*[name()='svg'][2]", "xpath")
         self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Estimated Sell Rate'])[2]/following::*[name()='svg'][2]", "xpath")
-        time.sleep(2)
         data_stored = self.isElementPresent("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]", "xpath")
         self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::div[1]/button", "xpath")
         if data_stored:
@@ -1647,24 +1645,26 @@ class QuoteForm(BasePage):
         if atl:
             self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
             self.elementClick(self._authority_to_leave, "xpath")
-            reqd = self.isElementPresent("//div[normalize-space()='Atleast 1 Authority To Leave Notes Required']", "xpath")
+            time.sleep(1)
+            reqd = self.isElementPresent("//span[normalize-space()='Atleast 1 Authority To Leave Notes Required']", "xpath")
             # enabled_v = self.getElement(
             #     "(.//*[normalize-space(text()) and normalize-space(.)='Atleast 1 Authority To Leave Notes Required'])[1]/preceding::div[1]", "xpath")
             # enabled = enabled_v.is_enabled()
             if not reqd:
                 self.log.error("###Authority To Leave first note is Required - Not Working!!!")
+            self.waitForElement("//div[3]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath")
             self.elementClick("//div[3]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath")
             self.sendKeys(atl, "//div[3]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath")
-            self.elementClick("//button[@id='wayne_id_Save']", "xpath")
-            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]/parent::*", "xpath")
-            time.sleep(2)
+            self.elementClick("//*/text()[normalize-space(.)='Save']/parent::*", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::div[1]/button", "xpath")
     def checkAuthorityToLeave(self):
         self.waitForElement("//button[@tabindex='92']", "xpath")
         self.elementClick("//button[@tabindex='92']", "xpath")
-        time.sleep(2)
-        ele_pre = self.isElementPresent("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]/parent::*", "xpath")
-        time.sleep(2)
-        if ele_pre:
+        # ele_pre = self.isElementPresent("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]/parent::*", "xpath")
+        ele = self.getElement("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]", "xpath")
+        ele_val = ele.text
+        print(ele_val)
+        if len(ele_val) > 0:
             self.log.info("Authority to Leave Note is present!!!")
 
             return True
@@ -1676,21 +1676,20 @@ class QuoteForm(BasePage):
         if cn:
             self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
             self.elementClick(self._customer_notes)
+            time.sleep(1)
             reqd = self.isElementPresent("//div[normalize-space()='Atleast 1 Customer Notes Required']", "xpath")
-            time.sleep(2)
             # enabled = self.getElement(
             #     "//div[3]/div/div/div/div/div/div/div[2]/div[2]/button", "xpath").is_enabled()
             if not reqd :
                 self.log.error("###Customer Notes:  first note is Required - Not Working!!!")
             self.elementClick("//div[3]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath")
             self.sendKeys(cn, "//div[3]/div/div/div/div/div/div/div/div/div/div/textarea", "xpath")
-            self.elementClick("//button[@id='wayne_id_Save']", "xpath")
-            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
+            self.elementClick("//*/text()[normalize-space(.)='Save']/parent::*", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::div[1]/button", "xpath")
 
     def checkCustomerNotes(self):
         self.waitForElement("//button[@tabindex='96']", "xpath")
         self.elementClick("//button[@tabindex='96']", "xpath")
-        time.sleep(2)
         ele_pre = self.isElementPresent("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]/parent::*", "xpath")
         if ele_pre:
             self.log.info("Customer Notes stored!!")

@@ -107,7 +107,7 @@ class NewQuoteSHTests(unittest.TestCase):
         time.sleep(2)
 
     #
-    @pytest.mark.order(5)
+    @pytest.mark.order(4)
     def test_sellRatetoCreateQuote(self):
         _res = False
 
@@ -133,22 +133,20 @@ class NewQuoteSHTests(unittest.TestCase):
         #     self.ts.markFinal("New CONSIGNMENT TESTS", True, "Quote Created Successfully!!!")
         # else:
         #     self.ts.markFinal("New Consignment TESTS", False, "### Quote couldn't be CREATED!!!")
-    #
-    def test_additionalInformation(self):
-        _res = False
-        self.qf.enterAdditionalInformation(atl='yes', cn='customers numba wan')
-        _res = self.qf.checkAdditionalInformation()
-        if _res:
-            self.ts.markFinal("Additional Information Section Test", True, "Additional Information Fields are Working "
-                                                                           "Correctly!!!")
-        else:
-            self.ts.markFinal("Additional Information  Section Test", False, "### Additional Information Fields are "
-                                                                             "not Working Correctly!!!")
-        time.sleep(2)
 
     #
-    @pytest.mark.order(6)
-    def test_createQuote(self):
+    @pytest.mark.order(5)
+    def test_additionalInformationandCreateQuote(self):
+
+        self.qf.enterAdditionalInformation(atl='yes', cn='customers numba wan')
+        # if :
+        #     self.ts.mark(True, "Additional Information Fields are Working "
+        #                        "Correctly!!!")
+        # else:
+        #     self.ts.mark(False, "### Additional Information Fields are "
+        #                         "not Working Correctly!!!")
+
+        # --- Create Quote ---
         cr_con = self.qf.clickCreateQuote()
         if cr_con:
             self.ts.markFinal("New CONSIGNMENT TESTS", True, "Quote Created Successfully!!!")
