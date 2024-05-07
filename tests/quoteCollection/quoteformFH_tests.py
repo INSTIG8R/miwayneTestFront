@@ -22,15 +22,13 @@ class NewQuoteFHTests(unittest.TestCase):
         self.qf = QuoteForm(self.driver)
 
     @pytest.mark.order(1)
-    def test_validPage(self):
+    def test_firsthalf(self):
         self.lp = LoginPage(self.driver)
         self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
         self.qf = self.hp.gotoQuoteForm()
         nc_res = self.qf.verifyNewQuoteTitle()
         self.ts.markFinal("Quote Form load Check", nc_res, "Quote Form Loaded")
 
-    @pytest.mark.order(2)
-    def test_header(self):
 
         self.qf.enterHeaderInformation(accountName='BELGOTEX NZ LTD', customerRef='1231231231',
                                        receiverRef='assdasd123123')
@@ -43,9 +41,6 @@ class NewQuoteFHTests(unittest.TestCase):
             self.ts.markFinal("Header Test", True, "Data Fetched Without Issues")
         else:
             self.ts.markFinal("Header Test", False, "Data Could not be fetched")
-
-    @pytest.mark.order(3)
-    def test_checkSenderDetails(self):
 
         _sd_val = False
         self.qf.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
@@ -110,85 +105,68 @@ class NewQuoteFHTests(unittest.TestCase):
 
         self.ts.markFinal("TEST -> (Required Fields) Receiver Details DATA FETCHING", _sd_val, "All tests working")
 
-    # @pytest.mark.order(4)
-    # def test_checkReceiverDetails(self):
-    #     _rd_val = False
-    #     # noinspection SpellCheckingInspection
-    #     self.qf.enterReceiverDetails(receiverCompanyName="CARPET COURT MT ROSKILL")
-    #     time.sleep(3)
-    #     print(self.qf.checkReceiverAddressType())
-    #     if self.qf.checkReceiverAddressType():
-    #         self.ts.mark(True, "Receiver Address Type has field value")
-    #         _rd_val = True
-    #     else:
-    #         self.ts.mark(False, "Receiver Address Type IS EMPTY!!!!")
-    #         _rd_val = False
-    #     #
-    #     print(self.qf.checkReceiverRoad())
-    #     if self.qf.checkReceiverRoad():
-    #         self.ts.mark(True, "Receiver Road has field value")
-    #         _rd_val = True
-    #     else:
-    #         self.ts.mark(False, "Receiver Road IS EMPTY!!!!")
-    #         _rd_val = False
-    #
-    #     print(self.qf.checkReceiverStreet())
-    #     if self.qf.checkReceiverStreet():
-    #         self.ts.mark(True, "Receiver Street has field value")
-    #         _rd_val = True
-    #     else:
-    #         self.ts.mark(False, "Receiver Street IS EMPTY!!!")
-    #         _rd_val = False
-    #
-    #     print(self.qf.checkReceiverCity())
-    #     if self.qf.checkReceiverCity():
-    #         self.ts.mark(True, "Receiver City has field value")
-    #         _rd_val = True
-    #     else:
-    #         self.ts.mark(False, "Receiver City IS EMPTY!!!")
-    #         _rd_val = False
-    #
-    #     print(self.qf.checkReceiverState())
-    #     if self.qf.checkReceiverState():
-    #         self.ts.mark(True, "Receiver State has field value")
-    #         _rd_val = True
-    #     else:
-    #         self.ts.mark(True, "Receiver State IS EMPTY!!!")
-    #         _rd_val = False
-    #
-    #     print(self.qf.checkReceiverPostCode())
-    #     if self.qf.checkReceiverPostCode():
-    #         self.ts.mark(True, "Receiver Post Code has field value")
-    #         _rd_val = True
-    #     else:
-    #         self.ts.mark(True, "Receiver Post Code IS EMPTY!!!")
-    #         _rd_val = False
-    #
-    #     self.ts.markFinal("TEST -> (Required Fields) Receiver Details DATA FETCHING", _rd_val, "All tests working")
+        _rd_val = False
+        # noinspection SpellCheckingInspection
+        self.qf.enterReceiverDetails(receiverCompanyName="CARPET COURT MT ROSKILL")
+        time.sleep(3)
+        print(self.qf.checkReceiverAddressType())
+        if self.qf.checkReceiverAddressType():
+            self.ts.mark(True, "Receiver Address Type has field value")
+            _rd_val = True
+        else:
+            self.ts.mark(False, "Receiver Address Type IS EMPTY!!!!")
+            _rd_val = False
+        #
+        print(self.qf.checkReceiverRoad())
+        if self.qf.checkReceiverRoad():
+            self.ts.mark(True, "Receiver Road has field value")
+            _rd_val = True
+        else:
+            self.ts.mark(False, "Receiver Road IS EMPTY!!!!")
+            _rd_val = False
 
+        print(self.qf.checkReceiverStreet())
+        if self.qf.checkReceiverStreet():
+            self.ts.mark(True, "Receiver Street has field value")
+            _rd_val = True
+        else:
+            self.ts.mark(False, "Receiver Street IS EMPTY!!!")
+            _rd_val = False
 
-    @pytest.mark.order(5)
-    def test_editSenderDetails(self):
+        print(self.qf.checkReceiverCity())
+        if self.qf.checkReceiverCity():
+            self.ts.mark(True, "Receiver City has field value")
+            _rd_val = True
+        else:
+            self.ts.mark(False, "Receiver City IS EMPTY!!!")
+            _rd_val = False
 
-        res_values = self.qf.editSenderDetailsCompanyNameAndCheckRequiredFields(senderCompanyName='BELGOTEX CHRISTCHURCH')
+        print(self.qf.checkReceiverState())
+        if self.qf.checkReceiverState():
+            self.ts.mark(True, "Receiver State has field value")
+            _rd_val = True
+        else:
+            self.ts.mark(True, "Receiver State IS EMPTY!!!")
+            _rd_val = False
+
+        print(self.qf.checkReceiverPostCode())
+        if self.qf.checkReceiverPostCode():
+            self.ts.mark(True, "Receiver Post Code has field value")
+            _rd_val = True
+        else:
+            self.ts.mark(True, "Receiver Post Code IS EMPTY!!!")
+            _rd_val = False
+
+        self.ts.markFinal("TEST -> (Required Fields) Receiver Details DATA FETCHING", _rd_val, "All tests working")
+
+        res_values = self.qf.editSenderDetailsCompanyNameAndCheckRequiredFields(
+            senderCompanyName='BELGOTEX CHRISTCHURCH')
         print(res_values)
         if res_values:
             self.ts.markFinal("Check Required Fields", res_values, "Required Fields are FILLED")
         else:
             self.ts.markFinal("Check Required Fields", res_values, "Required Fields are EMPTY!!!")
 
-        # addrTy, Road, Street, City, State, PostCode
-        # res_edit = self.qf.editSenderDetails(addressType="RESIDENTIAL BUSINESS", road='32', street='FOX STREET',
-        #                                      city='INVERCARGILL', state='SOUTHLAND', postcode='9810')  #
-        # if res_edit:
-        #     self.ts.markFinal("Edited Existing Sender Details", res_edit, "Sender Details Edited Successfully")
-        #
-        # else:
-        #     self.ts.markFinal("Edited Existing Sender Details", res_edit, "Sender Details couldn't be Edited!!!")
-
-
-    @pytest.mark.order(6)
-    def test_editReceiverDetails(self):
         res_values = self.qf.editReceiverDetailsCompanyName(receiverCompanyName="THE FLOORING ROOM CENTRE CHRISTCHURCH")
         print(res_values)
         if res_values:
@@ -196,14 +174,4 @@ class NewQuoteFHTests(unittest.TestCase):
         else:
             self.ts.markFinal("Check Required Fields", res_values, "Required Fields are EMPTY!!!")
 
-        # res_edit = self.qf.editReceiverDetails(addressType="RESIDENTIAL BUSINESS", road='11', street='NICCOL AVENUE', city='CHRISTCHURCH', state='OTAGO', postcode='9510')  #
-        #
-        # if res_edit:
-        #     self.ts.markFinal("Edited Existing Receiver Details", res_edit, "Receiver Details Edited Successfully")
-        #
-        # else:
-        #     self.ts.markFinal("Edited Existing Receiver Details", res_edit, "Receiver Details couldn't be Edited!!!")
-        # time.sleep(4)
 
-    #
-    #

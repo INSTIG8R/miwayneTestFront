@@ -333,3 +333,903 @@
 04/29/2024 02:45:46 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
 04/29/2024 02:45:47 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
 04/29/2024 02:45:47 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+04/30/2024 11:51:55 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 11:51:55 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 11:51:55 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 11:51:55 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 11:51:55 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 11:52:16 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 11:52:16 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 11:52:16 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 11:52:16 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 11:52:16 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 12:16:32 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:16:32 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:16:32 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 12:16:32 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 12:16:32 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 12:16:53 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:16:53 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:16:53 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 12:16:53 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 12:16:53 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 12:44:39 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:44:39 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:44:39 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 12:44:39 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 12:44:39 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 12:45:01 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:45:01 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 12:45:01 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 12:45:01 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 12:45:01 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 01:13:19 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 01:13:19 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 01:13:19 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 01:13:19 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 01:13:19 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+04/30/2024 01:13:41 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 01:13:41 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+04/30/2024 01:13:41 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/30/2024 01:13:41 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+04/30/2024 01:13:41 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 11:14:43 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:14:43 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:14:43 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 11:14:43 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 11:14:43 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 11:15:02 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:15:02 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:15:02 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 11:15:02 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 11:15:02 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 11:47:05 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:47:05 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:47:05 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 11:47:05 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 11:47:05 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 11:55:52 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:55:52 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 11:55:52 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 11:55:52 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 11:55:52 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 11:55:56 AM - TestStatus - INFO: ###Verfication Successful  ::Data Fetched Without Issues
+05/02/2024 11:55:56 AM - TestStatus - INFO: Header Test### TEST PASSED
+05/02/2024 11:56:01 AM - TestStatus - INFO: ###Verfication Failed  ::Sender Address Type IS EMPTY!!!!
+05/02/2024 11:56:01 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/Sender Address Type IS EMPTY!!!!.1714629361305.png
+05/02/2024 11:56:01 AM - TestStatus - INFO: ###Verfication Successful  ::Sender Road has field value
+05/02/2024 11:56:01 AM - TestStatus - INFO: ###Verfication Failed  ::Sender Street IS EMPTY!!!
+05/02/2024 11:56:01 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/Sender Street IS EMPTY!!!.1714629361577.png
+05/02/2024 11:56:01 AM - TestStatus - INFO: ###Verfication Successful  ::Sender City has field value
+05/02/2024 11:56:01 AM - TestStatus - INFO: ###Verfication Successful  ::Sender State has field value
+05/02/2024 11:56:07 AM - TestStatus - INFO: ###Verfication Successful  ::Sender Post Code has field value
+05/02/2024 11:56:07 AM - TestStatus - INFO: ###Verfication Successful  ::All tests working
+05/02/2024 11:56:07 AM - TestStatus - ERROR: TEST -> (Required Fields) Receiver Details DATA FETCHING### TEST FAILED
+05/02/2024 12:07:13 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 12:07:13 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 12:07:13 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 12:07:13 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 12:07:13 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 12:07:18 PM - TestStatus - INFO: ###Verfication Successful  ::Data Fetched Without Issues
+05/02/2024 12:07:18 PM - TestStatus - INFO: Header Test### TEST PASSED
+05/02/2024 12:07:22 PM - TestStatus - INFO: ###Verfication Successful  ::Sender Address Type has field value
+05/02/2024 12:08:03 PM - TestStatus - INFO: ###Verfication Successful  ::Sender Road has field value
+05/02/2024 12:08:44 PM - TestStatus - INFO: ###Verfication Successful  ::Sender Street has field value
+05/02/2024 12:09:25 PM - TestStatus - INFO: ###Verfication Successful  ::Sender City has field value
+05/02/2024 12:10:05 PM - TestStatus - INFO: ###Verfication Successful  ::Sender State has field value
+05/02/2024 12:10:52 PM - TestStatus - INFO: ###Verfication Successful  ::Sender Post Code has field value
+05/02/2024 12:10:52 PM - TestStatus - INFO: ###Verfication Successful  ::All tests working
+05/02/2024 12:10:52 PM - TestStatus - INFO: TEST -> (Required Fields) Receiver Details DATA FETCHING### TEST PASSED
+05/02/2024 12:10:58 PM - TestStatus - INFO: ###Verfication Successful  ::Receiver Address Type has field value
+05/02/2024 12:11:39 PM - TestStatus - INFO: ###Verfication Successful  ::Receiver Road has field value
+05/02/2024 12:12:20 PM - TestStatus - INFO: ###Verfication Successful  ::Receiver Street has field value
+05/02/2024 12:13:00 PM - TestStatus - INFO: ###Verfication Successful  ::Receiver City has field value
+05/02/2024 12:13:41 PM - TestStatus - INFO: ###Verfication Successful  ::Receiver State has field value
+05/02/2024 12:14:22 PM - TestStatus - INFO: ###Verfication Successful  ::Receiver Post Code has field value
+05/02/2024 12:14:22 PM - TestStatus - INFO: ###Verfication Successful  ::All tests working
+05/02/2024 12:14:22 PM - TestStatus - INFO: TEST -> (Required Fields) Receiver Details DATA FETCHING### TEST PASSED
+05/02/2024 12:16:16 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are FILLED
+05/02/2024 12:16:16 PM - TestStatus - INFO: Check Required Fields### TEST PASSED
+05/02/2024 12:16:42 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are FILLED
+05/02/2024 12:16:42 PM - TestStatus - INFO: Check Required Fields### TEST PASSED
+05/02/2024 12:17:03 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 12:17:03 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 12:17:03 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 12:17:03 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 12:17:03 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 12:18:29 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/02/2024 12:18:29 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/02/2024 12:18:49 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/02/2024 12:19:33 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/02/2024 12:19:33 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/02/2024 12:30:04 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 12:30:04 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 12:30:04 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 12:30:04 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 12:30:04 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 12:30:34 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/02/2024 12:30:34 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/02/2024 12:30:39 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/02/2024 12:30:39 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/02/2024 12:30:39 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/02/2024 12:30:39 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/02/2024 12:30:51 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/02/2024 12:30:51 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/02/2024 12:30:51 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/02/2024 12:30:51 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/02/2024 12:30:51 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/02/2024 12:30:51 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/02/2024 12:30:57 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/02/2024 12:31:13 PM - QuoteForm - INFO: Rate Estimated!!!
+05/02/2024 12:31:13 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/02/2024 12:31:13 PM - TestStatus - INFO: ###Verfication Failed  ::Error during Price Estimation
+05/02/2024 12:31:13 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/Error during Price Estimation.1714631473184.png
+05/02/2024 12:31:13 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/02/2024 12:31:13 PM - TestStatus - ERROR: Price Estimating Test### TEST FAILED
+05/02/2024 12:31:14 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/02/2024 12:31:14 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/02/2024 12:31:14 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/02/2024 12:31:22 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/02/2024 12:31:22 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/02/2024 12:31:22 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 12:31:22 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/02/2024 12:31:22 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/02/2024 12:31:22 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/02/2024 01:10:07 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 01:10:07 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 01:10:07 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 01:10:07 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 01:10:07 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 01:11:35 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/02/2024 01:11:35 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/02/2024 01:11:55 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/02/2024 01:12:39 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/02/2024 01:12:39 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/02/2024 01:12:42 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/02/2024 01:12:58 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/02/2024 01:12:59 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/02/2024 01:12:59 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/02/2024 01:13:06 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 01:13:06 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/02/2024 01:13:06 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/02/2024 01:13:06 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/02/2024 01:13:06 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/02/2024 01:13:06 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714633986647.png
+05/02/2024 01:13:06 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/02/2024 01:13:07 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/02/2024 01:13:08 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/02/2024 01:13:09 PM - QuoteForm - INFO: Customer Notes stored!!
+05/02/2024 01:13:09 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/02/2024 01:13:09 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/02/2024 01:20:04 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 01:20:04 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 01:20:04 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/02/2024 01:20:04 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/02/2024 01:20:04 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/02/2024 01:20:34 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/02/2024 01:20:34 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/02/2024 01:20:39 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/02/2024 01:20:39 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/02/2024 01:20:39 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/02/2024 01:20:39 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/02/2024 01:20:52 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/02/2024 01:20:52 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/02/2024 01:20:52 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/02/2024 01:20:52 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/02/2024 01:20:52 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/02/2024 01:20:52 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/02/2024 01:20:55 PM - QuoteForm - INFO: Price Estimated!!!
+05/02/2024 01:21:10 PM - QuoteForm - INFO: Rate Estimated!!!
+05/02/2024 01:21:10 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/02/2024 01:21:10 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/02/2024 01:21:10 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/02/2024 01:21:10 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/02/2024 01:21:13 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/02/2024 01:21:14 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/02/2024 01:21:14 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/02/2024 01:38:01 PM - QuoteForm - ERROR: Failed to get page title
+05/02/2024 01:38:01 PM - TestStatus - INFO: ###Verfication Failed  ::Quote Form Loaded
+05/02/2024 01:38:01 PM - TestStatus - ERROR: ### Exception occured 
+05/02/2024 01:38:01 PM - TestStatus - ERROR: Quote Form load Check### TEST FAILED
+05/02/2024 01:47:42 PM - Util - INFO: Actual Text From Application Web UI --> :: 
+05/02/2024 01:47:42 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/02/2024 01:47:42 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/02/2024 01:47:42 PM - TestStatus - INFO: ###Verfication Failed  ::Quote Form Loaded
+05/02/2024 01:47:42 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/Quote Form Loaded.1714636062312.png
+05/02/2024 01:47:42 PM - TestStatus - ERROR: Quote Form load Check### TEST FAILED
+05/03/2024 02:01:27 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:01:27 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:01:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:01:27 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 02:01:27 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 02:02:55 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/03/2024 02:02:55 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/03/2024 02:03:15 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/03/2024 02:04:28 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:04:28 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:04:28 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:04:28 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 02:04:28 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 02:04:58 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/03/2024 02:04:58 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/03/2024 02:05:03 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/03/2024 02:05:03 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/03/2024 02:05:03 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/03/2024 02:05:03 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/03/2024 02:05:15 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/03/2024 02:05:15 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/03/2024 02:05:15 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/03/2024 02:05:15 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/03/2024 02:05:15 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/03/2024 02:05:15 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/03/2024 02:05:19 PM - QuoteForm - INFO: Price Estimated!!!
+05/03/2024 02:05:34 PM - QuoteForm - INFO: Rate Estimated!!!
+05/03/2024 02:05:34 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/03/2024 02:05:34 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/03/2024 02:05:34 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/03/2024 02:05:34 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/03/2024 02:05:37 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/03/2024 02:05:38 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/03/2024 02:05:38 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/03/2024 02:05:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 02:05:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 02:05:45 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:05:45 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/03/2024 02:05:45 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/03/2024 02:05:45 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/03/2024 02:16:40 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:16:40 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:16:40 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:16:40 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 02:16:40 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 02:18:07 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/03/2024 02:18:07 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/03/2024 02:18:28 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/03/2024 02:19:12 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/03/2024 02:19:12 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/03/2024 02:19:15 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/03/2024 02:19:31 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/03/2024 02:19:31 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/03/2024 02:19:31 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/03/2024 02:19:39 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:19:39 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 02:19:39 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/03/2024 02:19:39 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/03/2024 02:19:39 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/03/2024 02:19:39 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714724379217.png
+05/03/2024 02:19:39 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/03/2024 02:19:39 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/03/2024 02:19:40 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/03/2024 02:19:41 PM - QuoteForm - INFO: Customer Notes stored!!
+05/03/2024 02:19:41 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/03/2024 02:19:41 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/03/2024 02:20:07 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:20:07 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:20:07 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:20:07 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 02:20:07 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 02:21:34 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/03/2024 02:21:34 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/03/2024 02:21:55 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/03/2024 02:22:38 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/03/2024 02:22:38 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/03/2024 02:22:42 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/03/2024 02:22:58 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/03/2024 02:22:58 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/03/2024 02:22:58 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/03/2024 02:23:06 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:23:06 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 02:23:06 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/03/2024 02:23:06 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/03/2024 02:23:06 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/03/2024 02:23:06 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714724586122.png
+05/03/2024 02:23:06 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/03/2024 02:23:06 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/03/2024 02:23:07 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/03/2024 02:23:08 PM - QuoteForm - INFO: Customer Notes stored!!
+05/03/2024 02:23:08 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/03/2024 02:23:08 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/03/2024 02:26:57 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:26:57 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:26:57 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:26:57 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 02:26:57 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 02:28:24 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/03/2024 02:28:24 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/03/2024 02:28:45 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/03/2024 02:29:29 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/03/2024 02:29:29 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/03/2024 02:29:32 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/03/2024 02:29:48 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/03/2024 02:29:49 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/03/2024 02:29:49 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/03/2024 02:29:56 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:29:56 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 02:29:56 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/03/2024 02:29:56 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/03/2024 02:29:56 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/03/2024 02:29:56 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714724996342.png
+05/03/2024 02:29:56 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/03/2024 02:29:56 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/03/2024 02:29:57 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/03/2024 02:29:59 PM - QuoteForm - INFO: Customer Notes stored!!
+05/03/2024 02:29:59 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/03/2024 02:29:59 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/03/2024 02:50:22 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:50:22 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:50:22 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 02:50:22 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 02:50:22 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 02:51:49 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/03/2024 02:51:49 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/03/2024 02:52:09 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/03/2024 02:52:53 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/03/2024 02:52:53 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/03/2024 02:52:57 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/03/2024 02:53:13 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/03/2024 02:53:13 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/03/2024 02:53:13 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/03/2024 02:53:21 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 02:53:21 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 02:53:21 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/03/2024 02:53:21 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/03/2024 02:53:21 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/03/2024 02:53:21 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714726401024.png
+05/03/2024 02:53:21 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/03/2024 02:53:21 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/03/2024 02:53:22 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/03/2024 02:53:23 PM - QuoteForm - INFO: Customer Notes stored!!
+05/03/2024 02:53:23 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/03/2024 02:53:23 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/03/2024 03:55:21 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 03:55:21 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 03:55:21 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/03/2024 03:55:21 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/03/2024 03:55:21 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/03/2024 03:56:49 PM - QuoteForm - ERROR: ### Item 1 Field is not filled!!!
+05/03/2024 03:56:49 PM - QuoteForm - ERROR: ### Commodity 1 Field is not filled!!!
+05/03/2024 03:57:09 PM - QuoteForm - ERROR: ### Quantity 1 Field is not filled!!!
+05/03/2024 03:57:53 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/03/2024 03:57:53 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/03/2024 03:57:56 PM - QuoteForm - ERROR: ### Price Not Estimated!!!
+05/03/2024 03:58:12 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/03/2024 03:58:13 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/03/2024 03:58:13 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/03/2024 03:58:20 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/03/2024 03:58:20 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/03/2024 03:58:20 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/03/2024 03:58:20 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/03/2024 03:58:20 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/03/2024 03:58:20 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714730300466.png
+05/03/2024 03:58:20 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/03/2024 03:58:20 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/03/2024 03:58:22 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/03/2024 03:58:23 PM - QuoteForm - INFO: Customer Notes stored!!
+05/03/2024 03:58:23 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/03/2024 03:58:23 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/06/2024 11:08:34 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:08:34 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:08:34 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:08:34 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 11:08:34 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 11:09:04 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 11:09:04 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 11:09:09 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 11:09:09 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 11:09:09 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:09:09 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 11:09:21 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 11:09:21 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 11:09:21 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:09:21 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 11:09:21 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 11:09:21 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 11:09:25 AM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 11:09:41 AM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 11:09:41 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 11:09:41 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 11:09:41 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 11:09:41 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 11:09:43 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 11:09:44 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 11:09:44 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 11:10:08 AM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 11:10:36 AM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 11:10:36 AM - QuoteForm - INFO: Customer Notes stored!!
+05/06/2024 11:10:36 AM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 11:10:36 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1714972236727.png
+05/06/2024 11:10:36 AM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/06/2024 11:27:33 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:27:33 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:27:33 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:27:33 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 11:27:33 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 11:29:12 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:29:12 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:29:12 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:29:12 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 11:29:12 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 11:38:18 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:38:18 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:38:18 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:38:18 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 11:38:18 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 11:38:48 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 11:38:48 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 11:38:53 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 11:38:53 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 11:38:53 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:38:53 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 11:39:05 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 11:39:05 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 11:39:05 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:39:05 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 11:39:05 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 11:39:05 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 11:39:09 AM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 11:39:25 AM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 11:39:25 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 11:39:25 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 11:39:25 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 11:39:25 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 11:39:27 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 11:39:28 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 11:39:28 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 11:39:30 AM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 11:39:31 AM - QuoteForm - INFO: Authority to Leave Note is present!!!
+05/06/2024 11:39:32 AM - QuoteForm - INFO: Customer Notes stored!!
+05/06/2024 11:39:32 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
+05/06/2024 11:39:32 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+05/06/2024 11:39:40 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:39:40 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 11:39:40 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/06/2024 11:39:40 AM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/06/2024 11:39:40 AM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/06/2024 11:39:40 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714973980559.png
+05/06/2024 11:39:40 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/06/2024 11:45:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:45:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:45:59 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:45:59 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 11:45:59 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 11:46:30 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 11:46:30 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 11:46:36 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 11:46:36 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 11:46:36 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:46:36 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 11:46:48 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 11:46:48 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 11:46:48 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:46:48 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 11:46:48 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 11:46:48 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 11:46:52 AM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 11:47:07 AM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 11:47:07 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 11:47:07 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 11:47:07 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 11:47:07 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 11:47:10 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 11:47:10 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 11:47:10 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 11:47:18 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 11:47:18 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 11:47:18 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:47:18 AM - QuoteForm - INFO: QUOTE CREATED!!!
+05/06/2024 11:47:18 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/06/2024 11:47:18 AM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/06/2024 11:52:24 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:52:24 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:52:24 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 11:52:24 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 11:52:24 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 11:52:55 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 11:52:55 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 11:53:00 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 11:53:00 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 11:53:00 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:53:00 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 11:53:13 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 11:53:13 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 11:53:13 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 11:53:13 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 11:53:13 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 11:53:13 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 11:53:16 AM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 11:53:31 AM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 11:53:31 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 11:53:31 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 11:53:31 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 11:53:31 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 11:53:34 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 11:53:36 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 11:53:36 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 11:53:44 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 11:53:44 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 11:53:44 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/06/2024 11:53:44 AM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/06/2024 11:53:44 AM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/06/2024 11:53:44 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714974824649.png
+05/06/2024 11:53:44 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/06/2024 12:00:44 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:00:44 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:00:44 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:00:44 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 12:00:44 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 12:01:15 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 12:01:15 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 12:01:20 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 12:01:20 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 12:01:20 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:01:20 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 12:01:32 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 12:01:32 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 12:01:32 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:01:32 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 12:01:32 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 12:01:32 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 12:01:36 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 12:01:51 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 12:01:51 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 12:01:51 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 12:01:51 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 12:01:51 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 12:01:54 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 12:01:55 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 12:01:55 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 12:02:02 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:02:02 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:02:02 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:02:02 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/06/2024 12:02:02 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/06/2024 12:02:02 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/06/2024 12:02:30 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 12:07:07 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:07:07 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:07:07 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:07:07 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 12:07:07 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 12:07:38 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 12:07:38 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 12:07:43 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 12:07:43 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 12:07:43 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:07:43 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 12:07:55 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 12:07:55 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 12:07:55 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:07:55 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 12:07:55 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 12:07:55 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 12:08:01 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 12:08:16 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 12:08:16 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 12:08:16 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 12:08:16 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 12:08:16 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 12:08:19 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 12:08:19 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 12:08:19 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 12:08:27 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:08:27 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:08:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:08:27 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/06/2024 12:08:27 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/06/2024 12:08:27 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/06/2024 12:08:54 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 12:09:34 PM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
+05/06/2024 12:10:13 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 12:10:41 PM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
+05/06/2024 12:10:41 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 12:10:41 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1714975841360.png
+05/06/2024 12:10:41 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/06/2024 12:14:18 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:14:18 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:14:18 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:14:18 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 12:14:18 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 12:14:49 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 12:14:49 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 12:14:54 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 12:14:54 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 12:14:54 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:14:54 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 12:15:06 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 12:15:06 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 12:15:06 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:15:06 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 12:15:06 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 12:15:06 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 12:15:09 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 12:15:25 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 12:15:25 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 12:15:25 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 12:15:25 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 12:15:25 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 12:15:30 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 12:15:31 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 12:15:31 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 12:15:39 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:15:39 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:15:39 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/06/2024 12:15:39 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/06/2024 12:15:39 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/06/2024 12:15:39 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714976139865.png
+05/06/2024 12:15:39 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/06/2024 12:16:29 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 12:16:30 PM - QuoteForm - INFO: Customer Notes stored!!
+05/06/2024 12:16:30 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 12:16:30 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1714976190124.png
+05/06/2024 12:16:30 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/06/2024 12:20:34 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:20:34 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:20:34 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:20:34 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 12:20:34 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 12:21:04 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 12:21:04 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 12:21:09 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 12:21:09 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 12:21:09 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:21:09 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 12:21:21 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 12:21:21 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 12:21:21 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:21:21 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 12:21:21 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 12:21:21 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 12:21:25 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 12:21:41 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 12:21:41 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 12:21:41 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 12:21:41 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 12:21:41 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 12:21:43 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 12:21:44 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 12:21:44 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 12:21:51 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:21:51 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:21:51 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:21:51 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/06/2024 12:21:51 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/06/2024 12:21:51 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/06/2024 12:22:19 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 12:23:01 PM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
+05/06/2024 12:23:41 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 12:24:09 PM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
+05/06/2024 12:24:09 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 12:24:09 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1714976649074.png
+05/06/2024 12:24:09 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/06/2024 12:37:24 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:37:24 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:37:24 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:37:24 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 12:37:24 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 12:37:55 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 12:37:55 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 12:38:00 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 12:38:00 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 12:38:00 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:38:00 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 12:38:12 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 12:38:12 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 12:38:12 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:38:12 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 12:38:12 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 12:38:12 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 12:38:16 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 12:38:32 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 12:38:32 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 12:38:32 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 12:38:32 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 12:38:32 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 12:38:34 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 12:38:35 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 12:38:35 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 12:38:42 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:38:42 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:38:42 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:38:42 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/06/2024 12:38:42 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/06/2024 12:38:42 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/06/2024 12:39:09 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 12:39:52 PM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
+05/06/2024 12:40:32 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 12:40:59 PM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
+05/06/2024 12:40:59 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 12:40:59 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1714977659668.png
+05/06/2024 12:40:59 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/06/2024 12:58:32 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:58:32 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:58:32 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 12:58:32 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 12:58:32 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 12:59:02 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 12:59:02 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 12:59:07 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 12:59:07 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 12:59:07 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:59:07 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 12:59:19 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 12:59:19 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 12:59:19 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 12:59:19 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 12:59:19 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 12:59:19 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 12:59:23 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 12:59:38 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 12:59:38 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 12:59:38 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 12:59:38 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 12:59:38 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 12:59:41 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 12:59:42 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 12:59:42 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 12:59:51 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 12:59:51 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 12:59:51 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/06/2024 12:59:51 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/06/2024 12:59:51 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/06/2024 12:59:51 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1714978791018.png
+05/06/2024 12:59:51 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/06/2024 01:00:40 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 01:00:41 PM - QuoteForm - INFO: Customer Notes stored!!
+05/06/2024 01:00:41 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 01:00:41 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1714978841085.png
+05/06/2024 01:00:41 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/06/2024 01:05:11 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 01:05:11 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/06/2024 01:05:11 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 01:05:11 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/06/2024 01:05:11 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/06/2024 01:05:41 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/06/2024 01:05:41 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/06/2024 01:05:46 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/06/2024 01:05:46 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/06/2024 01:05:46 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 01:05:46 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/06/2024 01:05:59 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/06/2024 01:05:59 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/06/2024 01:05:59 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/06/2024 01:05:59 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/06/2024 01:05:59 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/06/2024 01:05:59 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/06/2024 01:06:02 PM - QuoteForm - INFO: Price Estimated!!!
+05/06/2024 01:06:17 PM - QuoteForm - INFO: Rate Estimated!!!
+05/06/2024 01:06:17 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/06/2024 01:06:17 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/06/2024 01:06:17 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/06/2024 01:06:17 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/06/2024 01:06:22 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/06/2024 01:06:22 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/06/2024 01:06:22 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/06/2024 01:06:29 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 01:06:29 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/06/2024 01:06:29 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/06/2024 01:06:29 PM - QuoteForm - INFO: QUOTE CREATED!!!
+05/06/2024 01:06:29 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/06/2024 01:06:29 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/06/2024 01:06:57 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/06/2024 01:07:37 PM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
+05/06/2024 01:08:18 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/06/2024 01:08:33 PM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
+05/06/2024 01:08:33 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/06/2024 01:08:33 PM - TestStatus - ERROR: ### Exception occured 
+05/06/2024 01:08:33 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/07/2024 10:30:49 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 10:30:49 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 10:30:49 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/07/2024 10:30:49 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/07/2024 10:30:49 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/07/2024 10:31:20 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/07/2024 10:31:20 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/07/2024 10:31:25 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/07/2024 10:31:25 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/07/2024 10:31:25 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/07/2024 10:31:25 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/07/2024 10:31:38 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/07/2024 10:31:38 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/07/2024 10:31:38 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/07/2024 10:31:38 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/07/2024 10:31:38 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/07/2024 10:31:38 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/07/2024 10:31:42 AM - QuoteForm - INFO: Price Estimated!!!
+05/07/2024 10:31:57 AM - QuoteForm - INFO: Rate Estimated!!!
+05/07/2024 10:31:57 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/07/2024 10:31:57 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/07/2024 10:31:57 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/07/2024 10:31:57 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/07/2024 10:32:00 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/07/2024 10:32:00 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/07/2024 10:32:00 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/07/2024 10:32:07 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/07/2024 10:32:07 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/07/2024 10:32:07 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/07/2024 10:32:07 AM - QuoteForm - INFO: QUOTE CREATED!!!
+05/07/2024 10:32:07 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/07/2024 10:32:07 AM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/07/2024 10:32:35 AM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/07/2024 10:33:15 AM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
+05/07/2024 10:33:56 AM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/07/2024 10:34:24 AM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
+05/07/2024 10:34:24 AM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/07/2024 10:34:24 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715056464203.png
+05/07/2024 10:34:24 AM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/07/2024 10:51:35 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 10:51:35 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 10:51:35 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/07/2024 10:51:35 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/07/2024 10:51:35 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/07/2024 10:52:05 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/07/2024 10:52:05 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/07/2024 10:52:10 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/07/2024 10:52:10 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/07/2024 10:52:10 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/07/2024 10:52:10 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/07/2024 10:52:22 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/07/2024 10:52:22 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/07/2024 10:52:22 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/07/2024 10:52:22 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/07/2024 10:52:22 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/07/2024 10:52:22 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/07/2024 10:52:26 AM - QuoteForm - INFO: Price Estimated!!!
+05/07/2024 10:52:41 AM - QuoteForm - INFO: Rate Estimated!!!
+05/07/2024 10:52:41 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/07/2024 10:52:41 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/07/2024 10:52:41 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/07/2024 10:52:41 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/07/2024 10:52:44 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/07/2024 10:52:44 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/07/2024 10:52:44 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/07/2024 10:52:52 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 10:52:52 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/07/2024 10:52:52 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+05/07/2024 10:52:52 AM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
+05/07/2024 10:52:52 AM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
+05/07/2024 10:52:53 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715057572996.png
+05/07/2024 10:52:53 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+05/07/2024 10:53:44 AM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/07/2024 10:53:44 AM - QuoteForm - INFO: Customer Notes stored!!
+05/07/2024 10:53:44 AM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/07/2024 10:53:45 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715057624954.png
+05/07/2024 10:53:45 AM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
+05/07/2024 11:00:07 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 11:00:07 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
+05/07/2024 11:00:07 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/07/2024 11:00:07 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
+05/07/2024 11:00:07 AM - TestStatus - INFO: Quote Form load Check### TEST PASSED
+05/07/2024 11:00:37 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+05/07/2024 11:00:37 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
+05/07/2024 11:00:42 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
+05/07/2024 11:00:42 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
+05/07/2024 11:00:42 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/07/2024 11:00:42 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+05/07/2024 11:00:54 AM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
+05/07/2024 11:00:54 AM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
+05/07/2024 11:00:54 AM - QuoteForm - INFO: ### VALUES MATCHED !!!
+05/07/2024 11:00:54 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+05/07/2024 11:00:54 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+05/07/2024 11:00:54 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+05/07/2024 11:00:58 AM - QuoteForm - INFO: Price Estimated!!!
+05/07/2024 11:01:13 AM - QuoteForm - INFO: Rate Estimated!!!
+05/07/2024 11:01:13 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+05/07/2024 11:01:13 AM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
+05/07/2024 11:01:13 AM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
+05/07/2024 11:01:13 AM - TestStatus - INFO: Price Estimating Test### TEST PASSED
+05/07/2024 11:01:17 AM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
+05/07/2024 11:01:19 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+05/07/2024 11:01:19 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+05/07/2024 11:01:27 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/07/2024 11:01:27 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
+05/07/2024 11:01:27 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+05/07/2024 11:01:27 AM - QuoteForm - INFO: QUOTE CREATED!!!
+05/07/2024 11:01:27 AM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
+05/07/2024 11:01:27 AM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+05/07/2024 11:01:54 AM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
+05/07/2024 11:02:38 AM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
+05/07/2024 11:03:21 AM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
+05/07/2024 11:03:51 AM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
+05/07/2024 11:03:51 AM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
+05/07/2024 11:03:51 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715058231391.png
+05/07/2024 11:03:51 AM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED

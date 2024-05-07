@@ -33,7 +33,7 @@ class WebDriverFactory:
         PREFERRED: Set the path on the machine where browser will be executed
         '''
 
-    def getWebDriverInstance(self):
+    def getWebDriverInstance(self, options: str or None = None):
         '''
         Get WebDriver instance based on the browser configuration
          Returns:
@@ -46,14 +46,17 @@ class WebDriverFactory:
             pass
         elif self.browser == "Chrome":
          #Set Chrome Driver
-            driver = webdriver.Chrome()
+            driver = webdriver.Chrome(options=options)
         elif self.browser == "Edge":
-            driver = webdriver.Edge()
+            driver = webdriver.Edge(options=options)
         else:
-            driver = webdriver.Edge()
+            driver = webdriver.Edge(options=options)
         #Setting Driver implicit timeout for an Element
         driver.implicitly_wait(3)
         driver.maximize_window()
         driver.get(baseURL)
         return driver
+
+    def getBaseURL(self):
+        return "https://dev.test-wayne.com/"
 

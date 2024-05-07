@@ -23,15 +23,13 @@ class NewQuoteSHTests(unittest.TestCase):
         self.qf = QuoteForm(self.driver)
 
     @pytest.mark.order(1)
-    def test_validPage(self):
+    def test_secondhalf(self):
         self.lp = LoginPage(self.driver)
         self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
         self.qf = self.hp.gotoQuoteForm()
         nc_res = self.qf.verifyNewQuoteTitle()
         self.ts.markFinal("Quote Form load Check", nc_res, "Quote Form Loaded")
 
-    @pytest.mark.order(2)
-    def test_lines(self):
         _res = False
         self.qf.enterHeaderInformation(accountName='BELGOTEX NZ LTD', customerRef='1231231231',
                                        receiverRef='assdasd123123')
@@ -79,9 +77,6 @@ class NewQuoteSHTests(unittest.TestCase):
             self.ts.markFinal("Consignment Lines Test!!", False, "### Consignment Lines Section Test Failed!!!")
         time.sleep(3)
 
-    #
-    @pytest.mark.order(3)
-    def test_sellRating(self):
         _res = False
         self.qf.scrollWindowDown()
         print("---------------In Sell Rating Section---------------")
@@ -106,9 +101,6 @@ class NewQuoteSHTests(unittest.TestCase):
             self.ts.markFinal("Price Estimating Test", False, "### Price Not Estimated!!!")
         time.sleep(2)
 
-    #
-    @pytest.mark.order(5)
-    def test_sellRatetoCreateQuote(self):
         _res = False
 
         self.qf.enterSellRateFields(pricingNotes='pc1')
@@ -118,39 +110,21 @@ class NewQuoteSHTests(unittest.TestCase):
         else:
             self.ts.markFinal("Sell Rate Section Test", False, "### Sell Rate Fields are not Working Correctly!!!")
         time.sleep(2)
-        # _res = False
-        # self.qf.enterAdditionalInformation(atl='yes', cn='customers numba wan')
-        # _res = self.qf.checkAdditionalInformation()
-        # if _res:
-        #     self.ts.markFinal("Additional Information Section Test", True,
-        #                       "Additional Information Fields are Working Correctly!!!")
-        # else:
-        #     self.ts.markFinal("Additional Information  Section Test", False,
-        #                       "### Additional Information Fields are not Working Correctly!!!")
-        # time.sleep(2)
-        # cr_con = self.qf.clickCreateQuote()
-        # if cr_con:
-        #     self.ts.markFinal("New CONSIGNMENT TESTS", True, "Quote Created Successfully!!!")
-        # else:
-        #     self.ts.markFinal("New Consignment TESTS", False, "### Quote couldn't be CREATED!!!")
-    #
-    def test_additionalInformation(self):
+
         _res = False
         self.qf.enterAdditionalInformation(atl='yes', cn='customers numba wan')
         _res = self.qf.checkAdditionalInformation()
         if _res:
-            self.ts.markFinal("Additional Information Section Test", True, "Additional Information Fields are Working "
-                                                                           "Correctly!!!")
+            self.ts.markFinal("Additional Information Section Test", True,
+                              "Additional Information Fields are Working Correctly!!!")
         else:
-            self.ts.markFinal("Additional Information  Section Test", False, "### Additional Information Fields are "
-                                                                             "not Working Correctly!!!")
+            self.ts.markFinal("Additional Information  Section Test", False,
+                              "### Additional Information Fields are not Working Correctly!!!")
         time.sleep(2)
-
-    #
-    @pytest.mark.order(6)
-    def test_createQuote(self):
         cr_con = self.qf.clickCreateQuote()
         if cr_con:
             self.ts.markFinal("New CONSIGNMENT TESTS", True, "Quote Created Successfully!!!")
         else:
             self.ts.markFinal("New Consignment TESTS", False, "### Quote couldn't be CREATED!!!")
+
+

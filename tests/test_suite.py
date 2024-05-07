@@ -1,15 +1,33 @@
 import unittest
-from tests.customer_service.newconsignment_fh_tests import NewConsignmentFHTests
-from tests.customer_service.newconsignment_sh_tests import NewConsignmentSHTests
-from tests.customer_service.newconsignment_ddt_tests import NewConsignmentDDTTests
+from tests.quoteCollection.quoteformFH_tests import NewQuoteFHTests
+from tests.quoteCollection.quoteformSH_tests import NewQuoteSHTests
 
+# Load test cases from test classes
+tc1 = unittest.TestLoader().loadTestsFromTestCase(NewQuoteFHTests)
+tc2 = unittest.TestLoader().loadTestsFromTestCase(NewQuoteSHTests)
 
-tc1 = unittest.TestLoader().loadTestsFromTestCase(NewConsignmentFHTests)
-tc2 = unittest.TestLoader().loadTestsFromTestCase(NewConsignmentSHTests)
-tc3 = unittest.TestLoader().loadTestsFromTestCase(NewConsignmentDDTTests)
+# Create a test suite combining all quote form test classes
+quoteTest = unittest.TestSuite()
 
-# create a test suite combining all test classes - end to end test
+# Add test cases to the test suite
+quoteTest.addTests(tc1)
+quoteTest.addTests(tc2)
 
-endtoendTest = unittest.TestSuite([tc1, tc2, tc3])
+# Run the test suite
+unittest.TextTestRunner(verbosity=2).run(quoteTest)
 
-unittest.TextTestRunner(verbosity=2).run(endtoendTest)
+#
+# import pytest
+# from tests.sales.quoteformFH_tests import NewQuoteFHTests
+# from tests.sales.quoteformSH_tests import NewQuoteSHTests
+#
+# # Define a list of test classes
+# test_classes = [NewQuoteFHTests, NewQuoteSHTests]
+#
+# # Use pytest's parametrize decorator to run each test class
+# @pytest.mark.parametrize('test_class', test_classes)
+# def test_class(test_class):
+#     # Run each test method in the test class
+#     for test_method in dir(test_class):
+#         if test_method.startswith('test'):
+#             getattr(test_class(), test_method)()
