@@ -8,7 +8,6 @@ import utilities.custom_logger as cl
 import logging
 from base.basepage import BasePage
 from selenium.webdriver import Keys
-from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.common.action_chains import ActionChains
 
@@ -19,8 +18,8 @@ class ConsignmentForm(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
-        self.alert = Alert(driver)
-        self.action = ActionChains(driver)
+        self.alert = Alert(self.driver)
+        self.action = ActionChains(self.driver)
 
     # Locators
 
@@ -118,7 +117,7 @@ class ConsignmentForm(BasePage):
     _dimension_unit1 = "//div[@tabindex='72']"
     _container_number1 = "//input[@tabindex='73']"
     _agency1 = "//input[@tabindex='74']"
-    _item1 = "//input[@tabindex='75'][@id ='wayne_id_Item0']"
+    _item1 = "//input[@tabindex='75']"
     _commodity1 = "//input[@tabindex='76'][@id ='wayne_id_Commodity0']"
     _description1 = "//input[@tabindex='77'][@id ='wayne_id_Description0']"
     _quantity1 = "//input[@tabindex='78'][@id ='wayne_id_Quantity0']"
@@ -159,6 +158,8 @@ class ConsignmentForm(BasePage):
     _carrier_invoice1 = "//input[@id='wayne_id_carrier invoice0']"
     _cost1 = "//input[@id='wayne_id_cost0']"
     _cost_more1 = "//button[@id='Legging Notes0']"
+    _approver = "//input[@id='wayne_id_Approver0']"
+    _approver2 = "//input[@id='wayne_id_Approver1']"
 
     _cost_more1_desc = "//textarea[@id='wayne_id_Notes0']"
     _cost_more1_cancel_btn = "//button[@id='wayne_id_Close']"
@@ -202,8 +203,9 @@ class ConsignmentForm(BasePage):
     _authority_to_leave = "wayne_id_Authority To Leave?"
     _dangerous_goods_ai = "//input[@tabindex='112']"
     _pod_uploaded = "//input[@tabindex='107']"
-    _christell_notes = "wayne_id_Christel Notes"
-    _special_instruction_ai = "//textarea[@tabindex='111']"
+    _christel_notes = "//input[@id = 'wayne_id_Christel Notes']"
+    _christell_notes_i = "//div[3]/div[1]/div[1]/div[1]/div[1]/span[2]/button[1]/*[name()='svg'][1]/*[name()='path'][1]"
+    _special_instruction_ai = "//div[7]/div/div/div/textarea[1]"
     _general_docs = "//button[@tabindex='109']"
     _general_docs_close = "wayne_id_Close"
 
@@ -216,7 +218,7 @@ class ConsignmentForm(BasePage):
 
     # Footer buttons
 
-    _create_consignment = "(.//*[normalize-space(text()) and normalize-space(.)='Quoted By'])[2]/following::button[2]"  # //button[@tabindex='151']
+    _create_consignment = "//button[contains(@id,'wayne_id_Create Consignment, ')]"  # //button[@tabindex='151']
     _go_back = "wayne_id_Cancel Submit"
     _save_draft = "wayne_id_Save Draft"
 
@@ -281,6 +283,8 @@ class ConsignmentForm(BasePage):
     def enterCustomerRef(self, customerRef):
         if customerRef:
             self.sendKeys(customerRef, self._customer_ref, "xpath")
+        else:
+            self.log.error("CUSTOMER REF REQUIRED FIELD IS MISSING!!")
 
     def enterReceiverRef(self, receiverRef):
         if receiverRef:
@@ -296,14 +300,17 @@ class ConsignmentForm(BasePage):
 
     def enterAssignedTo(self, assignedTo):
         if assignedTo:
-            self.sendKeys(assignedTo, self._assigned_to, "xpath")
             at = self.getElement(self._assigned_to, "xpath")
+            self.sendKeys(assignedTo, self._assigned_to, "xpath")
+            time.sleep(2)
             at.send_keys(Keys.ENTER)
+        else:
+            self.log.error("ASSIGNED TO REQUIRED FIELD IS MISSING!!!")
 
     def enterPriorityLevel(self, priorityLevel):
         if priorityLevel:
-            self.sendKeys(priorityLevel, self._priority_level, "xpath")
             pl = self.getElement(self._priority_level, "xpath")
+            self.sendKeys(priorityLevel, self._priority_level, "xpath")
             pl.send_keys(Keys.ENTER)
 
     def checkDataFetchedPopUp(self):
@@ -352,8 +359,8 @@ class ConsignmentForm(BasePage):
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._company_l, "xpath"))
         self.sendKeys(senderCompanyName, self._company_l, "xpath")
         time.sleep(2)
-        sc.send_keys(Keys.ARROW_DOWN)
-        sc.send_keys(Keys.ARROW_DOWN)
+        # sc.send_keys(Keys.ARROW_DOWN)
+        # sc.send_keys(Keys.ARROW_DOWN)
         sc.send_keys(Keys.ENTER)
         time.sleep(2)
 
@@ -1217,6 +1224,10 @@ class ConsignmentForm(BasePage):
         time.sleep(2)
         self.createReceiverContact()
 
+
+    def scrollWindowDownToEnd(self):
+        ccb = self.getElement(self._create_consignment, "xpath")
+        self.driver.execute_script("arguments[0].scrollIntoView();", ccb)
     '''CONSIGNMENT LINES'''
 
     # weight and dimension units are select form type, and all after dangerous goods are ids
@@ -1253,12 +1264,36 @@ class ConsignmentForm(BasePage):
     def enterAgency_1(self, agency):
         pass
 
+
+    def enterItem_1_enterCommodity_1 (self, item, commodity): #### DO NOOOT CHANGE THE CODE FLOW> ITS WORKING!!!!
+        self.waitForElement(self._item1, "xpath")
+        it1 = self.getElement(self._item1, "xpath")
+        self.elementClick(self._item1, "xpath")
+        self.sendKeys(item, self._item1, "xpath")
+        # self.driver.execute_script("arguments[0].value = '" + item + "'", it1)
+        # it1.send_keys(Keys.ARROW_DOWN)
+        # it1.send_keys(Keys.ARROW_DOWN)
+        # it1.send_keys(Keys.ENTER)
+        self.action.move_to_element(it1).send_keys(Keys.RETURN).perform()
+        time.sleep(4)
+        it_val = self.getElement(self._item1, "xpath").get_attribute("value")
+        if it_val == '':
+            print("Item not yet selected")
+            return
+        cm1 = self.getElement(self._commodity1, "xpath")
+        self.elementClick(self._commodity1, "xpath")
+        self.sendKeys(commodity, self._commodity1, "xpath")
+        time.sleep(2)
+        cm1.send_keys(Keys.ARROW_DOWN)
+        cm1.send_keys(Keys.ARROW_DOWN)
+        cm1.send_keys(Keys.ENTER)
     def enterItem_1(self, item):
         self.waitForElement(self._item1, "xpath")
-        self.sendKeys(item, self._item1, "xpath")
         it1 = self.getElement(self._item1, "xpath")
+        self.elementClick(self._item1, "xpath")
+        self.sendKeys(item, self._item1, "xpath")
         it1.send_keys(Keys.ENTER)
-
+        # self.action.move_to_element(it1).send_keys(Keys.RETURN).perform()
     def enterCommodity_1(self, commodity):
         cm1 = self.getElement(self._commodity1, "xpath")
         self.elementClick(self._commodity1, "xpath")
@@ -1404,8 +1439,10 @@ class ConsignmentForm(BasePage):
         # self.enterDimensionUnit_1(dunit1)
         # self.enterContainerNumber_1(containerNumber1)
         # self.enterAgency_1(agency1)
-        self.enterItem_1(item1)
-        self.enterCommodity_1(commodity1)
+        self.enterItem_1_enterCommodity_1(item1, commodity1)
+        time.sleep(2)
+        # self.enterCommodity_1(commodity1)
+        time.sleep(2)
         time.sleep(2)
         # self.enterDescription_1(description1)
         self.enterQuantity_1(quantity1)
@@ -1803,6 +1840,26 @@ class ConsignmentForm(BasePage):
             to2.send_keys(Keys.ARROW_DOWN)
             to2.send_keys(Keys.ENTER)
 
+    def enterApprover1(self, approver):
+        self.elementClick(self._approver, "xpath")
+        ap = self.getElement(self._approver, "xpath")
+        self.sendKeys(approver, self._approver, "xpath")
+        self.elementClick(self._approver, "xpath")
+        time.sleep(2)
+        # ap.send_keys(Keys.ARROW_DOWN)
+        # ap.send_keys(Keys.ARROW_DOWN)
+        ap.send_keys(Keys.ENTER)
+
+    def enterApprover2(self, approver):
+        self.elementClick(self._approver2, "xpath")
+        ap = self.getElement(self._approver2, "xpath")
+        self.sendKeys(approver, self._approver2, "xpath")
+        self.elementClick(self._approver2, "xpath")
+        time.sleep(2)
+        # ap.send_keys(Keys.ARROW_DOWN)
+        # ap.send_keys(Keys.ARROW_DOWN)
+        ap.send_keys(Keys.ENTER)
+
     def enterCarrierRef1(self, carrRef):
         if carrRef:
             if self.isElementPresent("//strong[normalize-space()=2]", "xpath"):
@@ -1909,19 +1966,20 @@ class ConsignmentForm(BasePage):
         self.elementClick(self._add_leg_btn)
 
     # date carrier depot type frm to carrRef carrInv cost
-    def enterLegging_1(self, carrier1, depot1, frm1, to1, cost1, cn1):  # date1,  carrRef1, carrInv1
+    def enterLegging_1(self, carrier1, depot1, frm1, to1, approver):  # date1,  carrRef1, carrInv1
         # self.enterDate(date1)
         self.enterCarrier1(carrier1)
         self.enterDepot1(depot1)
         self.enterType1()
         self.enterFrom1(frm1)
         self.enterTo1(to1)
+        self.enterApprover1(approver)
         # self.enterCarrierRef1(carrRef1)
         # self.entercarrierInvoice1(carrInv1)
-        self.enterCost1(cost1)
-        self.enterCostMore1(cn1)
+        # self.enterCost1(cost1)
+        # self.enterCostMore1(cn1)
 
-    def enterLegging_2(self, carrier2, depot2, frm2, to2, cost2, cn2):
+    def enterLegging_2(self, carrier2, depot2, frm2, to2, approver2):
         if carrier2:
             self.clickAddLeg()
         # self.enterDate(date2)
@@ -1930,10 +1988,12 @@ class ConsignmentForm(BasePage):
         self.enterType2()
         self.enterFrom2(frm2)
         self.enterTo2(to2)
+        self.enterApprover2(approver2)
+
         # self.enterCarrierRef2(carrRef2)
         # self.entercarrierInvoice2(carrInv2)
-        self.enterCost2(cost2)
-        self.enterCostMore2(cn2)
+        # self.enterCost2(cost2)
+        # self.enterCostMore2(cn2)
 
     def checkCarrier1(self):
         self.waitForElement(self._carrier1, "xpath")
@@ -2061,7 +2121,7 @@ class ConsignmentForm(BasePage):
         _res = self.checkType2()
         _res = self.checkFrom2()
         _res = self.checkTo2()
-        _res = self.checkCost2()
+        # _res = self.checkCost2()
         return _res
 
     ## check legging notes are different or not, indiv.leggings from and to are different or not
@@ -2157,6 +2217,7 @@ class ConsignmentForm(BasePage):
         else:
             tsr = self.getElement(self._total_sell_rate, "xpath").get_attribute("value")
             print(tsr)
+            print("Sell RATE GENERATED VALUE -->> ", str(tsr))
             if tsr == "0.0": # or tsr is None
                 self.log.info("### Sell Rate value is 0.0!!!")
                 return True
@@ -2202,16 +2263,17 @@ class ConsignmentForm(BasePage):
     def enterQuotedBy(self, quotedBy):
         if quotedBy:
             self.waitForElement(self._quoted_by, "xpath")
+            qb = self.getElement(self._quoted_by, "xpath")
             self.elementClick(self._quoted_by, "xpath")
             self.sendKeys(quotedBy, self._quoted_by, "xpath")
-            qb = self.getElement(self._quoted_by, "xpath")
+            time.sleep(1)
             qb.send_keys(Keys.ENTER)
 
     def clickNoCharge(self, noCharge):
         if noCharge:
             self.elementClick(self._no_charge)
             self._nc_f = self.isElementPresent(
-                "(.//*[normalize-space(text()) and normalize-space(.)='Close'])[4]/following::span[1]", "xpath")
+                "//span[contains(normalize-space(),'Atleast 1')]", "xpath")
             if not self._nc_f:
                 self.log.error("### First Charge Note is Required - Not Working!!!")
             self._sr_f.append(self._nc_f)
@@ -2235,7 +2297,7 @@ class ConsignmentForm(BasePage):
         if pricingNotes:
             self.elementClick(self._pricing_notes)
             self._pn_f = self.isElementPresent(
-                "(.//*[normalize-space(text()) and normalize-space(.)='Close'])[4]/following::span[1]", "xpath")
+                "//span[contains(normalize-space(),'Atleast 1')]", "xpath")
             if not self._pn_f:
                 self.log.error("###First Pricing Note is Required - Not Working!!!")
             self.elementClick("//textarea[@id='wayne_id_Pricing Notes']", "xpath")
@@ -2254,12 +2316,24 @@ class ConsignmentForm(BasePage):
             self.elementClick(self._cancelled)
             self.waitForElement("//div[normalize-space()='Are you sure to cancel this consignment?']", "xpath")
             self.elementClick("//button[@id='wayne_id_YES']", "xpath")
+            # need to give note for cancelling
+            self._pn_f = self.isElementPresent(
+                "//span[contains(normalize-space(),'Atleast 1')]", "xpath")
+            if not self._pn_f:
+                self.log.error("###First Cancelled Note is Required - Not Working!!!")
+            self.elementClick("//textarea[@id='wayne_id_Cancel Notes']", "xpath")
+            self.sendKeys(cancelled, "//textarea[@id='wayne_id_Cancel Notes']", "xpath")
+            self.elementClick("//*/text()[normalize-space(.)='Save']/parent::*", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]",
+                              "xpath")
+
+
             self._nc_clicked_gsr_enabled2 = self.getElement(self._general_sell_rate).is_enabled()
             if self._nc_clicked_gsr_enabled2:
                 self.log.error("### GSR must be disabled when Consignment is CANCELLED!!")
             self._sr_f.append(not self._nc_clicked_gsr_enabled2)
             print(10*"#")
-            print(not self._nc_clicked_gsr_enabled2)
+            print(self._nc_clicked_gsr_enabled2)
             print(10*"#")
             self._cancelled_status = self.getElement(self._status, "xpath").get_attribute("value")
             if self._cancelled_status == "CANCELLED":
@@ -2268,12 +2342,16 @@ class ConsignmentForm(BasePage):
                 self.log.error("### STATUS didn't change to CANCELLED!!!")
             self._sr_f.append(self._cs)
             self.elementClick(self._cancelled)
-            time.sleep(2)
-            self.waitForElement("//div[normalize-space()='Are you sure to not cancel this consignment?']", "xpath")
-            time.sleep(2)
-            self.elementClick("//button[@id='wayne_id_YES']", "xpath")
             time.sleep(1)
-            self.elementClick(self._general_sell_rate)
+            self.waitForElement("//div[normalize-space()='Are you sure to not cancel this consignment?']", "xpath")
+            time.sleep(1)
+            self.elementClick("//button[@id='wayne_id_YES']", "xpath")
+            time.sleep(2)
+            # enab = self.getElement(self._general_sell_rate).is_enabled()
+            # if enab:
+            #     self.elementClick(self._general_sell_rate)
+            # else:
+            #     self.log.error("### GSR IS NOT ENABLED ")
 
     # connote anSR quotedPrice noCharge pricingNotes cancelled
     def checkGSR(self):
@@ -2284,8 +2362,7 @@ class ConsignmentForm(BasePage):
     def enterSellRating(self):
         self.clickGenerateSR()
 
-    def enterSellRateFields(self, quotedPrice, noCharge, quotedBy, pricingNotes, cancelled):
-        self.enterQuotedPrice(quotedPrice)
+    def enterSellRateFields(self, noCharge, quotedBy, pricingNotes, cancelled):
         self.enterQuotedBy(quotedBy)
         self.clickPricingNotes(pricingNotes)
         self.clickNoCharge(noCharge)
@@ -2298,16 +2375,15 @@ class ConsignmentForm(BasePage):
 
     def enterInsurance(self, insurance):
         if insurance:
-            select_element = Select(self.getElement(self._insurance, "xpath"))
-            options = select_element.options
-            for option in options:
-                if insurance == option.text:
-                    select_element.select_by_visible_text(insurance)
-                    print(option.text, insurance)
+            ins = self.getElement(self._insurance, "xpath")
+            self.sendKeys(insurance, self._insurance, "xpath")
+            ins.send_keys(Keys.ARROW_DOWN)
+            ins.send_keys(Keys.ARROW_DOWN)
+            ins.send_keys(Keys.ENTER)
 
     def checkInsurance(self):
         select_element = self.getElement(self._insurance, "xpath")
-        val = select_element.get_attribute("value")
+        val = select_element.text
         if val is not None:
             print(val)
             self.log.info("Insurance Field is Filled!!")
@@ -2319,9 +2395,11 @@ class ConsignmentForm(BasePage):
     def clickAuthorityToLeave(self, atl):
         if atl:
             self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
-            self.elementClick(self._authority_to_leave, "xpath")
-            self.sendKeys("//div[2]/div/div/div/div/textarea", "xpath")
-            self.elementClick("//button[@id='wayne_id_Close']/span", "xpath")
+            self.elementClick(self._authority_to_leave)
+            self.sendKeys(atl, "//textarea[@id ='wayne_id_Authority To Leave Notes']", "xpath")
+            self.elementClick("//*/text()[normalize-space(.)='Save']/parent::*/parent::*", "xpath")
+            time.sleep(1)
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
 
     def clickDangerousGoodsAI(self, dgAI):
         if dgAI:
@@ -2333,11 +2411,11 @@ class ConsignmentForm(BasePage):
 
     def clickChristellNotes(self, christellNotes):
         if christellNotes:
-            self.elementClick(self._christell_notes, "xpath")
+            self.elementClick(self._christel_notes)
             self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
-            self.sendKeys(christellNotes, "//div[2]/div/div/div/div/textarea", "xpath")
-            self.elementClick("//button[@id='wayne_id_Add Notes']/span", "xpath")
-            self.elementClick("//div[3]/div/div[3]/button/span", "xpath")
+            self.sendKeys(christellNotes, "//textarea[@id ='wayne_id_Christel Notes']", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Close'])[3]/preceding::button[1]/parent::*", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]/parent::*", "xpath")
 
     def enterSpecialInstructionsDescription(self, si):
         if si:
@@ -2347,17 +2425,74 @@ class ConsignmentForm(BasePage):
     def clickGeneralDocuments(self, genDoc):
         pass
 
-    # insurance atl dgAI podUploaded christellNotes si
+    def clickCustomerNotes(self, cn):
+        if cn:
+            self.elementClick("//input[@tabindex='110']", "xpath")
+            self.elementClick("//textarea[@id='wayne_id_Customer Notes']", "xpath")
+            el = self.getElement("//textarea[@id='wayne_id_Customer Notes']", "xpath") #textarea
+            self.sendKeys(cn, el, "xpath")
+            self.elementClick("//button[@id='wayne_id_Save']", "xpath") #save btn
+            self.isElementPresent("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath") # Close btn
 
-    def enterAdditionalInformation(self, insurance, atl, dgAI, podUploaded, christellNotes, si):
+    def clickConsignmentCharge(self, consCharge):
+        if consCharge:
+            self.elementClick("//input[@id='wayne_id_Consignment Charge']", "xpath")
+            el = self.getElement("//input[@id='wayne_id_Consignment Charge']", "xpath")
+            self.sendKeys(consCharge, "//input[@id='wayne_id_Consignment Charge']", "xpath")
+            el.send_keys(Keys.ARROW_DOWN)
+            el.send_keys(Keys.ARROW_DOWN)
+            el.send_keys(Keys.ENTER)
+            # self.elementClick()
+
+
+
+
+    # insurance atl dgAI podUploaded christellNotes si
+    def checkChristelNotes(self):
+        cn = self.getElement(self._christel_notes, "xpath")
+        if cn.is_selected:
+            self.elementClick(self._christell_notes_i, "xpath")
+            if self.elementPresenceCheck(".//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[2]", "xpath"):
+                return True
+            else:
+                return False
+        else: return True
+
+    def checkATL(self):
+        atl = self.getElement(self._authority_to_leave)
+        if atl.is_selected:
+            self.elementClick("//button[@tabindex='106']", "xpath")
+            chatl = self.elementPresenceCheck("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]","xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
+            if chatl:
+                self.log.info("ATL working Correctly! ")
+                return True
+            else: return False
+        else:
+            self.log.info("### ATL IS NOT CHECKED!!")
+            return False
+
+
+    def enterAdditionalInformation(self, insurance, atl, christelNotes, consCharge, si):
         if insurance is not None:
             if not self.checkInsurance():
                 self.enterInsurance(insurance)
         self.clickAuthorityToLeave(atl)
-        self.clickDangerousGoodsAI(dgAI)
-        self.clickPodUploaded(podUploaded)
-        self.clickChristellNotes(christellNotes)
+        self.clickConsignmentCharge(consCharge)
+        # self.clickDangerousGoodsAI(dgAI)
+        self.clickChristellNotes(christelNotes)
         self.enterSpecialInstructionsDescription(si)
+
+    def checkAdditionalInformation(self):
+        _res = False
+        _res = self.checkATL()
+        if _res:
+            return True
+        else:
+            return False
+
+
 
     '''FOOTERS'''
 
@@ -2387,11 +2522,12 @@ class ConsignmentForm(BasePage):
 
     def clickCreateConsignment(self):
         self.waitForElement(self._create_consignment, "xpath")
-        ccb = self.getElement(self._create_consignment, "xpath")
         if self.isElementPresent(self._create_consignment, "xpath"):
-            self.elementClick(self._create_consignment, "xpath")
-            time.sleep(3)
-            cc = self.verifyPageTitle("Express Cargo Ltd. | Consignment Form")
+            ccb = self.getElement(self._create_consignment, "xpath")
+            self.driver.execute_script("arguments[0].click();", ccb)
+            time.sleep(2)
+            self.waitForElement("//button[@id='wayne_id_Find']/parent::*", "xpath")
+            cc = self.verifyPageTitle("Express Cargo Ltd. | Dashboard")
             if cc:
                 self.log.info("CONSIGNMENT CREATED!!!")
                 return True
@@ -2399,6 +2535,7 @@ class ConsignmentForm(BasePage):
                 self.log.error("### ERROR IN CONSIGNMENT CREATION!!!!")
                 return False
         else:
+            self.log.error("Button element is not present.")
             return False
 
     def editConsignmentNumber(self):

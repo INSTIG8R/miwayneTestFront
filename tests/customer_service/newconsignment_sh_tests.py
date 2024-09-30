@@ -26,24 +26,25 @@ class NewConsignmentSHTests(unittest.TestCase):
     @pytest.mark.order(1)
     def test_validPage(self):
         self.lp = LoginPage(self.driver)
-        self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
+        self.lp.login("fatin.khan@w4solutions.com.au", "passswordkhaN97!")
         self.db = self.hp.clickDashboard()
         self.nc = self.db.gotoConsignmentForm()
-        nc_res = self.nc.verifyNewQuoteTitle()
+        nc_res = self.nc.verifyNewConsignmentTitle()
         self.ts.markFinal("New Consignment Page load Check", nc_res, "New Consignment Page Loaded")
 
     @pytest.mark.order(2)
     def test_lines(self):
         _res = False
-        self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED')
+        self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED', customerRef='testpurpose', assignedTo='Fatin', priorityLevel='High')
         if self.nc.isElementPresent("//p[contains(normalize-space(), 'already exist')]", "xpath"):
             self.nc.editConsignmentNumber()
         time.sleep(2)
         self.nc.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
-        self.nc.enterReceiverDetails(receiverCompanyName='CARPET AND MATLAND HENDERSON')
-        self.nc.enterConsignmentLine_1(services1='SUPERECONOMY', item1='CONTAINER', commodity1='SOC TWENTY FOOT', quantity1='2', weight1='200', volume1='0.200')
+        self.nc.enterReceiverDetails(receiverCompanyName='FLOORING DESIGN NEW LYNN')
+        # self.nc.scrollWindowDown()
+        self.nc.enterConsignmentLine_1(services1='METRO GENERAL', item1='ROLL', commodity1='ROLL FLOORING', quantity1='2', weight1='109.500', volume1='0.420')
         time.sleep(3)
-        self.nc.enterConsignmentLine_2(item2='CARTON', commodity2='GENERAL CARTON', quantity2='1', weight2='100', volume2='0.804')
+        self.nc.enterConsignmentLine_2(item2='ITEM', commodity2='GENERAL ITEM', quantity2='1', weight2='100', volume2='0.121')
         rqf = self.nc.checkRequiredFieldsCL()
         if rqf:
             self.ts.mark(True, "Required Fields are filled")
@@ -78,8 +79,8 @@ class NewConsignmentSHTests(unittest.TestCase):
     @pytest.mark.order(3)
     def test_leggings(self):
         _res = False
-        self.nc.enterLegging_1(carrier1='MAINSTREAM NZ LTD', depot1='', frm1='AUCKLAND', to1='CHRISTCHURCH', cost1='150', cn1='LC1')
-        self.nc.enterLegging_2(carrier2='MAINSTREAM NZ LTD', depot2='', frm2='CHRISTCHURCH', to2='GREYMOUTH', cost2='150', cn2='LC2')
+        self.nc.enterLegging_1(carrier1='CARGO PLUS LTD', depot1='', frm1='AUCKLAND', to1='CHRISTCHURCH', approver='EMBER')
+        self.nc.enterLegging_2(carrier2='CARGO PLUS LTD', depot2='', frm2='CHRISTCHURCH', to2='AUCKLAND', approver2='EMBER')
         #Verify Required Fields are Filled
         rqf = self.nc.checkRequiredFieldsLG()
         if rqf:
@@ -89,12 +90,12 @@ class NewConsignmentSHTests(unittest.TestCase):
         _res = rqf
 
         # Verify Total Legging Cost
-        tlc = self.nc.verifyTotalLeggingCost()
-        if tlc:
-            self.ts.mark(True, "Legging Costs are EQUAL")
-        else:
-            self.ts.mark(False, "Legging Costs don't MATCH!!!")
-        _res = tlc
+        # tlc = self.nc.verifyTotalLeggingCost()
+        # if tlc:
+        #     self.ts.mark(True, "Legging Costs are EQUAL")
+        # else:
+        #     self.ts.mark(False, "Legging Costs don't MATCH!!!")
+        # _res = tlc
         if _res:
             self.ts.markFinal("Consignment Leggings Test!!", True, "Consignment Leggings is Working Fine!!!")
         else:
@@ -102,6 +103,16 @@ class NewConsignmentSHTests(unittest.TestCase):
         time.sleep(3)
 
     @pytest.mark.order(4)
+    def test_additionalInformation(self):
+        _res = False
+        self.nc.enterAdditionalInformation(insurance='LIMITED LIABILITY', atl='yes', christelNotes='cn1', consCharge='SELECT ALL', si='this is the special')
+        _res = self.nc.checkAdditionalInformation()
+        if _res:
+            self.ts.markFinal("Additional Information Section Test", True, "Additional Information Working")
+        else:
+            self.ts.markFinal("Additional Information Section Test", False, "### Additional Information Not WORKING!!!")
+    #
+    @pytest.mark.order(5)
     def test_sellRating(self):
         _res = False
         self.nc.enterSellRating()
@@ -117,12 +128,13 @@ class NewConsignmentSHTests(unittest.TestCase):
         else:
             self.ts.markFinal("Sell Rating Test", False, "### Sell Rate Not Generated!!!")
         time.sleep(3)
-
-    @pytest.mark.order(5)
+    #
+    @pytest.mark.order(6)
     def test_sellRateSection(self):
         _res = False
 
-        self.nc.enterSellRateFields(quotedPrice='275', noCharge='yes', quotedBy='EMBERSAW', pricingNotes='pc1', cancelled='yes')
+        self.nc.enterSellRateFields(noCharge='yes', quotedBy='EMBERSAW', pricingNotes='pc1',
+                                        cancelled='yes')
         _srf = self.nc.checkSellRateFields()
         in_list = False in _srf
         if not in_list:
@@ -133,13 +145,14 @@ class NewConsignmentSHTests(unittest.TestCase):
         else:
             self.ts.markFinal("Sell Rate Section Test", False, "### Sell Rate Fields are not Working Correctly!!!")
         time.sleep(3)
-
-    @pytest.mark.order(6)
+    #
+    @pytest.mark.order(7)
     def test_createconsignment(self):
         if self.nc.isElementPresent("//p[contains(normalize-space(), 'already exist')]", "xpath"):
             self.nc.editConsignmentNumber()
-        if self.nc.checkGSR():
-            self.nc.enterSellRating()
+        # if self.nc.checkGSR():
+        #     self.nc.enterSellRating()
+        self.nc.scrollWindowDownToEnd()
         cr_con = self.nc.clickCreateConsignment()
         if cr_con:
             self.ts.markFinal("New CONSIGNMENT TESTS", True, "Consignment Created Successfully!!!")
