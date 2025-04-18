@@ -46,7 +46,7 @@ class LoginPage(BasePage):
         self.clickLoginButton()
 
     def verifyLoginSuccessful(self):
-        result = self.isElementPresent("//p[contains(normalize-space() , 'WELCOME TO EXPRESS CARGO LTD.')]", locatorType="xpath")
+        result = self.isElementPresent("//div/h2[contains(normalize-space() , 'WELCOME TO EXPRESS CARGO')]", locatorType="xpath")
         # self.storeCookie("sabbir.sristy@bishudigital.com", "Iamtheone@36")
         # time.sleep(1)
         return result
@@ -63,4 +63,5 @@ class LoginPage(BasePage):
 
     def verifyLoginTitle(self):
         time.sleep(5)
-        return self.verifyPageTitle("Express Cargo Ltd. | Home")
+        self.waitForElement("//h6[contains(normalize-space() , 'TRACKING')]", "xpath")
+        return self.verifyPageTitle("Express Cargo Ltd. | HOME")

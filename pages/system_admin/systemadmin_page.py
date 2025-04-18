@@ -35,11 +35,11 @@ from pages.system_admin.operations_master_data.status_page import StatusPage
 from pages.system_admin.operations_master_data.vehicles_page import VehiclesPage
 
 from pages.system_admin.sales_master_data.customercommoditysrschedule_page import CustomerCommodityCRSchedulePage
-from pages.system_admin.sales_master_data.customermetrosrschdeule_page import CustomerMetroSRSchedulePage
-from pages.system_admin.sales_master_data.customersrschedule_page import CustomerSRSchedulePage
-from pages.system_admin.sales_master_data.generatecrschedule_page import GenerateCRSchedulePage
+from pages.system_admin.sales_master_data.customermetrosrschedule_page import CustomerMetroSRSchedulePage
+from pages.system_admin.sales_master_data.customerspecificsrschedule_page import CustomerSSRSchedulePage
+from pages.system_admin.sales_master_data.generalcrschedule_page import GeneralCRSchedulePage
 from pages.system_admin.sales_master_data.industry_page import IndustryPage
-from pages.system_admin.sales_master_data.metrosrschedule_page import MetroSRSchedulePage
+from pages.system_admin.sales_master_data.metrogeneralrateschedule_page import MetroGeneralRSchedulePage
 from pages.system_admin.sales_master_data.schedule_types import ScheduleTypesPage
 
 from pages.system_admin.system_master_data.configurations_page import ConfigurationsPage
@@ -48,7 +48,7 @@ from pages.system_admin.system_master_data.migrationdictionary_page import Migra
 from pages.system_admin.system_master_data.roles_page import RolesPage
 
 
-class SystemAdminPage(BasePage):
+class MasterDataPage(BasePage):
     log = cl.customLogger(logging.DEBUG)
 
     def __init__(self, driver):
@@ -88,10 +88,10 @@ class SystemAdminPage(BasePage):
 
     #SALES MASTER DATA
 
-    _general_cr_schedule = "wayne_id_General Cost Rate Schedule"
-    _metro_sr_schedule = "wayne_id_Metro Sell Rate Schedule"
+    _general_cr_schedule = "wayne_id_General Cost Rate Schedules"
+    _metro_general_r_schedule = "wayne_id_Metro General Rate Schedule"
     _customer_metro_sr_schedule = "wayne_id_Customer Metro Sell Rate Schedule"
-    _customer_sr_schedule = "wayne_id_Customer Sell Rate Schedule"
+    _customer_ssr_schedule = "wayne_id_Customer Specific Sell Rate Schedule"
     _customer_commodity_sr_schedule = "wayne_id_Customer Commodity Sell Rate Schedule"
     _industry = "wayne_id_Industry"
     _schedule_types = "wayne_id_Schedule Types"
@@ -113,13 +113,13 @@ class SystemAdminPage(BasePage):
 
 
     #verification process
-    _add_btn = "//button[@aria-label = 'Add']"
+    _add_btn = "//button[@aria-label = 'Create']"
 
 
     ''' Fields '''
 
-    def verifySystemAdminTitle(self):
-        return self.verifyPageTitle("Express Cargo Ltd. | System Administration")
+    def verifyMasterDataTitle(self):
+        return self.verifyPageTitle("MASTER DATA")
 
     '''OPERATIONS MASTER DATA'''
 
@@ -276,14 +276,14 @@ class SystemAdminPage(BasePage):
         iv = InvoicesPage(self.driver)
         return iv
 
-    def gotoSurcharge(self):
-        self.waitForElement(self._surcharge)
-        self.elementClick(self._surcharge)
-        # verify page loaded
-        self.waitForElement(self._add_btn, locatorType='xpath')
-        # return Surcharge Page
-        su = SurchargePage(self.driver)
-        return su
+    # def gotoSurcharge(self):
+    #     self.waitForElement(self._surcharge)
+    #     self.elementClick(self._surcharge)
+    #     # verify page loaded
+    #     self.waitForElement(self._add_btn, locatorType='xpath')
+    #     # return Surcharge Page
+    #     su = SurchargePage(self.driver)
+    #     return su
 
     def gotoCustomers(self):
         self.waitForElement(self._customers)
@@ -333,40 +333,24 @@ class SystemAdminPage(BasePage):
 
     '''SALES MASTER DATA'''
 
-    def gotoGenerateCRSchedule(self):
+    def gotoGeneralCRSchedule(self):
         self.waitForElement(self._general_cr_schedule)
         self.elementClick(self._general_cr_schedule)
         # verify page loaded
         self.waitForElement(self._add_btn, locatorType='xpath')
         # return Generate CR Schedule Page
-        gs = GenerateCRSchedulePage(self.driver)
+        gs = GeneralCRSchedulePage(self.driver)
+        self.elementClick("//div[@class='css-mkdn3h']//button[@type='button']//*[name()='svg']", "xpath")
         return gs
 
-    def gotoMetroSRSchedule(self):
-        self.waitForElement(self._metro_sr_schedule)
-        self.elementClick(self._metro_sr_schedule)
-        # verify page loaded
-        self.waitForElement(self._add_btn, locatorType='xpath')
-        # return Metro SR Schedule Page
-        ms = MetroSRSchedulePage(self.driver)
-        return ms
 
-    def gotoCustomerMetroSRSchedule(self):
-        self.waitForElement(self._customer_metro_sr_schedule)
-        self.elementClick(self._customer_metro_sr_schedule)
-        # verify page loaded
-        self.waitForElement(self._add_btn, locatorType='xpath')
-        # return Customer Metro SR Schedule Page
-        cms =CustomerMetroSRSchedulePage(self.driver)
-        return cms
-
-    def gotoCustomerSRSchedule(self):
-        self.waitForElement(self._customer_sr_schedule)
-        self.elementClick(self._customer_sr_schedule)
+    def gotoCustomerSSRSchedule(self):
+        self.waitForElement(self._customer_ssr_schedule)
+        self.elementClick(self._customer_ssr_schedule)
         # verify page loaded
         self.waitForElement(self._add_btn, locatorType='xpath')
         # return Customer SR Schedule Page
-        cs = CustomerSRSchedulePage(self.driver)
+        cs = CustomerSSRSchedulePage(self.driver)
         return cs
 
     def gotoCustomerCommoditySRSchedule(self):
@@ -376,7 +360,27 @@ class SystemAdminPage(BasePage):
         self.waitForElement(self._add_btn, locatorType='xpath')
         # return Customer Commodity CR Schedule Page
         ccs =CustomerCommodityCRSchedulePage(self.driver)
+        self.elementClick("//div[@class='css-mkdn3h']//button[@type='button']//*[name()='svg']", "xpath")
         return ccs
+
+    def gotoCustomerMetroSRSchedule(self):
+        self.waitForElement(self._customer_metro_sr_schedule)
+        self.elementClick(self._customer_metro_sr_schedule)
+        # verify page loaded
+        self.waitForElement(self._add_btn, locatorType='xpath')
+        ccs = CustomerMetroSRSchedulePage(self.driver)
+        self.elementClick("//div[@class='css-mkdn3h']//button[@type='button']//*[name()='svg']", "xpath")
+        return ccs
+
+    def gotoMetroGeneralRSchedule(self):
+        self.waitForElement(self._metro_general_r_schedule)
+        self.elementClick(self._metro_general_r_schedule)
+        # verify page loaded
+        self.waitForElement(self._add_btn, locatorType='xpath')
+        ccs = MetroGeneralRSchedulePage(self.driver)
+        self.elementClick("//div[@class='css-mkdn3h']//button[@type='button']//*[name()='svg']", "xpath")
+        return ccs
+
 
     def gotoIndustry(self):
         self.waitForElement(self._industry)

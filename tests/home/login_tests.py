@@ -15,8 +15,8 @@ class LoginTests(unittest.TestCase):
 
     @pytest.mark.run(order=1)
     def test_validLogin(self):
-        self.lp.login("fatin.khan@w4solutions.com.au", "passswordkhaN97!")
-        time.sleep(2)
+        self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
+        time.sleep(1)
         result1 = self.lp.verifyLoginTitle()
         self.ts.mark(result1, "Title is correct")
         result1 = self.lp.verifyLoginSuccessful()

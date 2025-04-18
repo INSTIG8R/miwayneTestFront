@@ -218,7 +218,7 @@ class CurrentConsignmentPage(BasePage):
                           sender='', receiver='', container_number='', carrier='', status='', priority_level='', assigned_to=''):
         # remove filters first
         self.waitForElement(self._clear_filter_btn, "xpath")
-        if self.getElement(self._clear_filter_btn, "xpath").is_enabled():
+        if self.isElementPresent(self._clear_filter_btn, "xpath"):
             self.clearFilter()
         self.enterConnote(connote)
         self.enterDateReadyFrom(dateReadyFrom)

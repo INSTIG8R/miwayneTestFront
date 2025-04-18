@@ -19,28 +19,10 @@ def oneTimeSetUp(request, browser, headless):
     elif browser == "Edge":
         options = webdriver.EdgeOptions()
     else:
-        options = webdriver.EdgeOptions()
+        options = webdriver.ChromeOptions()
     if headless:
         options.add_argument("--headless")
     driver = wdf.getWebDriverInstance(options)
-
-    # if headless:
-    #     if browser == "Chrome":
-    #         options = webdriver.ChromeOptions()
-    #         options.add_argument("--headless")
-    #         driver = webdriver.Chrome(options=options)
-    #     elif browser == "Edge":
-    #         options = webdriver.EdgeOptions()
-    #         options.add_argument("headless")
-    #         driver = webdriver.Edge(options=options)
-    #
-    #     else:
-    #         options = webdriver.EdgeOptions()
-    #         options.add_argument("headless")
-    #         driver = webdriver.Edge(options=options)
-    #     #... other browsers...
-    # else:
-    #     driver = wdf.getWebDriverInstance()
 
     if request.cls is not None:
         request.cls.driver = driver

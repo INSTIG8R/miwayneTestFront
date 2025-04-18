@@ -7,7 +7,6 @@ import pytest
 from pages.customer_service.currentconsignment_page import CurrentConsignmentPage
 from ddt import ddt, data, unpack
 from utilities.read_data import getCSVData
-import allure
 
 
 @pytest.mark.use_fixtures("oneTimeSetup", "setUp")

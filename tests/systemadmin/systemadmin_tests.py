@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from pages.system_admin.systemadmin_page import SystemAdminPage
+from pages.system_admin.systemadmin_page import MasterDataPage
 from pages.home.home_page import HomePage
 from pages.home.login_page import LoginPage
 from utilities.teststatus import TestStatus
@@ -14,14 +14,14 @@ class SystemAdminTests(unittest.TestCase):
     def objectSetup(self, oneTimeSetUp):
         self.hp = HomePage(self.driver)
         self.ts = TestStatus(self.driver)
-        self.sa = SystemAdminPage(self.driver)
+        self.sa = MasterDataPage(self.driver)
 
     @pytest.mark.order(1)
     def test_validPage(self):
         self.lp = LoginPage(self.driver)
         self.lp.login("sabbir.sristy@bishudigital.com", "Iamtheone@36")
-        self.sa = self.hp.gotoSystemAdministration()
-        result1 = self.sa.verifySystemAdminTitle()
+        self.sa = self.hp.gotoMasterData()
+        result1 = self.sa.verifyMasterDataTitle()
         self.ts.markFinal("System Admin Title verification", result1, "System Admin page loaded")
 
     @pytest.mark.order(2)
@@ -125,7 +125,7 @@ class SystemAdminTests(unittest.TestCase):
         # SALES MASTER DATA
 
         self.gs = self.sa.gotoGenerateCRSchedule()
-        gs_test = self.gs.verifyGenerateCRScheduleTitle()
+        gs_test = self.gs.verifyMetroGenerateRScheduleTitle()
         self.ts.mark(gs_test, "Generate CR Schedule Page Loaded")
         self.driver.back()
         self.ms = self.sa.gotoMetroSRSchedule()
@@ -136,8 +136,8 @@ class SystemAdminTests(unittest.TestCase):
         cms_test = self.cms.verifyCustomerMetroSRScheduleTitle()
         self.ts.mark(cms_test, "Customer Metro SR Schedule Page Loaded")
         self.driver.back()
-        self.cs = self.sa.gotoCustomerSRSchedule()
-        cs_test = self.cs.verifyCustomerSRScheduleTitle()
+        self.cs = self.sa.gotoCustomerSSRSchedule()
+        cs_test = self.cs.verifyCustomerSSRScheduleTitle()
         self.ts.mark(cs_test, "Customer SR Schedule Page Loaded")
         self.driver.back()
         self.ccs = self.sa.gotoCustomerCommoditySRSchedule()

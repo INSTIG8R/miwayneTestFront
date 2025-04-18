@@ -1,3 +1,11 @@
-screenshots/
+/screenshots/
 .md
 !README.md
+*.html
+llf.py
+locustfile.py
+only_locust.py
+sakir_tests.py
+base/conf_actual.py
+automation.log
+/NewconsignmentPageReports/

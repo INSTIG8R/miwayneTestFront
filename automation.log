@@ -1,360 +1,1617 @@
-05/07/2024 02:04:07 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:04:07 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:04:07 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:04:07 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:04:07 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:04:38 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:04:38 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:04:44 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:04:44 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:04:44 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:04:44 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:04:56 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:04:56 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:04:56 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:04:56 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:04:56 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:04:56 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:05:00 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:05:15 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:05:15 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:05:15 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:05:15 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:05:15 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:05:17 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:05:18 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:05:18 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:05:26 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:05:26 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:05:26 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
-05/07/2024 02:05:26 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
-05/07/2024 02:05:26 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
-05/07/2024 02:05:26 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715069126737.png
-05/07/2024 02:05:26 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
-05/07/2024 02:05:51 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
-05/07/2024 02:06:19 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:06:20 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:06:20 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:06:20 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715069180042.png
-05/07/2024 02:06:20 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
-05/07/2024 02:15:27 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:15:27 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:15:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:15:27 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:15:27 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:15:58 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:15:58 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:16:03 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:16:03 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:16:03 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:16:03 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:16:15 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:16:15 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:16:15 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:16:15 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:16:15 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:16:15 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:16:19 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:16:34 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:16:34 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:16:34 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:16:34 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:16:34 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:16:36 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:16:37 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:16:37 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:16:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:16:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:16:45 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:16:45 PM - QuoteForm - INFO: QUOTE CREATED!!!
-05/07/2024 02:16:45 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
-05/07/2024 02:16:45 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
-05/07/2024 02:17:14 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
-05/07/2024 02:18:15 PM - QuoteForm - ERROR: ###Customer Notes:  first note is Required - Not Working!!!
-05/07/2024 02:18:55 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:19:23 PM - QuoteForm - ERROR: ### Customer Notes Not Stored!!!
-05/07/2024 02:19:23 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:19:23 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715069963043.png
-05/07/2024 02:19:23 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
-05/07/2024 02:21:31 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:21:31 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:21:31 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:21:31 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:21:31 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:22:02 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:22:02 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:22:07 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:22:07 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:22:07 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:22:07 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:22:19 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:22:19 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:22:19 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:22:19 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:22:19 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:22:19 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:22:23 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:22:38 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:22:38 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:22:38 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:22:38 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:22:38 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:22:40 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:22:41 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:22:41 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:22:46 PM - QuoteForm - INFO: Authority to Leave Note is present!!!
-05/07/2024 02:22:47 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:22:47 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Fields are Working Correctly!!!
-05/07/2024 02:22:47 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
-05/07/2024 02:22:55 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:22:55 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:22:55 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
-05/07/2024 02:22:55 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
-05/07/2024 02:22:55 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
-05/07/2024 02:22:55 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715070175563.png
-05/07/2024 02:22:55 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
-05/07/2024 02:26:06 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:26:06 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:26:06 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:26:06 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:26:06 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:26:37 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:26:37 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:26:42 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:26:42 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:26:42 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:26:42 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:26:54 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:26:54 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:26:54 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:26:54 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:26:54 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:26:54 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:26:58 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:27:13 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:27:13 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:27:13 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:27:13 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:27:13 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:27:15 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:27:17 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:27:17 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:27:45 PM - QuoteForm - ERROR: ###Authority To Leave first note is Required - Not Working!!!
-05/07/2024 02:28:14 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:28:14 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:28:14 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:28:15 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715070494842.png
-05/07/2024 02:28:15 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
-05/07/2024 02:35:26 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:35:26 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:35:26 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:35:26 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:35:26 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:35:57 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:35:57 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:36:02 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:36:02 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:36:02 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:36:02 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:36:14 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:36:14 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:36:14 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:36:14 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:36:14 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:36:14 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:36:18 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:36:33 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:36:33 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:36:33 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:36:33 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:36:33 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:36:35 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:36:36 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:36:36 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:36:41 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:36:42 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:36:42 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:36:43 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715071002909.png
-05/07/2024 02:36:43 PM - TestStatus - ERROR: Additional Information  Section Test### TEST FAILED
-05/07/2024 02:47:07 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:47:07 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:47:07 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:47:07 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:47:07 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:47:37 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:47:37 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:47:42 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:47:42 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:47:42 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:47:42 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:47:54 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:47:54 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:47:54 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:47:54 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:47:54 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:47:54 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:47:58 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:48:13 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:48:13 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:48:13 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:48:13 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:48:13 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:48:15 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:48:16 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:48:16 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:48:21 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:48:22 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:48:22 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:48:22 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715071702863.png
-05/07/2024 02:48:29 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:48:29 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:48:29 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
-05/07/2024 02:48:29 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
-05/07/2024 02:48:29 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
-05/07/2024 02:48:29 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715071709059.png
-05/07/2024 02:48:29 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
-05/07/2024 02:51:27 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:51:27 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:51:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:51:27 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:51:27 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:51:58 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:51:58 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:52:03 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:52:03 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:52:03 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:52:03 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:52:15 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:52:15 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:52:15 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:52:15 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:52:15 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:52:15 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:52:19 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:52:34 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:52:34 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:52:34 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:52:34 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:52:34 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:52:36 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:52:37 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:52:37 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 02:52:42 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:52:43 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:52:43 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:52:44 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715071963895.png
-05/07/2024 02:52:50 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:52:50 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:52:50 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
-05/07/2024 02:52:50 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
-05/07/2024 02:52:50 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
-05/07/2024 02:52:50 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715071970137.png
-05/07/2024 02:52:50 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
-05/07/2024 02:57:39 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:57:39 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:57:39 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 02:57:39 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 02:57:39 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 02:58:09 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 02:58:09 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 02:58:14 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 02:58:14 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 02:58:14 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:58:14 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 02:58:26 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 02:58:26 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 02:58:26 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 02:58:26 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 02:58:26 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 02:58:26 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 02:58:30 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 02:58:45 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 02:58:45 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 02:58:45 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 02:58:45 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 02:58:45 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 02:58:47 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 02:58:48 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 02:58:53 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 02:58:55 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 02:58:57 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:58:57 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715072337019.png
-05/07/2024 02:58:59 PM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate to Additional Information Fields are not Working Correctly!!!
-05/07/2024 02:58:59 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate to Additional Information Fields are not Working Correctly!!!.1715072339144.png
-05/07/2024 02:58:59 PM - TestStatus - ERROR: Sell Rate to  Additional Information Section Test### TEST FAILED
-05/07/2024 02:59:05 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 02:59:05 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 02:59:05 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
-05/07/2024 02:59:05 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
-05/07/2024 02:59:05 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
-05/07/2024 02:59:05 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715072345399.png
-05/07/2024 02:59:05 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
-05/07/2024 03:04:58 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 03:04:58 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 03:04:58 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 03:04:58 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 03:04:58 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 03:05:29 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 03:05:29 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 03:05:34 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 03:05:34 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 03:05:34 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 03:05:34 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 03:05:46 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 03:05:46 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 03:05:46 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 03:05:46 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 03:05:46 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 03:05:46 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 03:05:50 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 03:06:05 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 03:06:05 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 03:06:05 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 03:06:05 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 03:06:05 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 03:06:07 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 03:06:08 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 03:06:08 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 03:06:13 PM - QuoteForm - ERROR: ### Authority to Leave Note is NOT STORED!!!
-05/07/2024 03:06:14 PM - QuoteForm - INFO: Customer Notes stored!!
-05/07/2024 03:06:14 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Fields are not Working Correctly!!!
-05/07/2024 03:06:14 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Fields are not Working Correctly!!!.1715072774808.png
-05/07/2024 03:06:21 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 03:06:21 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 03:06:21 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
-05/07/2024 03:06:21 PM - QuoteForm - ERROR: ### ERROR IN QUOTE CREATION!!!!
-05/07/2024 03:06:21 PM - TestStatus - INFO: ###Verfication Failed  ::### Quote couldn't be CREATED!!!
-05/07/2024 03:06:21 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Quote couldn't be CREATED!!!.1715072781035.png
-05/07/2024 03:06:21 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
-05/07/2024 03:11:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 03:11:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | QUOTE FORM
-05/07/2024 03:11:45 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 03:11:45 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Form Loaded
-05/07/2024 03:11:45 PM - TestStatus - INFO: Quote Form load Check### TEST PASSED
-05/07/2024 03:12:15 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
-05/07/2024 03:12:15 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Not Enabled Yet - Working
-05/07/2024 03:12:20 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 200.0
-05/07/2024 03:12:20 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 200.0
-05/07/2024 03:12:20 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 03:12:20 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
-05/07/2024 03:12:33 PM - QuoteForm - INFO: Actual Value From Application Web UI --> :: 0.896
-05/07/2024 03:12:33 PM - QuoteForm - INFO: Expected Value From Calculations --> :: 0.896
-05/07/2024 03:12:33 PM - QuoteForm - INFO: ### VALUES MATCHED !!!
-05/07/2024 03:12:33 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
-05/07/2024 03:12:33 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
-05/07/2024 03:12:33 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
-05/07/2024 03:12:36 PM - QuoteForm - INFO: Price Estimated!!!
-05/07/2024 03:12:51 PM - QuoteForm - INFO: Rate Estimated!!!
-05/07/2024 03:12:51 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
-05/07/2024 03:12:51 PM - TestStatus - INFO: ###Verfication Successful  ::Price estimated Successfully
-05/07/2024 03:12:51 PM - TestStatus - INFO: ###Verfication Successful  ::Price Estimated!!!
-05/07/2024 03:12:51 PM - TestStatus - INFO: Price Estimating Test### TEST PASSED
-05/07/2024 03:12:53 PM - QuoteForm - ERROR: ###First Pricing Note is Required - Not Working!!!
-05/07/2024 03:12:55 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
-05/07/2024 03:12:55 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
-05/07/2024 03:13:05 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 03:13:05 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | ESTIMATED QUOTE
-05/07/2024 03:13:05 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
-05/07/2024 03:13:05 PM - QuoteForm - INFO: QUOTE CREATED!!!
-05/07/2024 03:13:05 PM - TestStatus - INFO: ###Verfication Successful  ::Quote Created Successfully!!!
-05/07/2024 03:13:05 PM - TestStatus - INFO: New CONSIGNMENT TESTS### TEST PASSED
+07/09/2024 10:16:27 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:16:27 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:16:27 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/09/2024 10:16:27 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/09/2024 10:16:27 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/09/2024 10:17:10 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:17:12 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/09/2024 10:17:12 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/09/2024 10:17:12 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:17:12 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/09/2024 10:17:18 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/09/2024 10:17:18 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/09/2024 10:17:18 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:17:18 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/09/2024 10:17:18 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/09/2024 10:17:18 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/09/2024 10:17:46 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:17:46 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/09/2024 10:17:46 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/09/2024 10:17:49 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/09/2024 10:18:04 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/09/2024 10:18:04 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/09/2024 10:18:04 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/09/2024 10:18:05 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/09/2024 10:18:08 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/09/2024 10:18:08 AM - ConsignmentForm - INFO: ### General Error ....
+07/09/2024 10:18:41 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/09/2024 10:18:41 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/09/2024 10:18:51 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:18:51 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/09/2024 10:18:51 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/09/2024 10:18:51 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/09/2024 10:18:51 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/09/2024 10:18:51 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720498731292.png
+07/09/2024 10:18:51 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/09/2024 10:22:23 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:22:23 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:22:23 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/09/2024 10:22:23 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/09/2024 10:22:23 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/09/2024 10:23:07 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:23:09 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/09/2024 10:23:09 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/09/2024 10:23:09 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:23:09 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/09/2024 10:23:15 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/09/2024 10:23:15 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/09/2024 10:23:15 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:23:15 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/09/2024 10:23:15 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/09/2024 10:23:15 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/09/2024 10:23:44 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:23:44 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/09/2024 10:23:44 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/09/2024 10:23:47 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/09/2024 10:24:02 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/09/2024 10:24:02 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/09/2024 10:24:02 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/09/2024 10:24:03 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/09/2024 10:24:06 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/09/2024 10:24:06 AM - ConsignmentForm - INFO: ### General Error ....
+07/09/2024 10:24:39 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/09/2024 10:24:39 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/09/2024 10:24:49 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:24:49 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/09/2024 10:24:49 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/09/2024 10:24:49 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/09/2024 10:24:49 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/09/2024 10:24:49 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720499089187.png
+07/09/2024 10:24:49 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/09/2024 10:31:39 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:31:39 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:31:39 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/09/2024 10:31:39 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/09/2024 10:31:39 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/09/2024 10:32:22 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:32:24 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/09/2024 10:32:24 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/09/2024 10:32:24 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:32:24 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/09/2024 10:32:31 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/09/2024 10:32:31 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/09/2024 10:32:31 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:32:31 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/09/2024 10:32:31 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/09/2024 10:32:31 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/09/2024 10:32:59 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:32:59 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/09/2024 10:32:59 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/09/2024 10:33:02 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/09/2024 10:33:17 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/09/2024 10:33:17 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/09/2024 10:33:17 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/09/2024 10:33:18 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/09/2024 10:33:21 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/09/2024 10:33:21 AM - ConsignmentForm - INFO: ### General Error ....
+07/09/2024 10:33:54 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/09/2024 10:33:54 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/09/2024 10:34:04 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:34:04 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/09/2024 10:34:04 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/09/2024 10:34:04 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/09/2024 10:34:04 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/09/2024 10:34:04 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720499644064.png
+07/09/2024 10:34:04 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/09/2024 10:39:31 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:39:31 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:39:31 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/09/2024 10:39:31 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/09/2024 10:39:31 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/09/2024 10:40:15 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:40:17 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/09/2024 10:40:17 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/09/2024 10:40:17 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:40:17 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/09/2024 10:40:23 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/09/2024 10:40:23 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/09/2024 10:40:23 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 10:40:23 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/09/2024 10:40:23 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/09/2024 10:40:23 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/09/2024 10:40:52 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 10:40:52 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/09/2024 10:40:52 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/09/2024 10:40:55 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/09/2024 10:41:10 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/09/2024 10:41:10 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/09/2024 10:41:10 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/09/2024 10:41:11 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/09/2024 10:41:14 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/09/2024 10:41:14 AM - ConsignmentForm - INFO: ### General Error ....
+07/09/2024 10:41:47 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/09/2024 10:41:47 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/09/2024 10:41:57 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 10:41:57 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/09/2024 10:41:57 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/09/2024 10:41:57 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/09/2024 10:41:57 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/09/2024 10:41:57 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720500117612.png
+07/09/2024 10:41:57 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/09/2024 11:32:05 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 11:32:05 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 11:32:05 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/09/2024 11:32:05 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/09/2024 11:32:05 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/09/2024 11:32:48 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 11:32:50 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/09/2024 11:32:50 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/09/2024 11:32:50 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 11:32:50 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/09/2024 11:32:57 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/09/2024 11:32:57 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/09/2024 11:32:57 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/09/2024 11:32:57 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/09/2024 11:32:57 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/09/2024 11:32:57 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/09/2024 11:33:26 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/09/2024 11:33:26 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/09/2024 11:33:26 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/09/2024 11:33:29 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/09/2024 11:33:44 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/09/2024 11:33:44 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/09/2024 11:33:44 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/09/2024 11:33:48 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/09/2024 11:33:51 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/09/2024 11:33:51 AM - ConsignmentForm - INFO: ### General Error ....
+07/09/2024 11:33:51 AM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+07/09/2024 11:33:55 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/09/2024 11:33:58 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/09/2024 11:33:58 AM - ConsignmentForm - INFO: ### General Error ....
+07/09/2024 11:33:58 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/09/2024 11:33:58 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720503238671.png
+07/09/2024 11:33:58 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/09/2024 11:33:58 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720503238799.png
+07/09/2024 11:33:58 AM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+07/09/2024 11:34:27 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/09/2024 11:34:27 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/09/2024 11:34:27 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/09/2024 11:34:27 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/09/2024 11:34:27 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/09/2024 11:34:27 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720503267656.png
+07/09/2024 11:34:27 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 10:46:15 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 10:46:15 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 10:46:15 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 10:46:15 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 10:46:15 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 10:46:58 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 10:47:00 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/10/2024 10:47:00 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/10/2024 10:47:00 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 10:47:00 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/10/2024 10:47:06 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/10/2024 10:47:06 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/10/2024 10:47:06 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 10:47:06 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/10/2024 10:47:06 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/10/2024 10:47:06 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/10/2024 10:47:34 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 10:47:34 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/10/2024 10:47:34 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/10/2024 10:47:37 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 10:47:52 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/10/2024 10:47:52 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/10/2024 10:47:52 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/10/2024 10:47:53 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/10/2024 10:47:56 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 10:47:56 AM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 10:48:30 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/10/2024 10:48:30 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/10/2024 10:48:39 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 10:48:39 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 10:48:39 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 10:48:39 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 10:48:39 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 10:48:39 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720586919317.png
+07/10/2024 10:48:39 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 10:52:45 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 10:52:45 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 10:52:45 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 10:52:45 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 10:52:45 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 10:53:28 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 10:53:30 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/10/2024 10:53:30 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/10/2024 10:53:30 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 10:53:30 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/10/2024 10:53:37 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/10/2024 10:53:37 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/10/2024 10:53:37 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 10:53:37 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/10/2024 10:53:37 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/10/2024 10:53:37 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/10/2024 10:54:07 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 10:54:07 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/10/2024 10:54:07 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/10/2024 10:54:10 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 10:54:25 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/10/2024 10:54:25 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/10/2024 10:54:25 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/10/2024 10:54:29 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 10:54:32 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 10:54:32 AM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 10:54:32 AM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+07/10/2024 10:54:37 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 10:54:40 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 10:54:40 AM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 10:54:40 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/10/2024 10:54:40 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720587280170.png
+07/10/2024 10:54:40 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/10/2024 10:54:40 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720587280773.png
+07/10/2024 10:54:40 AM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+07/10/2024 10:55:09 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 10:55:09 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 10:55:09 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 10:55:09 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 10:55:09 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 10:55:09 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720587309548.png
+07/10/2024 10:55:09 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 11:14:02 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 11:14:02 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 11:14:02 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 11:14:02 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 11:14:02 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 11:14:45 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 11:14:47 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/10/2024 11:14:47 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/10/2024 11:14:47 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 11:14:47 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/10/2024 11:14:53 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/10/2024 11:14:53 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/10/2024 11:14:53 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 11:14:53 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/10/2024 11:14:53 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/10/2024 11:14:53 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/10/2024 11:15:21 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 11:15:21 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/10/2024 11:15:21 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/10/2024 11:15:24 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 11:15:39 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/10/2024 11:15:39 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/10/2024 11:15:39 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/10/2024 11:15:43 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 11:15:46 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 11:15:46 AM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 11:15:46 AM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+07/10/2024 11:15:50 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 11:15:53 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 11:15:53 AM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 11:15:53 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/10/2024 11:15:53 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720588553701.png
+07/10/2024 11:15:53 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/10/2024 11:15:53 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720588553808.png
+07/10/2024 11:15:53 AM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+07/10/2024 11:16:22 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 11:16:22 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 11:16:22 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 11:16:22 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 11:16:22 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 11:16:22 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720588582474.png
+07/10/2024 11:16:22 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 01:55:10 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 01:55:10 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 01:55:10 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 01:55:10 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 01:55:10 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 01:55:53 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 01:55:55 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/10/2024 01:55:55 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/10/2024 01:55:55 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 01:55:55 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/10/2024 01:56:01 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/10/2024 01:56:01 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/10/2024 01:56:01 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 01:56:01 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/10/2024 01:56:01 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/10/2024 01:56:01 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/10/2024 01:56:29 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 01:56:29 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/10/2024 01:56:29 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/10/2024 01:56:32 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 01:56:47 PM - ConsignmentForm - INFO: ATL working Correctly! 
+07/10/2024 01:56:47 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/10/2024 01:56:47 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/10/2024 01:56:51 PM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 01:56:54 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 01:56:54 PM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 01:56:54 PM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+07/10/2024 01:56:58 PM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 01:57:01 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 01:57:01 PM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 01:57:01 PM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/10/2024 01:57:01 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720598221397.png
+07/10/2024 01:57:01 PM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/10/2024 01:57:01 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720598221504.png
+07/10/2024 01:57:01 PM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+07/10/2024 01:57:30 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 01:57:30 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 01:57:30 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 01:57:30 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 01:57:30 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 01:57:30 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720598250226.png
+07/10/2024 01:57:30 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 02:12:44 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:12:44 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:12:44 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 02:12:44 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 02:12:44 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 02:13:28 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 02:13:30 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/10/2024 02:13:30 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/10/2024 02:13:30 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 02:13:30 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/10/2024 02:13:36 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/10/2024 02:13:36 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/10/2024 02:13:36 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 02:13:36 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/10/2024 02:13:36 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/10/2024 02:13:36 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/10/2024 02:14:05 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 02:14:05 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/10/2024 02:14:05 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/10/2024 02:14:08 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 02:14:22 PM - ConsignmentForm - INFO: ATL working Correctly! 
+07/10/2024 02:14:22 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/10/2024 02:14:22 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/10/2024 02:14:23 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/10/2024 02:14:26 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 02:14:26 PM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 02:14:59 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/10/2024 02:14:59 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/10/2024 02:15:08 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:15:08 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 02:15:08 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 02:15:08 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 02:15:08 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 02:15:08 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720599308840.png
+07/10/2024 02:15:08 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 02:19:57 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:19:57 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:19:57 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 02:19:57 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 02:19:57 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 02:20:40 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 02:20:42 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/10/2024 02:20:42 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/10/2024 02:20:42 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 02:20:42 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/10/2024 02:20:48 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/10/2024 02:20:48 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/10/2024 02:20:48 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/10/2024 02:20:48 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/10/2024 02:20:48 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/10/2024 02:20:48 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/10/2024 02:21:17 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/10/2024 02:21:17 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/10/2024 02:21:17 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/10/2024 02:21:20 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 02:21:35 PM - ConsignmentForm - INFO: ATL working Correctly! 
+07/10/2024 02:21:35 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/10/2024 02:21:35 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/10/2024 02:21:36 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/10/2024 02:21:39 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 02:21:39 PM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 02:21:59 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/10/2024 02:21:59 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/10/2024 02:21:59 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/10/2024 02:21:59 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/10/2024 02:22:16 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/10/2024 02:22:16 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/10/2024 02:22:25 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:22:25 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 02:22:25 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 02:22:25 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 02:22:25 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 02:22:25 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720599745559.png
+07/10/2024 02:22:25 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/10/2024 02:35:37 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:35:37 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:35:37 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/10/2024 02:35:37 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/10/2024 02:35:37 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/10/2024 02:36:20 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/10/2024 02:36:44 PM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Not WORKING!!!
+07/10/2024 02:36:44 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Not WORKING!!!.1720600604351.png
+07/10/2024 02:36:44 PM - TestStatus - ERROR: Additional Information Section Test### TEST FAILED
+07/10/2024 02:37:07 PM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/10/2024 02:37:11 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/10/2024 02:37:11 PM - ConsignmentForm - INFO: ### General Error ....
+07/10/2024 02:37:31 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/10/2024 02:37:31 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/10/2024 02:37:31 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/10/2024 02:37:31 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/10/2024 02:38:07 PM - ConsignmentForm - ERROR: ###First Cancelled Note is Required - Not Working!!!
+07/10/2024 02:38:20 PM - ConsignmentForm - ERROR: ### STATUS didn't change to CANCELLED!!!
+07/10/2024 02:38:49 PM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Fields are not Working Correctly!!!
+07/10/2024 02:38:49 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Fields are not Working Correctly!!!.1720600729610.png
+07/10/2024 02:38:49 PM - TestStatus - ERROR: Sell Rate Section Test### TEST FAILED
+07/10/2024 02:38:56 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/10/2024 02:38:56 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/10/2024 02:38:56 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/10/2024 02:38:56 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/10/2024 02:38:56 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/10/2024 02:38:56 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720600736296.png
+07/10/2024 02:38:56 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/11/2024 10:42:21 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 10:42:21 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 10:42:21 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/11/2024 10:42:21 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/11/2024 10:42:21 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/11/2024 10:43:04 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/11/2024 10:43:28 AM - TestStatus - INFO: ###Verfication Failed  ::### Additional Information Not WORKING!!!
+07/11/2024 10:43:28 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Additional Information Not WORKING!!!.1720673008158.png
+07/11/2024 10:43:28 AM - TestStatus - ERROR: Additional Information Section Test### TEST FAILED
+07/11/2024 10:43:51 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/11/2024 10:43:54 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/11/2024 10:43:54 AM - ConsignmentForm - INFO: ### General Error ....
+07/11/2024 10:44:15 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/11/2024 10:44:15 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/11/2024 10:44:15 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/11/2024 10:44:15 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/11/2024 10:44:51 AM - ConsignmentForm - ERROR: ###First Cancelled Note is Required - Not Working!!!
+07/11/2024 10:45:03 AM - ConsignmentForm - ERROR: ### STATUS didn't change to CANCELLED!!!
+07/11/2024 10:45:33 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Fields are not Working Correctly!!!
+07/11/2024 10:45:33 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Fields are not Working Correctly!!!.1720673133443.png
+07/11/2024 10:45:33 AM - TestStatus - ERROR: Sell Rate Section Test### TEST FAILED
+07/11/2024 10:45:40 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 10:45:40 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/11/2024 10:45:40 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/11/2024 10:45:40 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/11/2024 10:45:40 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/11/2024 10:45:40 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720673140096.png
+07/11/2024 10:45:40 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/11/2024 10:47:45 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 10:47:45 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 10:47:45 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/11/2024 10:47:45 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/11/2024 10:47:45 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/11/2024 10:48:28 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/11/2024 10:48:30 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/11/2024 10:48:30 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/11/2024 10:48:30 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/11/2024 10:48:30 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/11/2024 10:48:36 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/11/2024 10:48:36 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/11/2024 10:48:36 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/11/2024 10:48:36 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/11/2024 10:48:36 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/11/2024 10:48:36 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/11/2024 10:49:04 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/11/2024 10:49:04 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/11/2024 10:49:04 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/11/2024 10:49:07 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/11/2024 10:49:22 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/11/2024 10:49:22 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/11/2024 10:49:22 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/11/2024 10:49:26 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/11/2024 10:49:29 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/11/2024 10:49:29 AM - ConsignmentForm - INFO: ### General Error ....
+07/11/2024 10:49:29 AM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+07/11/2024 10:49:33 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/11/2024 10:49:36 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/11/2024 10:49:36 AM - ConsignmentForm - INFO: ### General Error ....
+07/11/2024 10:49:36 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/11/2024 10:49:36 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720673376691.png
+07/11/2024 10:49:36 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+07/11/2024 10:49:36 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1720673376784.png
+07/11/2024 10:49:36 AM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+07/11/2024 10:49:49 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/11/2024 10:49:49 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/11/2024 10:49:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 10:49:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/11/2024 10:49:59 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/11/2024 10:49:59 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/11/2024 10:49:59 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/11/2024 10:49:59 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720673399613.png
+07/11/2024 10:49:59 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/11/2024 12:50:15 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 12:50:15 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 12:50:15 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/11/2024 12:50:15 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/11/2024 12:50:15 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/11/2024 12:50:59 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/11/2024 12:51:01 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/11/2024 12:51:01 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/11/2024 12:51:01 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/11/2024 12:51:01 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/11/2024 12:51:07 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/11/2024 12:51:07 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/11/2024 12:51:07 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/11/2024 12:51:07 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/11/2024 12:51:07 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/11/2024 12:51:07 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/11/2024 12:51:36 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/11/2024 12:51:36 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/11/2024 12:51:36 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/11/2024 12:51:39 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/11/2024 12:51:54 PM - ConsignmentForm - INFO: ATL working Correctly! 
+07/11/2024 12:51:54 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/11/2024 12:51:54 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/11/2024 12:51:55 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/11/2024 12:51:58 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/11/2024 12:51:58 PM - ConsignmentForm - INFO: ### General Error ....
+07/11/2024 12:52:19 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/11/2024 12:52:19 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/11/2024 12:52:19 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/11/2024 12:52:19 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/11/2024 12:52:35 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/11/2024 12:52:35 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/11/2024 12:52:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/11/2024 12:52:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/11/2024 12:52:45 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/11/2024 12:52:45 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/11/2024 12:52:45 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/11/2024 12:52:45 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1720680765570.png
+07/11/2024 12:52:45 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/15/2024 10:42:09 AM - ConsignmentForm - ERROR: Failed to get page title
+07/15/2024 10:42:09 AM - TestStatus - INFO: ###Verfication Failed  ::New Consignment Page Loaded
+07/15/2024 10:42:09 AM - TestStatus - ERROR: ### Exception occured 
+07/15/2024 10:42:10 AM - TestStatus - ERROR: New Consignment Page load Check### TEST FAILED
+07/15/2024 10:52:51 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/15/2024 10:52:51 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/15/2024 10:52:51 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/15/2024 10:52:51 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/15/2024 10:52:51 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/15/2024 10:53:33 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/15/2024 10:53:35 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/15/2024 10:53:35 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/15/2024 10:53:35 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/15/2024 10:53:35 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/15/2024 10:53:41 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/15/2024 10:53:41 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/15/2024 10:53:41 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/15/2024 10:53:41 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/15/2024 10:53:41 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/15/2024 10:53:41 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/15/2024 10:54:09 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/15/2024 10:54:09 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/15/2024 10:54:09 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/15/2024 10:54:13 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/15/2024 10:54:27 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/15/2024 10:54:27 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/15/2024 10:54:27 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/15/2024 10:54:28 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/15/2024 10:54:31 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/15/2024 10:54:31 AM - ConsignmentForm - INFO: ### General Error ....
+07/15/2024 10:54:51 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/15/2024 10:54:51 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/15/2024 10:54:51 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/15/2024 10:54:51 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/15/2024 10:55:08 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/15/2024 10:55:08 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/15/2024 10:55:17 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/15/2024 10:55:17 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+07/15/2024 10:55:17 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+07/15/2024 10:55:17 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+07/15/2024 10:55:17 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+07/15/2024 10:55:18 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1721019317918.png
+07/15/2024 10:55:18 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+07/15/2024 01:50:47 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/15/2024 01:50:47 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/15/2024 01:50:47 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/15/2024 01:50:47 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/15/2024 01:50:47 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/15/2024 01:51:31 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/15/2024 01:51:33 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/15/2024 01:51:33 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/15/2024 01:51:33 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/15/2024 01:51:33 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/15/2024 01:51:39 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/15/2024 01:51:39 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/15/2024 01:51:39 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/15/2024 01:51:39 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/15/2024 01:51:39 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/15/2024 01:51:39 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/15/2024 01:52:07 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/15/2024 01:52:07 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/15/2024 01:52:07 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/15/2024 01:52:10 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/15/2024 01:52:25 PM - ConsignmentForm - INFO: ATL working Correctly! 
+07/15/2024 01:52:25 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/15/2024 01:52:25 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/15/2024 01:52:26 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/15/2024 01:52:29 PM - ConsignmentForm - INFO: ### Customer Error ....
+07/15/2024 01:52:29 PM - ConsignmentForm - INFO: ### General Error ....
+07/15/2024 01:52:50 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/15/2024 01:52:50 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/15/2024 01:52:50 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/15/2024 01:52:50 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/15/2024 01:53:06 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/15/2024 01:53:06 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/28/2024 03:39:18 PM - ConsignmentForm - ERROR: Failed to get page title
+07/28/2024 03:39:18 PM - TestStatus - INFO: ###Verfication Failed  ::New Consignment Page Loaded
+07/28/2024 03:39:18 PM - TestStatus - ERROR: ### Exception occured 
+07/28/2024 03:39:18 PM - TestStatus - ERROR: New Consignment Page load Check### TEST FAILED
+07/29/2024 10:35:05 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 10:35:05 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 10:35:05 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/29/2024 10:35:05 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/29/2024 10:35:05 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/29/2024 10:37:20 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 10:37:20 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 10:37:20 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/29/2024 10:37:20 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/29/2024 10:37:20 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/29/2024 10:38:03 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/29/2024 10:38:05 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/29/2024 10:38:05 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/29/2024 10:38:05 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/29/2024 10:38:05 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/29/2024 10:38:11 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/29/2024 10:38:11 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/29/2024 10:38:11 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/29/2024 10:38:11 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/29/2024 10:38:11 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/29/2024 10:38:11 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/29/2024 10:38:39 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/29/2024 10:38:39 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/29/2024 10:38:39 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/29/2024 10:38:42 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/29/2024 10:38:57 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/29/2024 10:38:57 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/29/2024 10:38:57 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/29/2024 10:38:58 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/29/2024 10:39:01 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/29/2024 10:39:01 AM - ConsignmentForm - INFO: ### General Error ....
+07/29/2024 10:39:22 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/29/2024 10:39:22 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 10:39:22 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 10:39:22 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/29/2024 10:39:38 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/29/2024 10:39:38 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/29/2024 11:09:01 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 11:09:01 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 11:09:01 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/29/2024 11:09:01 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/29/2024 11:09:01 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/29/2024 11:09:44 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/29/2024 11:09:46 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/29/2024 11:09:46 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/29/2024 11:09:46 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/29/2024 11:09:46 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/29/2024 11:09:53 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/29/2024 11:09:53 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/29/2024 11:09:53 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/29/2024 11:09:53 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/29/2024 11:09:53 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/29/2024 11:09:53 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/29/2024 11:10:44 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/29/2024 11:10:59 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/29/2024 11:10:59 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/29/2024 11:10:59 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/29/2024 11:10:59 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/29/2024 11:11:03 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/29/2024 11:11:03 AM - ConsignmentForm - INFO: ### General Error ....
+07/29/2024 11:11:23 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/29/2024 11:11:23 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 11:11:23 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 11:11:23 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/29/2024 11:11:38 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+07/29/2024 11:11:38 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+07/29/2024 11:12:36 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 11:12:36 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 11:12:36 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/29/2024 11:12:36 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/29/2024 11:12:36 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/29/2024 11:13:19 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/29/2024 11:13:21 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+07/29/2024 11:13:21 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+07/29/2024 11:13:21 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/29/2024 11:13:21 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+07/29/2024 11:13:28 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+07/29/2024 11:13:28 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+07/29/2024 11:13:28 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+07/29/2024 11:13:28 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+07/29/2024 11:13:28 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+07/29/2024 11:13:28 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+07/29/2024 11:13:56 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+07/29/2024 11:13:56 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+07/29/2024 11:13:56 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+07/29/2024 11:14:00 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/29/2024 11:14:14 AM - ConsignmentForm - INFO: ATL working Correctly! 
+07/29/2024 11:14:14 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+07/29/2024 11:14:14 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+07/29/2024 11:14:15 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+07/29/2024 11:14:18 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/29/2024 11:14:18 AM - ConsignmentForm - INFO: ### General Error ....
+07/29/2024 11:14:39 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/29/2024 11:14:39 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 11:14:39 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 11:14:39 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+07/29/2024 11:15:17 AM - ConsignmentForm - ERROR: ###First Cancelled Note is Required - Not Working!!!
+07/29/2024 11:15:29 AM - ConsignmentForm - ERROR: ### STATUS didn't change to CANCELLED!!!
+07/29/2024 11:15:55 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Fields are not Working Correctly!!!
+07/29/2024 11:15:55 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Fields are not Working Correctly!!!.1722230155236.png
+07/29/2024 11:15:55 AM - TestStatus - ERROR: Sell Rate Section Test### TEST FAILED
+07/29/2024 11:17:53 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 11:17:53 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+07/29/2024 11:17:53 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+07/29/2024 11:17:53 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+07/29/2024 11:17:53 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+07/29/2024 11:18:31 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+07/29/2024 11:19:12 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+07/29/2024 11:19:15 AM - ConsignmentForm - INFO: ### Customer Error ....
+07/29/2024 11:19:15 AM - ConsignmentForm - INFO: ### General Error ....
+07/29/2024 11:19:36 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+07/29/2024 11:19:36 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 11:19:36 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+07/29/2024 11:19:36 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/01/2024 11:14:11 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 11:14:11 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 11:14:11 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/01/2024 11:14:11 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/01/2024 11:14:11 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/01/2024 11:14:54 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 11:14:57 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/01/2024 11:14:57 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/01/2024 11:14:57 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 11:14:57 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/01/2024 11:15:03 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/01/2024 11:15:03 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/01/2024 11:15:03 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 11:15:03 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/01/2024 11:15:03 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/01/2024 11:15:03 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/01/2024 11:15:31 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 11:15:31 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/01/2024 11:15:31 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/01/2024 11:15:34 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/01/2024 11:15:49 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/01/2024 11:15:49 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/01/2024 11:15:49 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/01/2024 11:15:51 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/01/2024 11:15:54 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 11:15:54 AM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 11:16:14 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/01/2024 11:16:14 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/01/2024 11:16:14 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/01/2024 11:16:14 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/01/2024 11:16:33 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/01/2024 11:16:33 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/01/2024 11:16:42 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 11:16:42 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/01/2024 11:16:42 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/01/2024 11:16:42 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/01/2024 11:16:42 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/01/2024 11:16:42 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1722489402709.png
+08/01/2024 11:16:42 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/01/2024 11:49:30 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 11:49:30 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 11:49:30 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/01/2024 11:49:30 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/01/2024 11:49:30 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/01/2024 11:50:14 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 11:50:17 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/01/2024 11:50:17 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/01/2024 11:50:17 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 11:50:17 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/01/2024 11:50:23 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/01/2024 11:50:23 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/01/2024 11:50:23 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 11:50:23 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/01/2024 11:50:23 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/01/2024 11:50:23 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/01/2024 11:50:52 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 11:50:52 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/01/2024 11:50:52 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/01/2024 11:50:55 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/01/2024 11:51:10 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/01/2024 11:51:10 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/01/2024 11:51:10 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/01/2024 11:51:14 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/01/2024 11:51:17 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 11:51:17 AM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 11:51:17 AM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+08/01/2024 11:51:22 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/01/2024 11:51:25 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 11:51:25 AM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 11:51:25 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+08/01/2024 11:51:25 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1722491485106.png
+08/01/2024 11:51:25 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+08/01/2024 11:51:25 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1722491485198.png
+08/01/2024 11:51:25 AM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+08/01/2024 11:51:34 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 11:51:34 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/01/2024 11:51:34 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/01/2024 11:51:34 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/01/2024 11:51:34 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/01/2024 11:51:34 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1722491494813.png
+08/01/2024 11:51:34 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/01/2024 12:06:13 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 12:06:13 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 12:06:13 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/01/2024 12:06:13 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/01/2024 12:06:13 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/01/2024 12:06:57 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 12:06:59 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/01/2024 12:06:59 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/01/2024 12:06:59 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 12:06:59 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/01/2024 12:07:05 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/01/2024 12:07:05 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/01/2024 12:07:05 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 12:07:05 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/01/2024 12:07:05 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/01/2024 12:07:05 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/01/2024 12:07:33 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 12:07:33 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/01/2024 12:07:33 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/01/2024 12:07:36 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/01/2024 12:07:52 PM - ConsignmentForm - INFO: ATL working Correctly! 
+08/01/2024 12:07:52 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/01/2024 12:07:52 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/01/2024 12:07:53 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/01/2024 12:07:56 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 12:07:56 PM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 12:08:16 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/01/2024 12:08:16 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/01/2024 12:08:16 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/01/2024 12:08:16 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/01/2024 12:08:33 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/01/2024 12:08:33 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/01/2024 12:08:42 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 12:08:42 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/01/2024 12:08:42 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/01/2024 12:08:42 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/01/2024 12:08:42 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/01/2024 12:08:43 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1722492522955.png
+08/01/2024 12:08:43 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/01/2024 02:17:20 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 02:17:20 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 02:17:20 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/01/2024 02:17:20 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/01/2024 02:17:20 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/01/2024 02:18:03 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 02:18:05 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/01/2024 02:18:05 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/01/2024 02:18:05 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 02:18:05 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/01/2024 02:18:11 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/01/2024 02:18:11 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/01/2024 02:18:11 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 02:18:11 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/01/2024 02:18:11 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/01/2024 02:18:11 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/01/2024 02:18:39 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 02:18:39 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/01/2024 02:18:39 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/01/2024 02:18:42 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/01/2024 02:18:57 PM - ConsignmentForm - INFO: ATL working Correctly! 
+08/01/2024 02:18:57 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/01/2024 02:18:57 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/01/2024 02:18:58 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/01/2024 02:19:02 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 02:19:02 PM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 02:19:22 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/01/2024 02:19:22 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/01/2024 02:19:22 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/01/2024 02:19:22 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/01/2024 02:19:39 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/01/2024 02:19:39 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/01/2024 02:20:09 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 02:20:09 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/01/2024 02:20:09 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/01/2024 02:20:09 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/01/2024 02:20:09 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/01/2024 02:20:09 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1722500409012.png
+08/01/2024 02:20:09 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/01/2024 02:21:45 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 02:21:45 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 02:21:45 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/01/2024 02:21:45 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/01/2024 02:21:45 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/01/2024 02:22:28 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 02:22:30 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/01/2024 02:22:30 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/01/2024 02:22:30 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 02:22:30 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/01/2024 02:22:36 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/01/2024 02:22:36 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/01/2024 02:22:36 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/01/2024 02:22:36 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/01/2024 02:22:36 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/01/2024 02:22:36 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/01/2024 02:23:04 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/01/2024 02:23:04 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/01/2024 02:23:04 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/01/2024 02:23:07 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/01/2024 02:23:22 PM - ConsignmentForm - INFO: ATL working Correctly! 
+08/01/2024 02:23:22 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/01/2024 02:23:22 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/01/2024 02:23:26 PM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/01/2024 02:23:29 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 02:23:29 PM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 02:23:29 PM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+08/01/2024 02:23:33 PM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/01/2024 02:23:37 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/01/2024 02:23:37 PM - ConsignmentForm - INFO: ### General Error ....
+08/01/2024 02:23:37 PM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+08/01/2024 02:23:37 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1722500617034.png
+08/01/2024 02:23:37 PM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+08/01/2024 02:23:37 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1722500617130.png
+08/01/2024 02:23:37 PM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+08/01/2024 02:24:06 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/01/2024 02:24:06 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/01/2024 02:24:06 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/01/2024 02:24:06 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/01/2024 02:24:06 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/01/2024 02:24:06 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1722500646698.png
+08/01/2024 02:24:06 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/14/2024 02:42:58 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 02:42:58 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 02:42:58 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/14/2024 02:42:58 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/14/2024 02:42:58 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/14/2024 02:43:42 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/14/2024 02:43:44 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/14/2024 02:43:44 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/14/2024 02:43:44 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/14/2024 02:43:44 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/14/2024 02:43:50 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/14/2024 02:43:50 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/14/2024 02:43:50 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/14/2024 02:43:50 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/14/2024 02:43:50 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/14/2024 02:43:50 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/14/2024 02:44:19 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/14/2024 02:44:19 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/14/2024 02:44:19 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/14/2024 02:44:22 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/14/2024 02:44:37 PM - ConsignmentForm - INFO: ATL working Correctly! 
+08/14/2024 02:44:37 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/14/2024 02:44:37 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/14/2024 02:44:39 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/14/2024 02:44:42 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/14/2024 02:44:42 PM - ConsignmentForm - INFO: ### General Error ....
+08/14/2024 02:45:02 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/14/2024 02:45:02 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/14/2024 02:45:02 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/14/2024 02:45:02 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/14/2024 02:45:19 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/14/2024 02:45:19 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/14/2024 02:45:50 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 02:45:50 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/14/2024 02:45:50 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/14/2024 02:45:50 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/14/2024 02:45:50 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/14/2024 02:45:50 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1723625150025.png
+08/14/2024 02:45:50 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/14/2024 02:47:25 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 02:47:25 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 02:47:25 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/14/2024 02:47:25 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/14/2024 02:47:25 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/14/2024 02:48:09 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/14/2024 02:48:11 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/14/2024 02:48:11 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/14/2024 02:48:11 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/14/2024 02:48:11 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/14/2024 02:48:17 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/14/2024 02:48:17 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/14/2024 02:48:17 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/14/2024 02:48:17 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/14/2024 02:48:17 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/14/2024 02:48:17 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/14/2024 02:48:46 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/14/2024 02:48:46 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/14/2024 02:48:46 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/14/2024 02:48:49 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/14/2024 02:49:04 PM - ConsignmentForm - INFO: ATL working Correctly! 
+08/14/2024 02:49:04 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/14/2024 02:49:04 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/14/2024 02:49:05 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/14/2024 02:49:08 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/14/2024 02:49:08 PM - ConsignmentForm - INFO: ### General Error ....
+08/14/2024 02:49:29 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/14/2024 02:49:29 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/14/2024 02:49:29 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/14/2024 02:49:29 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/14/2024 02:49:46 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/14/2024 02:49:46 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/14/2024 02:50:15 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 02:50:15 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/14/2024 02:50:15 PM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/14/2024 02:50:15 PM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/14/2024 02:50:15 PM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/14/2024 02:50:15 PM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1723625415810.png
+08/14/2024 02:50:15 PM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/14/2024 03:45:49 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 03:45:49 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/14/2024 03:45:49 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/14/2024 03:45:49 PM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/14/2024 03:45:49 PM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/14/2024 03:46:32 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/14/2024 03:46:35 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/14/2024 03:46:35 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/14/2024 03:46:35 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/14/2024 03:46:35 PM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/14/2024 03:46:41 PM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/14/2024 03:46:41 PM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/14/2024 03:46:41 PM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/14/2024 03:46:41 PM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/14/2024 03:46:41 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/14/2024 03:46:41 PM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/14/2024 03:47:09 PM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/14/2024 03:47:09 PM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/14/2024 03:47:09 PM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/14/2024 03:47:12 PM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/14/2024 03:47:28 PM - ConsignmentForm - INFO: ATL working Correctly! 
+08/14/2024 03:47:28 PM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/14/2024 03:47:28 PM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/14/2024 03:47:29 PM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/14/2024 03:47:32 PM - ConsignmentForm - INFO: ### Customer Error ....
+08/14/2024 03:47:32 PM - ConsignmentForm - INFO: ### General Error ....
+08/14/2024 03:47:52 PM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/14/2024 03:47:52 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/14/2024 03:47:52 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/14/2024 03:47:52 PM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/14/2024 03:48:09 PM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/14/2024 03:48:09 PM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/20/2024 10:22:20 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:22:20 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:22:20 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/20/2024 10:22:20 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/20/2024 10:22:20 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/20/2024 10:23:03 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 10:23:06 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/20/2024 10:23:06 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/20/2024 10:23:06 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 10:23:06 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/20/2024 10:23:12 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/20/2024 10:23:12 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/20/2024 10:23:12 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 10:23:12 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/20/2024 10:23:12 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/20/2024 10:23:12 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/20/2024 10:23:40 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 10:23:40 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/20/2024 10:23:40 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/20/2024 10:23:43 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/20/2024 10:23:58 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/20/2024 10:23:58 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/20/2024 10:23:58 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/20/2024 10:24:21 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/20/2024 10:24:25 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/20/2024 10:24:25 AM - ConsignmentForm - INFO: ### General Error ....
+08/20/2024 10:24:45 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/20/2024 10:24:45 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 10:24:45 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 10:24:45 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/20/2024 10:25:22 AM - ConsignmentForm - ERROR: ###First Cancelled Note is Required - Not Working!!!
+08/20/2024 10:25:34 AM - ConsignmentForm - ERROR: ### STATUS didn't change to CANCELLED!!!
+08/20/2024 10:26:03 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Fields are not Working Correctly!!!
+08/20/2024 10:26:03 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Fields are not Working Correctly!!!.1724127963907.png
+08/20/2024 10:26:03 AM - TestStatus - ERROR: Sell Rate Section Test### TEST FAILED
+08/20/2024 10:33:46 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:33:46 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:33:46 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/20/2024 10:33:46 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/20/2024 10:33:46 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/20/2024 10:34:29 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 10:34:32 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/20/2024 10:34:32 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/20/2024 10:34:32 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 10:34:32 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/20/2024 10:34:38 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/20/2024 10:34:38 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/20/2024 10:34:38 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 10:34:38 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/20/2024 10:34:38 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/20/2024 10:34:38 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/20/2024 10:35:06 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 10:35:06 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/20/2024 10:35:06 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/20/2024 10:35:09 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/20/2024 10:35:24 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/20/2024 10:35:24 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/20/2024 10:35:24 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/20/2024 10:35:48 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/20/2024 10:35:51 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/20/2024 10:35:51 AM - ConsignmentForm - INFO: ### General Error ....
+08/20/2024 10:36:11 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/20/2024 10:36:11 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 10:36:11 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 10:36:11 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/20/2024 10:36:49 AM - ConsignmentForm - ERROR: ###First Cancelled Note is Required - Not Working!!!
+08/20/2024 10:37:01 AM - ConsignmentForm - ERROR: ### STATUS didn't change to CANCELLED!!!
+08/20/2024 10:37:30 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Fields are not Working Correctly!!!
+08/20/2024 10:37:30 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Fields are not Working Correctly!!!.1724128650855.png
+08/20/2024 10:37:30 AM - TestStatus - ERROR: Sell Rate Section Test### TEST FAILED
+08/20/2024 10:48:48 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:48:48 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:48:48 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/20/2024 10:48:48 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/20/2024 10:48:48 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/20/2024 10:49:34 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 10:49:36 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/20/2024 10:49:36 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/20/2024 10:49:36 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 10:49:36 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/20/2024 10:49:42 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/20/2024 10:49:42 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/20/2024 10:49:42 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 10:49:42 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/20/2024 10:49:42 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/20/2024 10:49:42 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/20/2024 10:50:10 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 10:50:10 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/20/2024 10:50:10 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/20/2024 10:50:13 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/20/2024 10:50:28 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/20/2024 10:50:28 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/20/2024 10:50:28 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/20/2024 10:50:52 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/20/2024 10:50:55 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/20/2024 10:50:55 AM - ConsignmentForm - INFO: ### General Error ....
+08/20/2024 10:51:15 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/20/2024 10:51:15 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 10:51:15 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 10:51:15 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/20/2024 10:51:52 AM - ConsignmentForm - ERROR: ###First Cancelled Note is Required - Not Working!!!
+08/20/2024 10:52:04 AM - ConsignmentForm - ERROR: ### STATUS didn't change to CANCELLED!!!
+08/20/2024 10:52:34 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Fields are not Working Correctly!!!
+08/20/2024 10:52:34 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Fields are not Working Correctly!!!.1724129554161.png
+08/20/2024 10:52:34 AM - TestStatus - ERROR: Sell Rate Section Test### TEST FAILED
+08/20/2024 10:53:01 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 10:53:01 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/20/2024 10:53:01 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/20/2024 10:53:01 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/20/2024 10:53:01 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/20/2024 10:53:01 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1724129581682.png
+08/20/2024 10:53:01 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/20/2024 11:14:46 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 11:14:46 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 11:14:46 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/20/2024 11:14:46 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/20/2024 11:14:46 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/20/2024 11:15:31 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 11:15:34 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/20/2024 11:15:34 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/20/2024 11:15:34 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 11:15:34 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/20/2024 11:15:40 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/20/2024 11:15:40 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/20/2024 11:15:40 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 11:15:40 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/20/2024 11:15:40 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/20/2024 11:15:40 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/20/2024 11:15:55 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/20/2024 11:16:10 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/20/2024 11:16:10 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/20/2024 11:16:10 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/20/2024 11:16:34 AM - ConsignmentForm - INFO: ### Sell Rate Not Generated!!!
+08/20/2024 11:16:37 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/20/2024 11:16:37 AM - ConsignmentForm - INFO: ### General Error ....
+08/20/2024 11:16:37 AM - ConsignmentForm - INFO: ### Sell Rate Not generated!!!
+08/20/2024 11:16:38 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/20/2024 11:16:41 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/20/2024 11:16:41 AM - ConsignmentForm - INFO: ### General Error ....
+08/20/2024 11:16:41 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+08/20/2024 11:16:41 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1724131001563.png
+08/20/2024 11:16:41 AM - TestStatus - INFO: ###Verfication Failed  ::### Sell Rate Not Generated!!!
+08/20/2024 11:16:41 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Sell Rate Not Generated!!!.1724131001660.png
+08/20/2024 11:16:41 AM - TestStatus - ERROR: Sell Rating Test### TEST FAILED
+08/20/2024 11:16:54 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/20/2024 11:16:54 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/20/2024 11:17:25 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 11:17:25 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/20/2024 11:17:25 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/20/2024 11:17:25 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/20/2024 11:17:25 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/20/2024 11:17:25 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1724131045323.png
+08/20/2024 11:17:25 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+08/20/2024 11:49:38 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 11:49:38 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Consignment Form
+08/20/2024 11:49:38 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+08/20/2024 11:49:38 AM - TestStatus - INFO: ###Verfication Successful  ::New Consignment Page Loaded
+08/20/2024 11:49:38 AM - TestStatus - INFO: New Consignment Page load Check### TEST PASSED
+08/20/2024 11:50:23 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 11:50:25 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 319.0
+08/20/2024 11:50:25 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 319.0
+08/20/2024 11:50:25 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 11:50:25 AM - TestStatus - INFO: ###Verfication Successful  ::Weight of the consignment Lines are correct
+08/20/2024 11:50:32 AM - ConsignmentForm - INFO: Actual Value From Application Web UI --> :: 0.961
+08/20/2024 11:50:32 AM - ConsignmentForm - INFO: Expected Value From Calculations --> :: 0.961
+08/20/2024 11:50:32 AM - ConsignmentForm - INFO: ### VALUES MATCHED !!!
+08/20/2024 11:50:32 AM - TestStatus - INFO: ###Verfication Successful  ::Volumes of the consignment Lines are correct
+08/20/2024 11:50:32 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Lines Section is Working Fine!!!
+08/20/2024 11:50:32 AM - TestStatus - INFO: Consignment Lines Test!!### TEST PASSED
+08/20/2024 11:51:00 AM - TestStatus - INFO: ###Verfication Successful  ::Required Fields are filled
+08/20/2024 11:51:00 AM - TestStatus - INFO: ###Verfication Successful  ::Consignment Leggings is Working Fine!!!
+08/20/2024 11:51:00 AM - TestStatus - INFO: Consignment Leggings Test!!### TEST PASSED
+08/20/2024 11:51:03 AM - ConsignmentForm - INFO: Insurance Field is Filled!!
+08/20/2024 11:51:18 AM - ConsignmentForm - INFO: ATL working Correctly! 
+08/20/2024 11:51:18 AM - TestStatus - INFO: ###Verfication Successful  ::Additional Information Working
+08/20/2024 11:51:18 AM - TestStatus - INFO: Additional Information Section Test### TEST PASSED
+08/20/2024 11:51:18 AM - ConsignmentForm - INFO: Sell Rate Generated!!!
+08/20/2024 11:51:21 AM - ConsignmentForm - INFO: ### Customer Error ....
+08/20/2024 11:51:21 AM - ConsignmentForm - INFO: ### General Error ....
+08/20/2024 11:51:42 AM - ConsignmentForm - INFO: Sell Rate generated!!!
+08/20/2024 11:51:42 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 11:51:42 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Generated!!!
+08/20/2024 11:51:42 AM - TestStatus - INFO: Sell Rating Test### TEST PASSED
+08/20/2024 11:51:58 AM - TestStatus - INFO: ###Verfication Successful  ::Sell Rate Fields are Working Correctly!!!
+08/20/2024 11:51:58 AM - TestStatus - INFO: Sell Rate Section Test### TEST PASSED
+08/20/2024 11:52:28 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Dashboard
+08/20/2024 11:52:28 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+08/20/2024 11:52:28 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+08/20/2024 11:52:28 AM - ConsignmentForm - ERROR: ### ERROR IN CONSIGNMENT CREATION!!!!
+08/20/2024 11:52:28 AM - TestStatus - INFO: ###Verfication Failed  ::### Consignment couldn't be CREATED!!!
+08/20/2024 11:52:28 AM - TestStatus - INFO: Screenshots saved to directory: D:\work\workspace_python\wayne_express_cargo\base\../screenshots/### Consignment couldn't be CREATED!!!.1724133148545.png
+08/20/2024 11:52:28 AM - TestStatus - ERROR: New Consignment TESTS### TEST FAILED
+04/15/2025 09:50:38 AM - Util - INFO: Actual Text From Application Web UI --> :: Log in | MiWayneCurrentStage
+04/15/2025 09:50:38 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/15/2025 09:50:38 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+04/15/2025 09:50:38 AM - TestStatus - INFO: ###Verfication Failed  ::Title is correct
+04/15/2025 09:50:39 AM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Title is correct.1744689038903.png
+04/15/2025 09:50:42 AM - TestStatus - INFO: ###Verfication Failed  ::Login was successful
+04/15/2025 09:50:42 AM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Login was successful.1744689042199.png
+04/15/2025 09:50:42 AM - TestStatus - ERROR: test_validLogin### TEST FAILED
+04/15/2025 09:56:23 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/15/2025 09:56:23 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/15/2025 09:56:23 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/15/2025 09:56:23 AM - TestStatus - INFO: ###Verfication Successful  ::Title is correct
+04/15/2025 09:56:26 AM - TestStatus - INFO: ###Verfication Failed  ::Login was successful
+04/15/2025 09:56:26 AM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Login was successful.1744689386121.png
+04/15/2025 09:56:26 AM - TestStatus - ERROR: test_validLogin### TEST FAILED
+04/15/2025 10:04:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Redirecting
+04/15/2025 10:04:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/15/2025 10:04:59 AM - Util - INFO: ### VERIFICATION DOES NOT CONTAINS !!!
+04/15/2025 10:04:59 AM - TestStatus - INFO: ###Verfication Failed  ::Title is correct
+04/15/2025 10:04:59 AM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Title is correct.1744689899483.png
+04/15/2025 10:05:00 AM - TestStatus - INFO: ###Verfication Successful  ::Login was successful
+04/15/2025 10:05:00 AM - TestStatus - ERROR: test_validLogin### TEST FAILED
+04/15/2025 10:17:02 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/15/2025 10:17:02 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | HOME
+04/15/2025 10:17:02 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/15/2025 10:17:02 AM - TestStatus - INFO: ###Verfication Successful  ::Title is correct
+04/15/2025 10:17:02 AM - TestStatus - INFO: ###Verfication Successful  ::Login was successful
+04/15/2025 10:17:02 AM - TestStatus - INFO: test_validLogin### TEST PASSED
+04/15/2025 10:19:30 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/15/2025 10:19:30 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | HOME
+04/15/2025 10:19:30 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/15/2025 10:19:30 AM - TestStatus - INFO: ###Verfication Successful  ::Title is correct
+04/15/2025 10:19:30 AM - TestStatus - INFO: ###Verfication Successful  ::Login was successful
+04/15/2025 10:19:30 AM - TestStatus - INFO: test_validLogin### TEST PASSED
+04/15/2025 11:19:19 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/15/2025 11:19:19 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/15/2025 11:19:19 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/15/2025 11:19:19 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/15/2025 11:19:19 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 09:54:19 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 09:54:19 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 09:54:19 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 09:54:19 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 09:54:19 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:00:43 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:00:43 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:00:43 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:00:43 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:00:43 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:09:56 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:09:56 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:09:56 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:09:56 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:09:56 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:12:44 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:12:44 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:12:44 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:12:44 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:12:44 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:15:37 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:15:37 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:15:37 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:15:37 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:15:37 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:18:42 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:18:42 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:18:42 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:18:42 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:18:42 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:28:56 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:28:56 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:28:56 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:28:56 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:28:56 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:40:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:40:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:40:59 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:40:59 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:40:59 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:49:50 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:49:50 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:49:50 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:49:50 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:49:50 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:53:07 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:53:07 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:53:07 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:53:07 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:53:07 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 10:55:00 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Home
+04/16/2025 10:55:00 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | HOME
+04/16/2025 10:55:00 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:55:00 AM - TestStatus - INFO: ###Verfication Successful  ::Title is correct
+04/16/2025 10:55:00 AM - TestStatus - INFO: ###Verfication Successful  ::Login was successful
+04/16/2025 10:55:00 AM - TestStatus - INFO: test_validLogin### TEST PASSED
+04/16/2025 10:57:40 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:57:40 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 10:57:40 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 10:57:40 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 10:57:40 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 11:00:38 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 11:00:38 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/16/2025 11:00:38 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 11:00:38 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/16/2025 11:00:38 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/16/2025 11:03:59 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+04/16/2025 11:03:59 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+04/16/2025 11:03:59 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 11:03:59 AM - TestStatus - INFO: ###Verfication Successful  ::Current Consignment page loaded
+04/16/2025 11:03:59 AM - TestStatus - INFO: Current Consignment Title verification### TEST PASSED
+04/16/2025 11:07:28 AM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/16/2025 11:07:44 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+04/16/2025 11:07:44 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Current Consignments
+04/16/2025 11:07:44 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/16/2025 11:07:44 AM - TestStatus - INFO: ###Verfication Successful  ::Current Consignment page loaded
+04/16/2025 11:07:44 AM - TestStatus - INFO: Current Consignment Title verification### TEST PASSED
+04/17/2025 10:13:57 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:13:57 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:13:57 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 10:13:57 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 10:13:57 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 10:39:18 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:39:18 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:39:18 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 10:39:18 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 10:39:18 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 10:50:42 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:50:42 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:50:42 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 10:50:42 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 10:50:42 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 10:57:08 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:57:08 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 10:57:08 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 10:57:08 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 10:57:08 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 11:10:02 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:10:02 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:10:02 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 11:10:02 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 11:10:02 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 11:20:58 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:20:58 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:20:58 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 11:20:58 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 11:20:58 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 11:32:53 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:32:53 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:32:53 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 11:32:53 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 11:32:53 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 11:44:53 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:44:53 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:44:53 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 11:44:53 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 11:44:53 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 11:50:05 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:50:05 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:50:05 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 11:50:05 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 11:50:05 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 11:57:16 AM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:57:16 AM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 11:57:16 AM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 11:57:16 AM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 11:57:16 AM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 12:03:29 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:03:29 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:03:29 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 12:03:29 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 12:03:29 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 12:07:34 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:07:34 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:07:34 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 12:07:34 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 12:07:34 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 12:08:32 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:08:32 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:08:32 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744870112442.png
+04/17/2025 12:08:32 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 12:11:59 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:11:59 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:11:59 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 12:11:59 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 12:11:59 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 12:12:58 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:12:58 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:12:58 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744870378001.png
+04/17/2025 12:12:58 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 12:15:19 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:15:19 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:15:19 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 12:15:19 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 12:15:19 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 12:16:16 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:16:16 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 12:16:16 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 12:28:18 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:28:18 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 12:28:18 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 12:28:18 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 12:28:18 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 12:29:18 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:29:18 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 12:29:18 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 12:30:01 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:30:01 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 12:30:01 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 12:30:46 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:30:46 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 12:30:46 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 12:31:37 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:31:37 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:31:38 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744871497631.png
+04/17/2025 12:31:38 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 12:32:24 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:32:24 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:32:25 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744871544598.png
+04/17/2025 12:32:25 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 12:32:51 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:32:51 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:32:52 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744871571803.png
+04/17/2025 12:32:52 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 12:33:31 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:33:31 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:33:32 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744871611498.png
+04/17/2025 12:33:32 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 12:34:16 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 12:34:16 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 12:34:16 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744871656059.png
+04/17/2025 12:34:16 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 01:14:40 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:14:40 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:14:40 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 01:14:40 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 01:14:40 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 01:15:39 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:15:39 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:15:39 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:16:23 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:16:23 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:16:23 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:17:11 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:17:11 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:17:11 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:33:46 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:33:46 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:33:46 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 01:33:46 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 01:33:46 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 01:34:49 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:34:49 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:34:49 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:35:36 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:35:36 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:35:36 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:36:25 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:36:25 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:36:25 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:37:18 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:37:18 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 01:37:19 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744875438373.png
+04/17/2025 01:37:19 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 01:39:01 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:39:01 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:39:01 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 01:39:01 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 01:39:01 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 01:40:00 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:40:00 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:40:00 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:40:43 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:40:43 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:40:43 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:41:29 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:41:29 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:41:29 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:42:18 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:42:18 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 01:42:19 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744875738724.png
+04/17/2025 01:42:19 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 01:48:00 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:48:00 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:48:00 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 01:48:00 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 01:48:00 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 01:48:58 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:48:58 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:48:58 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:49:41 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:49:41 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:49:41 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:50:26 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:50:26 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:50:26 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:51:16 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:51:16 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 01:51:16 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 01:52:27 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:52:27 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 01:52:27 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 01:52:27 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 01:52:27 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 01:53:25 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:53:25 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 01:53:26 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744876405650.png
+04/17/2025 01:53:26 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 01:53:55 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:53:55 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 01:53:55 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744876435222.png
+04/17/2025 01:53:55 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 01:54:36 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:54:36 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 01:54:37 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744876476875.png
+04/17/2025 01:54:37 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 01:55:23 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 01:55:23 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 01:55:24 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744876523856.png
+04/17/2025 01:55:24 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 03:28:40 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 03:28:40 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 03:28:40 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 03:28:40 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 03:28:40 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 03:29:37 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:29:37 PM - TestStatus - INFO: ###Verfication Failed  ::Filtering has ISSUES!!!
+04/17/2025 03:29:38 PM - TestStatus - INFO: Screenshots saved to directory: C:\work\miwayneTestFront\base\../screenshots/Filtering has ISSUES!!!.1744882177559.png
+04/17/2025 03:29:38 PM - TestStatus - ERROR: Test_Filtering### TEST FAILED
+04/17/2025 03:29:57 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:29:57 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:29:57 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:30:28 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:30:28 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:30:28 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:49:53 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 03:49:53 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 03:49:53 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 03:49:53 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 03:49:53 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 03:50:51 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:50:51 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:50:51 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:51:10 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:51:10 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:51:10 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:51:43 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:51:43 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:51:43 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:56:58 PM - Util - INFO: Actual Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 03:56:58 PM - Util - INFO: Expected Text From Application Web UI --> :: Express Cargo Ltd. | Customer Commodity Sell Rate Schedule
+04/17/2025 03:56:58 PM - Util - INFO: ### VERIFICATION CONTAINS !!!
+04/17/2025 03:56:58 PM - TestStatus - INFO: ###Verfication Successful  ::Customer Commodity SRSchedule Page Loaded
+04/17/2025 03:56:58 PM - TestStatus - INFO: CustomerCommoditySRSchedule Title verification### TEST PASSED
+04/17/2025 03:57:56 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:57:56 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:57:56 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:58:17 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:58:17 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:58:17 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:58:49 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:58:49 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:58:49 PM - TestStatus - INFO: Test_Filtering### TEST PASSED
+04/17/2025 03:59:28 PM - TestStatus - INFO: ###Verfication Successful  ::Data Exist!!!
+04/17/2025 03:59:28 PM - TestStatus - INFO: ###Verfication Successful  ::Filtering is working properly
+04/17/2025 03:59:28 PM - TestStatus - INFO: Test_Filtering### TEST PASSED

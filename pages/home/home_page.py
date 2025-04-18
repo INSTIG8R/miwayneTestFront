@@ -12,9 +12,10 @@ from pages.sales.acceptedquote_page import AcceptedQuotePage
 from pages.sales.estimatedquote_page import EstimatedQuotePage
 from pages.sales.quoteform_page import QuoteForm
 from pages.sales.verifiedquote_page import VerifiedQuotePage
+from pages.system_admin.systemadmin_page import MasterDataPage
 
 
-# from pages.system_admin.systemadmin_page import SystemAdminPage
+# from pages.systemadmin.systemadmin_page import MasterDataPage
 
 
 class HomePage(BasePage):
@@ -194,13 +195,13 @@ class HomePage(BasePage):
         invoice = InvoiceRunPage(self.driver)
         return invoice
 
-    # def gotoSystemAdministration(self):
-    #     self.elementClick(self._hamburger_icon, "xpath")
-    #
-    #     self.waitForElement(locator=self._dashboard_btn, locatorType='xpath')
-    #     self.elementClick(locator=self._system_administration_btn, locatorType='xpath')
-    #     systemadmin = SystemAdminPage(self.driver)
-    #     return systemadmin
+    def gotoMasterData(self):
+        self.elementClick(self._hamburger_icon, "xpath")
+
+        self.waitForElement(locator=self._dashboard_btn, locatorType='xpath')
+        self.elementClick(locator=self._system_administration_btn, locatorType='xpath')
+        masterdata = MasterDataPage(self.driver)
+        return masterdata
 
     def verifyCustomerServiceClicked(self):
         result = self.isElementPresent(locator=" //div[@title = 'POD']", locatorType = 'xpath')

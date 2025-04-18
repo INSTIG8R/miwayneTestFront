@@ -84,7 +84,7 @@ class Util(object):
             self.log.info("### VERIFICATION CONTAINS !!!")
             return True
         else:
-            self.log.info("### VERIFICATION DOES NOT CONTAINS !!!")
+            self.log.info("### VERIFICATION DOES NOT CONTAIN !!!")
             return False
 
     def verifyTextMatch(self, actualText, expectedText):

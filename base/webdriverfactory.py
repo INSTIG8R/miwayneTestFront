@@ -14,6 +14,9 @@ Example:
 # import traceback
 from selenium import webdriver
 
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+import time
 
 class WebDriverFactory:
     def __init__(self, browser):
@@ -32,7 +35,6 @@ class WebDriverFactory:
         
         PREFERRED: Set the path on the machine where browser will be executed
         '''
-
     def getWebDriverInstance(self, options: str or None = None):
         '''
         Get WebDriver instance based on the browser configuration
@@ -40,7 +42,7 @@ class WebDriverFactory:
              WebDriver Instance
         '''
         driver = None
-        baseURL = "https://dev.test-wayne.com/"
+        baseURL = "https://stage.miwayne.com/"
         if self.browser == "iexplorer":
             # Set ie Driver
             pass
@@ -50,13 +52,17 @@ class WebDriverFactory:
         elif self.browser == "Edge":
             driver = webdriver.Edge(options=options)
         else:
-            driver = webdriver.Edge(options=options)
+            driver = webdriver.Chrome(options=options)
         #Setting Driver implicit timeout for an Element
         driver.implicitly_wait(3)
         driver.maximize_window()
+
+        driver.execute_script("document.body.style.zoom='80%'")
+        driver.implicitly_wait(3)
+
         driver.get(baseURL)
         return driver
 
     def getBaseURL(self):
-        return "https://dev.test-wayne.com/"
+        return "https://stage.miwayne.com/"
 
