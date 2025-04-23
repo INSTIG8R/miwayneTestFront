@@ -1,4 +1,5 @@
 /screenshots/
+/NewconsignmentPageReports/
 .md
 !README.md
 *.html
@@ -8,4 +9,3 @@ only_locust.py
 sakir_tests.py
 base/conf_actual.py
 automation.log
-/NewconsignmentPageReports/
