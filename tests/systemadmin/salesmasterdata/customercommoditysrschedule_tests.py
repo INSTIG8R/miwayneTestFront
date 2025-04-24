@@ -45,4 +45,9 @@ class CustomerCommoditySRScheduleTests(unittest.TestCase):
         else:
             self.ts.markFinal("Test_Filtering", False, "Filtering has ISSUES!!!")
 
-
+    def test_edit(self):
+        edit_ok = self.ccsr.edit()
+        if edit_ok:
+            self.ts.markFinal("Test_Editing", True, "Editing is working properly")
+        else:
+            self.ts.markFinal("Test_Editing", False, "Editing is NOT!! working properly")

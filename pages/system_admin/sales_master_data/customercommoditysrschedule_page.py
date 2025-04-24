@@ -234,3 +234,51 @@ class CustomerCommodityCRSchedulePage(BasePage):
     def infonotpresent(self):
         presence = self.isElementPresent("//td[normalize-space()='No records to display']", "xpath")
         return presence
+
+
+# -------      EDITING         ----------
+# AccountCommodity Schedule updated successfully, toast
+
+    def edit(self):
+# store the values and rewrite on fields. save after, then check the toast
+        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND'])[2]/preceding::*[name()='svg'][4]"
+
+        self.waitForElement(self._total_count)
+        self.elementClick(edit_btn, "xpath")
+        self.waitForElement(self._origin, "xpath")
+        origin_val = self.getElement(self._origin, "xpath").text
+        destination_val = self.getElement(self._destination, "xpath").text
+        service_val = self.getElement(self._service_type, "xpath").text
+        item_val = self.getElement("//input[@id='wayne_id_item']", "xpath").text
+        commodity_val =self.getElement("//input[@id='wayne_id_commodity']", "xpath").text
+        rate_val = self.getElement("//input[@id='wayne_id_rate']", "xpath").text
+
+# ADD NOTES SECTION AND DATES SECTION.
+        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._origin, "xpath"))
+        self.sendKeys(origin_val, self._origin, "xpath")
+        time.sleep(2)
+        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._destination, "xpath"))
+        self.sendKeys(destination_val, self._destination, "xpath")
+        time.sleep(2)
+        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._service_type, "xpath"))
+        self.sendKeys(service_val, self._service_type, "xpath")
+        time.sleep(2)
+        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_item']", "xpath"))
+        self.sendKeys(item_val, "//input[@id='wayne_id_item']", "xpath")
+        time.sleep(2)
+        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_commodity']", "xpath"))
+        self.sendKeys(commodity_val, "//input[@id='wayne_id_commodity']", "xpath")
+        time.sleep(2)
+        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_rate']", "xpath"))
+        self.sendKeys(rate_val, "//input[@id='wayne_id_rate']", "xpath")
+        time.sleep(5)
+        min_hrs_asterisk = self.isElementPresent("//div/label[@id='wayne_id_min hours-label']/span", "xpath")
+        if min_hrs_asterisk:
+            # self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_min hours']", "xpath"))
+            self.getElement("//input[@id='wayne_id_min hours']", "xpath").clear()
+            self.sendKeys(2, "//input[@id='wayne_id_min hours']", "xpath")
+
+        self.elementClick("//button[@id='wayne_id_Save, ']", "xpath")
+        edit_successfull: bool = self.isElementPresent("//div[contains(normalize-space(text()), 'AccountCommodity Schedule updated')]/parent::*/parent::*", "xpath")
+        return edit_successfull
+
