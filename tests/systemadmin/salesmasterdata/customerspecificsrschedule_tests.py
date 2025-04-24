@@ -33,8 +33,8 @@ class CustomerSSRScheduleTests(unittest.TestCase):
     @pytest.mark.order(2)
     @data(*getCSVData("C:\\work\\miwayneTestFront\\data\\customerssrschedule_data.csv"))
     @unpack
-    def test_ccsv(self, accountName, origin, destination, service, effectiveDate, gri, activity):
-        working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination, service=service, effectiveDate=effectiveDate, gri=gri, activity=activity)
+    def test_ccsv(self, accountName, origin, destination, service, scheduleType, effectiveDate, gri, activity):
+        working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination, service=service, scheduleType=scheduleType, effectiveDate=effectiveDate, gri=gri, activity=activity)
         if self.ccsr.infonotpresent():
             self.ts.markFinal("Test_dataPresence", False, "###What you are looking for doesn't exist###")
         else:

@@ -18,7 +18,6 @@ class CustomerMetroSRSchedulePage(BasePage):
         "origin": 3,
         "destination": 4,
         "service": 7,
-        "effective_date": 13,
     }
 
     def __init__(self, driver):
@@ -150,7 +149,7 @@ class CustomerMetroSRSchedulePage(BasePage):
         self.filter_field_val = "activity"
         self.elementClick(self._inactive_schedule, "xpath")
 
-    def find_schedule(self, accountName='', origin='', destination='', service='', effectiveDate='', gri='',
+    def find_schedule(self, accountName='', origin='', destination='', service='', gri='',
                       activity='', ):
         # remove filters first
         working = True
@@ -161,7 +160,7 @@ class CustomerMetroSRSchedulePage(BasePage):
         self.enterOrigin(origin)
         self.enterDestination(destination)
         self.clickService(service)
-        self.enterEffectiveDate(effectiveDate)
+        # self.enterEffectiveDate(effectiveDate)
         self.enterGRIApplied(gri)
         self.clickInactiveSchedule(activity)
         time.sleep(2)

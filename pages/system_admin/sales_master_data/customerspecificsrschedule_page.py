@@ -14,12 +14,12 @@ class CustomerSSRSchedulePage(BasePage):
     filter_field = []
     filter_field_val = None
     mapps = {
-        "accountName": 2,
-        "origin": 3,
-        "destination": 4,
-        "schedule": 5,
-        "service": 7,
-        "effective_date": 9,
+        "accountName": 3,
+        "origin": 4,
+        "destination": 5,
+        "schedule": 6,
+        "service": 8,
+        "effective_date": 10,
     }
 
     def __init__(self, driver):
@@ -168,7 +168,7 @@ class CustomerSSRSchedulePage(BasePage):
         self.filter_field_val = "activity"
         self.elementClick(self._inactive_schedule, "xpath")
 
-    def find_schedule(self, accountName='', origin='', destination='', service='', schedule='', effectiveDate='', gri='', activity='', ):
+    def find_schedule(self, accountName='', origin='', destination='', service='', scheduleType='', effectiveDate='', gri='', activity='', ):
         # remove filters first
         working = True
         self.waitForElement(self._clear_filter_btn, "xpath")
@@ -178,7 +178,7 @@ class CustomerSSRSchedulePage(BasePage):
         self.enterOrigin(origin)
         self.enterDestination(destination)
         self.clickService(service)
-        self.clickSchedule(schedule)
+        self.clickSchedule(scheduleType)
         self.enterEffectiveDate(effectiveDate)
         self.enterGRIApplied(gri)
         self.clickInactiveSchedule(activity)
