@@ -215,17 +215,26 @@ class MetroGeneralRSchedulePage(BasePage):
 
     def edit(self):
 # store the values and rewrite on fields. save after, then check the toast
-        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND'])[2]/preceding::*[name()='svg'][4]"
+        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND-AREA 2'])[1]/preceding::*[name()='svg'][2]"
 
+        edit_ok = []
+        calc_method_field = "//input[@id='wayne_id_CALCULATION METHOD']"
+        min_rate_field = "//input[@id='wayne_id_MINIMUM RATE']"
         self.waitForElement(self._total_count)
         self.elementClick(edit_btn, "xpath")
         self.waitForElement(self._origin, "xpath")
+        calc_methd_bool = not self.getElement(calc_method_field, "xpath").is_enabled()
+        print(calc_methd_bool)
+        edit_ok.append(not self.getElement(calc_method_field, "xpath").is_enabled())
         origin_val = self.getElement(self._origin, "xpath").text
         destination_val = self.getElement(self._destination, "xpath").text
         service_val = self.getElement(self._service_type, "xpath").text
-        item_val = self.getElement("//input[@id='wayne_id_item']", "xpath").text
-        commodity_val =self.getElement("//input[@id='wayne_id_commodity']", "xpath").text
-        rate_val = self.getElement("//input[@id='wayne_id_rate']", "xpath").text
+        self.waitForElement("//input[@id='wayne_id_schedule type']", "xpath")
+        schedule = self.getElement("//input[@id='wayne_id_schedule type']", "xpath")
+        schedule_val = schedule.text
+        # ratio_w_v_val = self.getElement("//div[@id='wayne_id_RATIO (W/V)']", "xpath").text
+        vol_val = self.getElement("//input[@id='wayne_id_MINIMUM VOLUME']", "xpath").text
+        rate_val = self.getElement("//input[@id='wayne_id_Rate']", "xpath").text
 
 # ADD NOTES SECTION AND DATES SECTION.
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._origin, "xpath"))
@@ -237,22 +246,31 @@ class MetroGeneralRSchedulePage(BasePage):
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._service_type, "xpath"))
         self.sendKeys(service_val, self._service_type, "xpath")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_item']", "xpath"))
-        self.sendKeys(item_val, "//input[@id='wayne_id_item']", "xpath")
+        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_schedule type']", "xpath"))
+        self.sendKeys(schedule_val, "//input[@id='wayne_id_schedule type']", "xpath")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_commodity']", "xpath"))
-        self.sendKeys(commodity_val, "//input[@id='wayne_id_commodity']", "xpath")
-        time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_rate']", "xpath"))
-        self.sendKeys(rate_val, "//input[@id='wayne_id_rate']", "xpath")
-        time.sleep(5)
-        min_hrs_asterisk = self.isElementPresent("//div/label[@id='wayne_id_min hours-label']/span", "xpath")
-        if min_hrs_asterisk:
-            # self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_min hours']", "xpath"))
-            self.getElement("//input[@id='wayne_id_min hours']", "xpath").clear()
-            self.sendKeys(2, "//input[@id='wayne_id_min hours']", "xpath")
+        # self.driver.execute_script("arguments[0].value = ''", self.getElement("//div[@id='wayne_id_RATIO (W/V)']", "xpath"))
+        # self.sendKeys(ratio_w_v_val, "//div[@id='wayne_id_RATIO (W/V)']", "xpath")
+        # time.sleep(2)
+        self.elementClick("//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]", "xpath")
+        self.driver.execute_script("arguments[0].value = '';", self.getElement("//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]", "xpath"))
+        self.sendKeys(vol_val, "//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]", "xpath")
 
-        self.elementClick("//button[@id='wayne_id_Save, ']", "xpath")
-        edit_successfull: bool = self.isElementPresent("//div[contains(normalize-space(text()), 'AccountCommodity Schedule updated')]/parent::*/parent::*", "xpath")
-        return edit_successfull
+        self.elementClick("//div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]", "xpath")
+        self.driver.execute_script("arguments[0].value = ''", self.getElement("//div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]", "xpath"))
+        self.sendKeys(rate_val, "//div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]", "xpath")
+        time.sleep(2)
+        # min_hrs_asterisk = self.isElementPresent("//div/label[@id='wayne_id_min hours-label']/span", "xpath")
+        # if min_hrs_asterisk:
+        #     # self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_min hours']", "xpath"))
+        #     self.getElement("//input[@id='wayne_id_min hours']", "xpath").clear()
+        #     self.sendKeys(2, "//input[@id='wayne_id_min hours']", "xpath")
+        edit_ok.append(not self.getElement("//input[@id='wayne_id_MINIMUM RATE']", "xpath").is_enabled())
+
+        self.elementClick("//button[@id='wayne_id_Edit, ']", "xpath")
+        edit_ok.append(self.isElementPresent("//div[contains(normalize-space(text()), 'Metro Schedule updated Successfully')]/parent::*/parent::*", "xpath"))
+
+        print(edit_ok, all(edit_ok))
+
+        return all(edit_ok)
 

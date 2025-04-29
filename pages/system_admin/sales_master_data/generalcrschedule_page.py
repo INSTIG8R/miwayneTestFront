@@ -230,20 +230,48 @@ class GeneralCRSchedulePage(BasePage):
 # AccountCommodity Schedule updated successfully, toast
 
     def edit(self):
-# store the values and rewrite on fields. save after, then check the toast
-        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND'])[2]/preceding::*[name()='svg'][4]"
+        # store the values and rewrite on fields. save after, then check the toast
+        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='ACACIA BAY'])[1]/preceding::*[name()='svg'][5]"
+        edit_ok = []
 
+        schedule_field = "//input[@id='wayne_id_SCHEDULE Type']"
+        ratio_field = "//div[@id='wayne_id_RATIO (W/V)']/following-sibling::*[1]"
+        weight1_field = "(//input[@id='wayne_id_WEIGHT'])[1]"
+        volume1_field = "(//input[@id='wayne_id_VOLUME'])[1]"
+        weight2_field = "(//input[@id='wayne_id_WEIGHT'])[2]"
+        volume2_field = "(//input[@id='wayne_id_VOLUME'])[2]"
         self.waitForElement(self._total_count)
         self.elementClick(edit_btn, "xpath")
         self.waitForElement(self._origin, "xpath")
+
+        edit_ok.append(not self.getElement(schedule_field, "xpath").is_enabled())
+        edit_ok.append(not self.getElement(ratio_field, "xpath").is_enabled())
+        edit_ok.append(not self.getElement(weight1_field, "xpath").is_enabled())
+        edit_ok.append(not self.getElement(volume1_field, "xpath").is_enabled())
+        edit_ok.append(not self.getElement(weight2_field, "xpath").is_enabled())
+        edit_ok.append(not self.getElement(volume2_field, "xpath").is_enabled())
+        vol2_val = float(self.getElement(volume2_field, "xpath").get_attribute("value"))
+        vol1_val = float(self.getElement(volume1_field, "xpath").get_attribute("value"))
+        print(vol1_val, vol2_val)
+        ratio = round(float(vol2_val / vol1_val), 2)
+        print("#####################" + str(ratio) + "##################")
+
         origin_val = self.getElement(self._origin, "xpath").text
         destination_val = self.getElement(self._destination, "xpath").text
         service_val = self.getElement(self._service_type, "xpath").text
-        item_val = self.getElement("//input[@id='wayne_id_item']", "xpath").text
-        commodity_val =self.getElement("//input[@id='wayne_id_commodity']", "xpath").text
-        rate_val = self.getElement("//input[@id='wayne_id_rate']", "xpath").text
+        effectivedate_val = self.getElement("//input[@id='wayne_id_EFFECTIVE DATE']", "xpath").text
+        rate1 = self.getElement("(//input[@id='wayne_id_RATE'])[1]", "xpath")
+        rate2 = self.getElement("(//input[@id='wayne_id_RATE'])[2]", "xpath")
+        rate1_val = float(rate1.get_attribute("value"))
+        rate2_val = float(rate2.get_attribute("value"))
+        min1_val = self.getElement("(//input[@id='wayne_id_MIN CHARGE'])[1]", "xpath").text
+        min2_val = self.getElement("(//input[@id='wayne_id_MIN CHARGE'])[2]", "xpath").text
 
-# ADD NOTES SECTION AND DATES SECTION.
+        rate_ratio = round(float(rate2_val / rate1_val), 2)
+        rate1_asterisk = self.isElementPresent("(//div/label[@id='wayne_id_RATE-label']/span)[1]", "xpath")
+        rate2_asterisk = self.isElementPresent("(//div/label[@id='wayne_id_RATE-label']/span)[2]", "xpath")
+
+        # ADD NOTES SECTION AND DATES SECTION.
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._origin, "xpath"))
         self.sendKeys(origin_val, self._origin, "xpath")
         time.sleep(2)
@@ -253,22 +281,55 @@ class GeneralCRSchedulePage(BasePage):
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._service_type, "xpath"))
         self.sendKeys(service_val, self._service_type, "xpath")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_item']", "xpath"))
-        self.sendKeys(item_val, "//input[@id='wayne_id_item']", "xpath")
+        self.driver.execute_script("arguments[0].value = ''",
+                                   self.getElement("//input[@id='wayne_id_EFFECTIVE DATE']", "xpath"))
+        self.sendKeys(effectivedate_val, "//input[@id='wayne_id_EFFECTIVE DATE']", "xpath")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_commodity']", "xpath"))
-        self.sendKeys(commodity_val, "//input[@id='wayne_id_commodity']", "xpath")
-        time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_rate']", "xpath"))
-        self.sendKeys(rate_val, "//input[@id='wayne_id_rate']", "xpath")
-        time.sleep(5)
-        min_hrs_asterisk = self.isElementPresent("//div/label[@id='wayne_id_min hours-label']/span", "xpath")
-        if min_hrs_asterisk:
-            # self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_min hours']", "xpath"))
-            self.getElement("//input[@id='wayne_id_min hours']", "xpath").clear()
-            self.sendKeys(2, "//input[@id='wayne_id_min hours']", "xpath")
 
+        #
+        self.elementClick("(// input[@id='wayne_id_RATE'])[1]", "xpath")
+        self.driver.execute_script("arguments[0].value = '';",
+                                   self.getElement("(// input[@id='wayne_id_RATE'])[1]", "xpath"))
+
+        # self.getElement("(// input[@id='wayne_id_RATE'])[1]", "xpath").clear()
+        self.sendKeys(rate1_val, "(// input[@id='wayne_id_RATE'])[1]", "xpath")
+        print(rate1.get_attribute("value"), rate1_val)
+        time.sleep(2)
+
+        self.elementClick("(// input[@id='wayne_id_RATE'])[2]", "xpath")
+        self.driver.execute_script("arguments[0].value = '';",
+                                   self.getElement("(// input[@id='wayne_id_RATE'])[2]", "xpath"))
+        # self.getElement("(//input[@id='wayne_id_RATE'])[2]", "xpath").clear()
+        self.sendKeys(rate2_val, "(// input[@id='wayne_id_RATE'])[2]", "xpath")
+        print(rate2.get_attribute("value"), rate2_val)
+        time.sleep(2)
+        if (rate1_asterisk and rate2_asterisk) and (ratio == rate_ratio):
+            edit_ok.append(True)
+            self.log.info("Rates are required field, calculation is correct.... Working!")
+        else:
+            edit_ok.append(False)
+            self.log.error(
+                "Rates are either not required field (asterisk missing) or calculation is wrong... NOT WORKING!")
+
+        time.sleep(2)
+        if (min1_val is None) and (min2_val == "0.00"):
+            edit_ok.append(True)
+            self.log.info("Min Rate Value 1 missing and min rate value 2 is not ZERO.. Working!!")
+        elif (min1_val is None) and (min2_val != "0.00"):
+            edit_ok.append(False)
+            self.log.error("Min Rate Value 1 missing but min rate value 2 is not ZERO.. NOT Working!!")
+
+        else:
+            equal_or_not = (min2_val == min1_val)
+            edit_ok.append(equal_or_not)
+            self.log.info("Minimum Values Check!! ")
+        time.sleep(2)
         self.elementClick("//button[@id='wayne_id_Save, ']", "xpath")
-        edit_successfull: bool = self.isElementPresent("//div[contains(normalize-space(text()), 'AccountCommodity Schedule updated')]/parent::*/parent::*", "xpath")
+
+        edit_successfull: bool = self.isElementPresent(
+            "//div[contains(normalize-space(text()), 'Sell Rate updated Successfully')]/parent::*/parent::*",
+            "xpath")
+
+        print(edit_ok, edit_successfull)
         return edit_successfull
 
