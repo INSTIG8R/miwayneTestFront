@@ -34,15 +34,15 @@ class NewConsignmentDDTTests(unittest.TestCase):
         self.ts.markFinal("New Consignment Page load Check", nc_res, "New Consignment Page Loaded")
 
     @pytest.mark.order(2)
-    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\data\\newconsignment_data.csv"))
+    @data(*getCSVData("C:\\work\\miwayneTestFront\\data\\newconsignment_data.csv"))
     @unpack
-    def test_ccsv(self, connote='', accountName='', status='', senderCompanyName='', receiverCompanyName='',
+    def test_ccsv(self, connote='', accountName='', status='', customerRef='', assignedTo='', priorityLevel='', senderCompanyName='', receiverCompanyName='',
                   services1='', item1='', commodity1='', quantity1='', weight1='', volume1='',
                   item2='', commodity2='', quantity2='', weight2='', volume2='',
                   carrier1='', depot1='', frm1='', to1='', cost1='', cn1='',
                   carrier2='', depot2='', frm2='', to2='', cost2='', cn2='',
                   quotedPrice='', noCharge='', quotedBy='', pricingNotes='', cancelled=''):
-        self.nc.enterHeaderInformation(connote=connote, accountName=accountName, status=status)
+        self.nc.enterHeaderInformation(connote=connote, accountName=accountName, status=status, customerRef=customerRef, assignedTo=assignedTo, priorityLevel=priorityLevel)
         ###
         data_fetched_test = self.nc.checkDataFetchedPopUp()
         if data_fetched_test:

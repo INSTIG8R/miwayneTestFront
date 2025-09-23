@@ -8,11 +8,6 @@ from utilities.teststatus import TestStatus
 import unittest
 import pytest
 
-
-# from ddt import ddt, data, unpack
-# from utilities.read_data import getCSVData
-
-
 @pytest.mark.use_fixtures("oneTimeSetup", "setUp")
 # @ddt
 class NewConsignmentSHTests(unittest.TestCase):
@@ -26,7 +21,7 @@ class NewConsignmentSHTests(unittest.TestCase):
     @pytest.mark.order(1)
     def test_validPage(self):
         self.lp = LoginPage(self.driver)
-        self.lp.login("fatin.khan@w4solutions.com.au", "passswordkhaN97!")
+        self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
         self.db = self.hp.clickDashboard()
         self.nc = self.db.gotoConsignmentForm()
         nc_res = self.nc.verifyNewConsignmentTitle()
@@ -35,15 +30,15 @@ class NewConsignmentSHTests(unittest.TestCase):
     @pytest.mark.order(2)
     def test_lines(self):
         _res = False
-        self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED', customerRef='testpurpose', assignedTo='Fatin', priorityLevel='High')
+        self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED', customerRef='testpurpose', assignedTo='DONE', priorityLevel='High')
         if self.nc.isElementPresent("//p[contains(normalize-space(), 'already exist')]", "xpath"):
             self.nc.editConsignmentNumber()
         time.sleep(2)
         self.nc.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
-        self.nc.enterReceiverDetails(receiverCompanyName='FLOORING DESIGN NEW LYNN')
+        self.nc.enterReceiverDetails(receiverCompanyName='BELGOTEX C/O EXPRESS CARGO')
         # self.nc.scrollWindowDown()
         self.nc.enterConsignmentLine_1(services1='METRO GENERAL', item1='ROLL', commodity1='ROLL FLOORING', quantity1='2', weight1='109.500', volume1='0.420')
-        time.sleep(3)
+        time.sleep(2)
         self.nc.enterConsignmentLine_2(item2='ITEM', commodity2='GENERAL ITEM', quantity2='1', weight2='100', volume2='0.121')
         rqf = self.nc.checkRequiredFieldsCL()
         if rqf:
@@ -79,8 +74,8 @@ class NewConsignmentSHTests(unittest.TestCase):
     @pytest.mark.order(3)
     def test_leggings(self):
         _res = False
-        self.nc.enterLegging_1(carrier1='CARGO PLUS LTD', depot1='', frm1='AUCKLAND', to1='CHRISTCHURCH', approver='EMBER')
-        self.nc.enterLegging_2(carrier2='CARGO PLUS LTD', depot2='', frm2='CHRISTCHURCH', to2='AUCKLAND', approver2='EMBER')
+        self.nc.enterLegging_1(carrier1='CARGO PLUS LTD', depot1='', frm1='AUCKLAND', to1='CHRISTCHURCH', approver='SARAHGL')
+        self.nc.enterLegging_2(carrier2='CARGO PLUS LTD', depot2='', frm2='CHRISTCHURCH', to2='AUCKLAND', approver2='SARAHGL')
         #Verify Required Fields are Filled
         rqf = self.nc.checkRequiredFieldsLG()
         if rqf:

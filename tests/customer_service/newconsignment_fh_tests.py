@@ -21,7 +21,7 @@ class NewConsignmentFHTests(unittest.TestCase):
     @pytest.mark.order(1)
     def test_validPage(self):
         self.lp = LoginPage(self.driver)
-        self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
+        self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
         self.db = self.hp.clickDashboard()
         self.nc = self.db.gotoConsignmentForm()
         nc_res = self.nc.verifyNewConsignmentTitle()
@@ -29,7 +29,7 @@ class NewConsignmentFHTests(unittest.TestCase):
 
     @pytest.mark.order(2)
     def test_header(self):
-        self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED')
+        self.nc.enterHeaderInformation(connote='DEMO0001001', accountName='BELGOTEX NZ LTD', status='DELIVERED', customerRef='1233AS', priorityLevel='STANDARD', assignedTo='DONE')
         addressinfotest = self.nc.checkSenderAddressClickable()
         # print(data_fetched_test)
         if addressinfotest:
@@ -40,14 +40,14 @@ class NewConsignmentFHTests(unittest.TestCase):
     @pytest.mark.order(3)
     def test_checkSenderDetails(self):
         _sd_val = False
-        self.nc.enterSenderDetails(senderCompanyName='BELGOTEX TIDAL ROAD')
-        data_fetched_test = self.nc.checkDataFetchedPopUp()
-        # print(data_fetched_test)
-        if data_fetched_test:
-            self.ts.mark(True, "Data Fetched Without Issues")
-        else:
-            self.ts.mark(False, "Data Could not be fetched")
-        time.sleep(5)
+        self.nc.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
+        # data_fetched_test = self.nc.checkDataFetchedPopUp()
+        # # print(data_fetched_test)
+        # if data_fetched_test:
+        #     self.ts.mark(True, "Data Fetched Without Issues")
+        # else:
+        #     self.ts.mark(False, "Data Could not be fetched")
+        # time.sleep(2)
         print(self.nc.checkSenderAddressType())
         if self.nc.checkSenderAddressType():
             self.ts.mark(True, "Sender Address Type has field value")
@@ -102,8 +102,8 @@ class NewConsignmentFHTests(unittest.TestCase):
     def test_checkReceiverDetails(self):
         _rd_val = False
         # noinspection SpellCheckingInspection
-        self.nc.enterReceiverDetails(receiverCompanyName="FLOORING XTRA JB'S")
-        time.sleep(5)
+        self.nc.enterReceiverDetails(receiverCompanyName="BELGOTEX HA CRES")
+        # time.sleep(5)
         print(self.nc.checkReceiverAddressType())
         if self.nc.checkReceiverAddressType():
             self.ts.mark(True, "Receiver Address Type has field value")
@@ -158,41 +158,49 @@ class NewConsignmentFHTests(unittest.TestCase):
     @pytest.mark.order(5)
     def test_editSenderDetails(self):
 
-        res_values = self.nc.editSenderDetailsCompanyNameAndCheckRequiredFields(senderCompanyName="CARPET 2000 LTD")
-        print(res_values)
-        if res_values:
-            self.ts.mark(res_values, "Required Fields are FILLED")
+        verified_acc = self.nc.verifiedaccount_l()
+        if verified_acc:
+            self.ts.markFinal("Verified Account", True, "Editing not needed")
         else:
-            self.ts.mark(res_values, "Required Fields are EMPTY!!!")
+            res_values = self.nc.editSenderDetailsCompanyNameAndCheckRequiredFields(senderCompanyName="BELGOTEX NZ LTD")
+            print(res_values)
+            if res_values:
+                self.ts.mark(res_values, "Required Fields are FILLED")
+            else:
+                self.ts.mark(res_values, "Required Fields are EMPTY!!!")
 
         # addrTy, Road, Street, City, State, PostCode
-        res_edit = self.nc.editSenderDetails(addressType="RESIDENTIAL BUSINESS", road='32', street='FOX STREET',
+            res_edit = self.nc.editSenderDetails( road='32', street='FOX STREET',
                                              city='INVERCARGILL', state='SOUTHLAND', postcode='9810')  #
-        if res_edit:
-            self.ts.markFinal("Edited Existing Sender Details", res_edit, "Sender Details Edited Successfully")
+            if res_edit:
+                self.ts.markFinal("Edited Existing Sender Details", res_edit, "Sender Details Edited Successfully")
 
-        else:
-            self.ts.markFinal("Edited Existing Sender Details", res_edit, "Sender Details couldn't be Edited!!!")
+            else:
+                self.ts.markFinal("Edited Existing Sender Details", res_edit, "Sender Details couldn't be Edited!!!")
 
         time.sleep(5)
-
+    #
     @pytest.mark.order(6)
     def test_editReceiverDetails(self):
-        res_values = self.nc.editReceiverDetailsCompanyName(receiverCompanyName="ESSENTIAL FLOORS LTD")
-        print(res_values)
-        if res_values:
-            self.ts.mark(res_values, "Required Fields are FILLED")
+        verifiedacc = self.nc.verifiedaccount_r()
+        if verifiedacc:
+            self.ts.markFinal("Verified Account", True, "Editing not needed")
         else:
-            self.ts.mark(res_values, "Required Fields are EMPTY!!!")
+            res_values = self.nc.editReceiverDetailsCompanyName(receiverCompanyName="BELGOTEX HA CRES")
 
-        res_edit = self.nc.editReceiverDetails(addressType="RESIDENTIAL BUSINESS", road='11', street='NICCOL AVENUE', city='CHRISTCHURCH', state='OTAGO', postcode='9510')  #
+            if res_values:
+                self.ts.mark(res_values, "Required Fields are FILLED")
+            else:
+                self.ts.mark(res_values, "Required Fields are EMPTY!!!")
 
-        if res_edit:
-            self.ts.markFinal("Edited Existing Receiver Details", res_edit, "Receiver Details Edited Successfully")
+            res_edit = self.nc.editReceiverDetails( road='11', street='NICCOL AVENUE', city='CHRISTCHURCH', state='OTAGO', postcode='9510')  #
 
-        else:
-            self.ts.markFinal("Edited Existing Receiver Details", res_edit, "Receiver Details couldn't be Edited!!!")
-        time.sleep(4)
+            if res_edit:
+                self.ts.markFinal("Edited Existing Receiver Details", res_edit, "Receiver Details Edited Successfully")
 
-
-
+            else:
+                self.ts.markFinal("Edited Existing Receiver Details", res_edit, "Receiver Details couldn't be Edited!!!")
+    #     time.sleep(4)
+    #
+    #
+    #

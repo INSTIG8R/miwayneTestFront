@@ -35,7 +35,7 @@ class ConsignmentForm(BasePage):
     _assigned_to = "//input[@id = 'wayne_id_Assigned To']"
     _priority_level = "//input[@id = 'wayne_id_Priority Level']"
 
-    _data_fetched_popup = "//div[contains(text(),'Address Info Fetched')]"
+    _data_fetched_popup = "//div[contains(text(),'Address Info Fetched')]/parent::*/parent::*"
 
     # Sender Details
 
@@ -54,15 +54,18 @@ class ConsignmentForm(BasePage):
     _city_l = "//input[@tabindex='23']"
     _state_l = "//input[@tabindex='24']"
     _post_code_l = "//input[@tabindex='25']"
-    _forklift_l = "//input[@tabindex='27']"
-    _driver_l = "//input[@tabindex='28']"
-    _open_time_l = "//input[@id='wayne_id_openTime']"  # [0]
-    _close_time_l = "//input[@id='wayne_id_close Time']"  # [0]
-    _vehicle_l = "//input[@id='wayne_id_vehicle'][@tabindex =31]"
-    _vehicle_type_l = "//input[@id='wayne_id_vehicle Type'][@tabindex =32]"
-    _charges_l = "//input[@tabindex = '33']"
-    _special_instruction_l = "//textarea[@tabindex = '34']"
-    _create_addr_l = "//button[@tabindex='35'][@id = 'wayne_id_Edit Address']"  ##Not Used
+    _forklift_l = "//input[@tabindex='30']"
+    _driver_l = "//input[@tabindex='31']"
+    _open_time_l = "//input[@tabindex='27']"  # [0]
+    _close_time_l = "//input[@tabindex='28']"  # [0]
+    _vehicle_l = "//input[@tabindex =31]"
+    _ringbeforepickupordelivery_l = "//input[@tabindex =32]"
+    _charges_l = "//input[@tabindex='29']"
+    _taillift_l = "//input[@tabindex='35']"
+    _cfs_site_l = "//input[@tabindex =33]"
+    _unmannedsite_l = "//input[@tabindex = '34']"
+    _special_instruction_l = "//textarea[@tabindex = '36']"
+    _create_addr_l = "//button[@id = 'wayne_id_Create Address'][@tabindex =37]"  ##Not Used
 
     _charges_lst_f = "//div[@data-tag-index=0]/span"  # [0]
     _charges_rst_f = ""
@@ -79,15 +82,17 @@ class ConsignmentForm(BasePage):
     _city_r = "//input[@tabindex = '43']"
     _state_r = "//input[@tabindex = '44']"
     _post_code_r = "//input[@tabindex = '45']"
-    _forklift_r = "//input[@tabindex = '47']"
-    _driver_r = "//input[@tabindex = '48']"
-    _open_time_r = "//input[@id='wayne_id_openTime']"  # [1]
-    _close_time_r = "//input[@id='wayne_id_close Time']"  # [1]
-    _vehicle_r = "//input[@tabindex = '51']"
-    _vehicle_type_r = "//input[@tabindex = '52']"
-    _charges_r = "//input[@tabindex = '53']"
-    _special_instruction_r = "//textarea[@tabindex = '54']"
-    _create_addr_r = "//button[@tabindex='60']/span[normalize-space()='EDIT ADDRESS']"  ##Not Used
+    _forklift_r = "//input[@tabindex = '50']"
+    _driver_r = "//input[@tabindex = '54']"
+    _open_time_r = "//input[@tabindex = '47']"  # [1]
+    _close_time_r = "//input[@tabindex = '48']"  # [1]
+    _taillift_r = "//input[@tabindex = '51']"
+    _ringbeforepickupordelivery_r = "//input[@tabindex = '52']"
+    _charges_r = "//input[@tabindex = '49']"
+    _cfs_site_r = "//input[@tabindex = '53']"
+    _unmannedsite_r = "//input[@tabindex = '55']"
+    _special_instruction_r = "//textarea[@tabindex = '56']"
+    _create_addr_r = "//button[@tabindex='57'][@id = 'wayne_id_Create Address']"  ##Not Used
 
     # Contact Details sender
 
@@ -229,8 +234,9 @@ class ConsignmentForm(BasePage):
 
     _check_popUp = "//h2[normalize-space() = 'Do you want to create or edit the address?']"
     _edit_cancel_btn = "//button[normalize-space() = 'Cancel']"
-    _edit_address_btn = "//button[normalize-space() = 'Edit Address'][@tabindex =0]"
-    _edit_address_btn_r = "//button[normalize-space() = 'Edit Address'][@tabindex =55]"
+    _change_address_btn = "//button[@id= 'wayne_id_Change Address'][@tabindex =0]"
+
+    _edit_address_btn_r = "//button[normalize-space() = 'Edit Address'][@tabindex =57]"
     _edit_create_address_btn = "//button[normalize-space() = 'Create Address']"
     _addr_upadted_successfully = "//span[normalize-space() ='Address updated Successfully']"
     # error logs array
@@ -316,7 +322,7 @@ class ConsignmentForm(BasePage):
     def checkDataFetchedPopUp(self):
         self.waitForElement(self._data_fetched_popup, "xpath")
         print(self.getElement(self._data_fetched_popup, "xpath").text)
-        if self.getElement(self._data_fetched_popup, "xpath").text == "Account Info Fetched":
+        if self.getElement(self._data_fetched_popup, "xpath").text == "Address Info Fetched":
             return True
         else:
             return False
@@ -366,7 +372,7 @@ class ConsignmentForm(BasePage):
 
     def checkSenderAddressClickable(self):
         sa = self.getElement(self._company_l, "xpath")
-        sa_clickable = sa.isEnabled()
+        sa_clickable = sa.is_enabled()
         if not sa_clickable:
             return False
         else:
@@ -509,15 +515,15 @@ class ConsignmentForm(BasePage):
 
     def enterSenderVehicleType(self, vehicleType):
         if vehicleType:
-            self.waitForElement(self._vehicle_type_l, "xpath")
-            self.sendKeys(self._vehicle_type_l, "xpath")
-            vt = self.getElement(self._vehicle_type_l, "xpath")
+            self.waitForElement(self._ringbeforepickupordelivery_l, "xpath")
+            self.sendKeys(self._ringbeforepickupordelivery_l, "xpath")
+            vt = self.getElement(self._ringbeforepickupordelivery_l, "xpath")
             vt.send_keys(Keys.ENTER)
 
     def enterSenderSpecialInstructions(self, specialInstructions):
         if specialInstructions:
-            self.waitForElement(self._special_instruction_l)
-            self.sendKeys(specialInstructions, self._special_instruction_l, "xpath")
+            self.waitForElement(self._unmannedsite_l)
+            self.sendKeys(specialInstructions, self._unmannedsite_l, "xpath")
 
     def checkSenderCharges(self):
         sch = self.getElement(self._charges_lst_f, "xpath").text
@@ -678,7 +684,7 @@ class ConsignmentForm(BasePage):
     def editPopUpWindow(self):
         self.waitForElement(self._check_popUp, "xpath")
         pw = self.getElement(self._check_popUp, "xpath")
-        self.elementClick(self._edit_address_btn, "xpath")
+        self.elementClick("//button[@id='wayne_id_Edit Address'][@tabindex='0']", "xpath")
         if pw:
             return True
         else:
@@ -731,11 +737,25 @@ class ConsignmentForm(BasePage):
         else:
             return False
 
-    def editSenderDetails(self, addressType, road, street, city, state, postcode):  #
+    def verifiedaccount_l(self):
+        va = self.getElement(self._street_l, "xpath")
+        disabled_attribute = va.get_attribute("disabled")
+        if disabled_attribute == "true" or disabled_attribute == "disabled":
+            return True
+        else:
+            return False
+
+    def verifiedaccount_r(self):
+        va = self.getElement(self._street_r, "xpath")
+        disabled_attribute = va.get_attribute("disabled")
+        if disabled_attribute == "true" or disabled_attribute == "disabled":
+            return True
+        else:
+            return False
+
+    def editSenderDetails(self, road, street, city, state, postcode):  #
         _r1 = False
         _es = False
-        self.editSenderAddressType(addressType=addressType)  # select type
-        time.sleep(3)
         self.editSenderRoad(road=road)
         _r1 = self.checkSenderStreet()
         if not _r1:
@@ -784,12 +804,11 @@ class ConsignmentForm(BasePage):
         else:
             return False
 
-    def editReceiverDetails(self, addressType, road, street, city, state, postcode):  #
+    def editReceiverDetails(self, road, street, city, state, postcode):  #
         _r1 = False
         _es = False
         # _r2 = False
-        self.editReceiverAddressType(addressType=addressType)  # select type
-        time.sleep(3)
+
         self.editReceiverRoad(road=road)
         _r1 = self.checkReceiverStreet()
         if not _r1:
@@ -812,7 +831,7 @@ class ConsignmentForm(BasePage):
         cab = self.getElement(self._edit_address_btn_r, "xpath")
 
         if cab is None:
-            self.log.error("### CREATE ADDRESS BUTTON NOT FOUND!!!")
+            self.log.error("### EDIT ADDRESS BUTTON NOT FOUND!!!")
         if cab is not None and cab.is_enabled():
             self.elementClick(self._edit_address_btn_r, "xpath")
             _es = self.isElementPresent("//div[1]/div[1]/div[1][normalize-space()='Address updated Successfully']",
@@ -1087,16 +1106,16 @@ class ConsignmentForm(BasePage):
 
     def enterReceiverVehicle(self, vehicle):
         if vehicle:
-            self.waitForElement(self._vehicle_r, "xpath")
-            self.sendKeys(self._vehicle_r, "xpath")
-            ve = self.getElement(self._vehicle_r, "xpath")
+            self.waitForElement(self._taillift_r, "xpath")
+            self.sendKeys(self._taillift_r, "xpath")
+            ve = self.getElement(self._taillift_r, "xpath")
             ve.send_keys(Keys.ENTER)
 
     def enterReceiverVehicleType(self, vehicleType):
         if vehicleType:
-            self.waitForElement(self._vehicle_type_r, "xpath")
-            self.sendKeys(self._vehicle_type_r, "xpath")
-            vt = self.getElement(self._vehicle_type_r, "xpath")
+            self.waitForElement(self._ringbeforepickupordelivery_r, "xpath")
+            self.sendKeys(self._ringbeforepickupordelivery_r, "xpath")
+            vt = self.getElement(self._ringbeforepickupordelivery_r, "xpath")
             vt.send_keys(Keys.ENTER)
 
     def checkReceiverSpecialInstructions(self):
@@ -1629,18 +1648,18 @@ class ConsignmentForm(BasePage):
         wt = self.getElement(self._weight1, "xpath").get_attribute("value")
         qu = self.getElement(self._quantity1, "xpath").get_attribute("value")
         wt = float(wt)
-        wt_f = "{:.3f}".format(wt)
-        sum = sum + round(float(wt_f), 3)
+        wt_f = "{:.2f}".format(wt)
+        sum = sum + round(float(wt_f), 2)
         sum = sum * int(qu)
 
         print(int(qu))
         if self.isElementPresent(self._weight2, "xpath"):
             wt2 = self.getElement(self._weight2, "xpath").get_attribute("value")
-            Wt2 = round(float(wt2), 3)
+            Wt2 = round(float(wt2), 2)
             qu2 = self.getElement(self._quantity2, "xpath").get_attribute("value")
-            sum = round(sum + (Wt2 * int(qu2)), 3)
+            sum = round(sum + (Wt2 * int(qu2)), 2)
             print(Wt2, int(qu2))
-        sum = round(sum, 3)
+        sum = round(sum, 2)
         print(sum)
         return sum
 
@@ -1649,20 +1668,20 @@ class ConsignmentForm(BasePage):
         rr = 0.000
         vol = self.getElement(self._volume1, "xpath").get_attribute("value")
         qu = self.getElement(self._quantity1, "xpath").get_attribute("value")
-        res1 = v_sum + round(float(vol), 3)
+        res1 = v_sum + round(float(vol), 2)
         sum = res1 * int(qu)
-        sum = round(sum, 3)
+        sum = round(sum, 2)
         print("Sum ", sum)
         if self.isElementPresent(self._weight2, "xpath"):
             vl = self.getElement(self._volume2, "xpath").get_attribute("value")
-            vol2 = round(float(vl), 3)
+            vol2 = round(float(vl), 2)
             qu2 = self.getElement(self._quantity2, "xpath").get_attribute("value")
-            rr = round(vol2 * int(qu2), 3)
+            rr = round(vol2 * int(qu2), 2)
             print("rr ", rr)
         res = sum + rr
-        res = round(res, 3)
+        res = round(res, 2)
         print("res", res)
-        time.sleep(3)
+        time.sleep(2)
         return res
 
     def totalWeightVerification(self):
@@ -2396,8 +2415,8 @@ class ConsignmentForm(BasePage):
         if atl:
             self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
             self.elementClick(self._authority_to_leave)
-            self.sendKeys(atl, "//textarea[@id ='wayne_id_Authority To Leave Notes']", "xpath")
-            self.elementClick("//*/text()[normalize-space(.)='Save']/parent::*/parent::*", "xpath")
+            self.sendKeys(atl, "//textarea[@id ='wayne_id_Authority To Leave Notes']", "xpath") # //button[@tabindex='0'][@id='wayne_id_Save']
+            self.elementClick("//*/text()[normalize-space(.)='Save']/parent::*", "xpath")
             time.sleep(1)
             self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
 
@@ -2411,11 +2430,11 @@ class ConsignmentForm(BasePage):
 
     def clickChristellNotes(self, christellNotes):
         if christellNotes:
-            self.elementClick(self._christel_notes)
+            self.elementClick(self._christel_notes, "xpath")
             self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
             self.sendKeys(christellNotes, "//textarea[@id ='wayne_id_Christel Notes']", "xpath")
-            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Close'])[3]/preceding::button[1]/parent::*", "xpath")
-            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]/parent::*", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Close'])[3]/preceding::button[1]", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
 
     def enterSpecialInstructionsDescription(self, si):
         if si:
@@ -2463,7 +2482,7 @@ class ConsignmentForm(BasePage):
         atl = self.getElement(self._authority_to_leave)
         if atl.is_selected:
             self.elementClick("//button[@tabindex='106']", "xpath")
-            chatl = self.elementPresenceCheck("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[1]","xpath")
+            chatl = self.elementPresenceCheck("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[2]","xpath")
             self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
             if chatl:
                 self.log.info("ATL working Correctly! ")
