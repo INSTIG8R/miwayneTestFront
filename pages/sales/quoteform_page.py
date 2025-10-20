@@ -162,7 +162,7 @@ class QuoteForm(BasePage):
 
     _check_popUp = "//h2[normalize-space() = 'Do you want to create or edit the address?']"
     _edit_cancel_btn = "//button[normalize-space() = 'Cancel']"
-    _edit_address_btn = "//button[normalize-space() = 'Change Address'][@tabindex =0]"
+    _edit_address_btn = "//button[@id = 'wayne_id_Edit Address'][@tabindex =0]"
     _edit_address_btn_r = "//button[normalize-space() = 'Change Address']"
     _edit_create_address_btn = "//button[normalize-space() = 'Create Address']"
     _addr_upadted_successfully = "//span[normalize-space() ='Address updated Successfully']"
@@ -225,8 +225,11 @@ class QuoteForm(BasePage):
 
     def enterSenderAddress(self, senderNewAddress):
         if senderNewAddress:
-            self.sendKeys(senderNewAddress, self._enter_addr_l, "xpath")
             sa = self.getElement(self._enter_addr_l, "xpath")
+            self.sendKeys(senderNewAddress, self._enter_addr_l, "xpath")
+            time.sleep(2)
+            # sa.send_keys(Keys.ARROW_DOWN)
+            # sa.send_keys(Keys.ARROW_DOWN)
             sa.send_keys(Keys.ENTER)
 
     def enterSenderCompany(self, senderCompanyName):
@@ -601,6 +604,14 @@ class QuoteForm(BasePage):
         _r1 = self.checkSenderCity()
         _r1 = self.checkSenderPostCode()
         if _r1:
+            return True
+        else:
+            return False
+
+    def verifiedaccount_l(self):
+        va = self.getElement(self._street_l, "xpath")
+        disabled_attribute = va.get_attribute("disabled")
+        if disabled_attribute == "true" or disabled_attribute == "disabled":
             return True
         else:
             return False
@@ -1464,44 +1475,44 @@ class QuoteForm(BasePage):
         pass
 
     def calctotalweight(self):
-        sum = 0.000
+        sum = 0.00
         wt = self.getElement(self._weight1, "xpath").get_attribute("value")
         qu = self.getElement(self._quantity1, "xpath").get_attribute("value")
         wt = float(wt)
-        wt_f = "{:.3f}".format(wt)
-        sum = sum + round(float(wt_f), 3)
+        wt_f = "{:.2f}".format(wt)
+        sum = sum + round(float(wt_f), 2)
         sum = sum * int(qu)
 
         print(int(qu))
         if self.isElementPresent(self._weight2, "xpath"):
             wt2 = self.getElement(self._weight2, "xpath").get_attribute("value")
-            Wt2 = round(float(wt2), 3)
+            Wt2 = round(float(wt2), 2)
             qu2 = self.getElement(self._quantity2, "xpath").get_attribute("value")
-            sum = round(sum + (Wt2 * int(qu2)), 3)
+            sum = round(sum + (Wt2 * int(qu2)), 2)
             print(Wt2, int(qu2))
-        sum = round(sum, 3)
+        sum = round(sum, 2)
         print(sum)
         return sum
 
     def calctotalvolume(self):
-        v_sum = 0.000
-        rr = 0.000
+        v_sum = 0.00
+        rr = 0.00
         vol = self.getElement(self._volume1, "xpath").get_attribute("value")
         qu = self.getElement(self._quantity1, "xpath").get_attribute("value")
-        res1 = v_sum + round(float(vol), 3)
+        res1 = v_sum + round(float(vol), 2)
         sum = res1 * int(qu)
-        sum = round(sum, 3)
+        sum = round(sum, 2)
         print("Sum ", sum)
         if self.isElementPresent(self._weight2, "xpath"):
             vl = self.getElement(self._volume2, "xpath").get_attribute("value")
-            vol2 = round(float(vl), 3)
+            vol2 = round(float(vl), 2)
             qu2 = self.getElement(self._quantity2, "xpath").get_attribute("value")
-            rr = round(vol2 * int(qu2), 3)
+            rr = round(vol2 * int(qu2), 2)
             print("rr ", rr)
         res = sum + rr
-        res = round(res, 3)
+        res = round(res, 2)
         print("res", res)
-        time.sleep(3)
+        time.sleep(2)
         return res
 
     def totalWeightVerification(self):

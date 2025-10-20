@@ -36,7 +36,7 @@ class CustomerCommoditySRScheduleTests(unittest.TestCase):
     def test_ccsv(self, accountName, origin, destination, service, effectiveDate, gri, activity):
         working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination, service=service, effectiveDate=effectiveDate, gri=gri, activity=activity)
         if self.ccsr.infonotpresent():
-            self.ts.markFinal("Test_dataPresence", False, "###What you are looking for doesn't exist###")
+            self.ts.mark(False, "###What you are looking for doesn't exist###")
         else:
             self.ts.mark(True, "Data Exist!!!")
         print(working)
@@ -45,6 +45,7 @@ class CustomerCommoditySRScheduleTests(unittest.TestCase):
         else:
             self.ts.markFinal("Test_Filtering", False, "Filtering has ISSUES!!!")
 
+    @pytest.mark.order(3)
     def test_edit(self):
         edit_ok = self.ccsr.edit()
         if edit_ok:

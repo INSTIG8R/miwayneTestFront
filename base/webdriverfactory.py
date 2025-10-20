@@ -57,7 +57,7 @@ class WebDriverFactory:
         driver.implicitly_wait(3)
         driver.maximize_window()
 
-        driver.execute_script("document.body.style.zoom='80%'")
+        # driver.execute_script("document.body.style.zoom='80%'")
         driver.implicitly_wait(3)
 
         driver.get(baseURL)

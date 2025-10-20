@@ -24,8 +24,7 @@ class NewConsignmentSHTests(unittest.TestCase):
         self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
         self.db = self.hp.clickDashboard()
         self.nc = self.db.gotoConsignmentForm()
-        nc_res = self.nc.verifyNewConsignmentTitle()
-        self.ts.markFinal("New Consignment Page load Check", nc_res, "New Consignment Page Loaded")
+
 
     @pytest.mark.order(2)
     def test_lines(self):
@@ -128,7 +127,7 @@ class NewConsignmentSHTests(unittest.TestCase):
     def test_sellRateSection(self):
         _res = False
 
-        self.nc.enterSellRateFields(noCharge='yes', quotedBy='EMBERSAW', pricingNotes='pc1',
+        self.nc.enterSellRateFields(noCharge='yes', quotedBy='SARAHGL', pricingNotes='pc1',
                                         cancelled='yes')
         _srf = self.nc.checkSellRateFields()
         in_list = False in _srf

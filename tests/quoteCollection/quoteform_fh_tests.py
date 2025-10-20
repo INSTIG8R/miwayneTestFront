@@ -43,7 +43,7 @@ class NewQuoteFHTests(unittest.TestCase):
             self.ts.markFinal("Header Test", False, "Data Could not be fetched")
 
         _sd_val = False
-        self.qf.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
+        self.qf.enterSenderDetails(senderCompanyName='BELGOTEX HA CRES')
         # data_fetched_test = self.qf.checkDataFetchedPopUp()
         # print(data_fetched_test)
         # if data_fetched_test:
@@ -103,11 +103,13 @@ class NewQuoteFHTests(unittest.TestCase):
             self.ts.mark(True, "Sender Post Code IS EMPTY!!!")
             _sd_val = False
 
-        self.ts.markFinal("TEST -> (Required Fields) Receiver Details DATA FETCHING", _sd_val, "All tests working")
+        self.ts.markFinal( "Sender Tests", _sd_val, "All tests working")
 
+    @pytest.mark.order(2)
+    def test_checkReceiverDetails(self):
         _rd_val = False
         # noinspection SpellCheckingInspection
-        self.qf.enterReceiverDetails(receiverCompanyName="CARPET COURT MT ROSKILL")
+        self.qf.enterReceiverDetails(receiverCompanyName="BELGOTEX C/O EXPRESS CARGO") #CARPET COURT MT ROSKILL
         time.sleep(3)
         print(self.qf.checkReceiverAddressType())
         if self.qf.checkReceiverAddressType():
@@ -157,21 +159,20 @@ class NewQuoteFHTests(unittest.TestCase):
             self.ts.mark(True, "Receiver Post Code IS EMPTY!!!")
             _rd_val = False
 
-        self.ts.markFinal("TEST -> (Required Fields) Receiver Details DATA FETCHING", _rd_val, "All tests working")
+        self.ts.markFinal( "Reciever Tests", _rd_val, "All tests working")
 
-        res_values = self.qf.editSenderDetailsCompanyNameAndCheckRequiredFields(
-            senderCompanyName='BELGOTEX CHRISTCHURCH')
-        print(res_values)
-        if res_values:
-            self.ts.markFinal("Check Required Fields", res_values, "Required Fields are FILLED")
+    @pytest.mark.order(3)
+    def testDetails(self):
+
+        verifiedacc = self.qf.verifiedaccount_l()
+        if verifiedacc:
+            self.ts.markFinal("Verified Account", True, "Editing not needed")
         else:
-            self.ts.markFinal("Check Required Fields", res_values, "Required Fields are EMPTY!!!")
-
-        res_values = self.qf.editReceiverDetailsCompanyName(receiverCompanyName="THE FLOORING ROOM CENTRE CHRISTCHURCH")
-        print(res_values)
-        if res_values:
-            self.ts.markFinal("Check Required Fields", res_values, "Required Fields are FILLED")
-        else:
-            self.ts.markFinal("Check Required Fields", res_values, "Required Fields are EMPTY!!!")
-
+            res_values = self.qf.editSenderDetailsCompanyNameAndCheckRequiredFields(
+                senderCompanyName='BELGOTEX HA CRES')
+            print(res_values)
+            if res_values:
+                self.ts.markFinal("Check Required Fields", res_values, "Required Fields are FILLED")
+            else:
+                self.ts.markFinal("Check Required Fields", res_values, "Required Fields are EMPTY!!!")
 

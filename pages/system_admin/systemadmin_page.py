@@ -360,7 +360,7 @@ class MasterDataPage(BasePage):
         self.waitForElement(self._add_btn, locatorType='xpath')
         # return Customer Commodity CR Schedule Page
         ccs =CustomerCommodityCRSchedulePage(self.driver)
-        self.elementClick("//div[@class='css-mkdn3h']//button[@type='button']//*[name()='svg']", "xpath")
+        self.elementClick("//div[@class='css-mkdn3h']//button[@type='button']//*[name()='svg']/parent::*", "xpath")
         return ccs
 
     def gotoCustomerMetroSRSchedule(self):

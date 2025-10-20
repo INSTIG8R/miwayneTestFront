@@ -22,14 +22,14 @@ class CurrentConsignmentTests(unittest.TestCase):
     @pytest.mark.order(1)
     def test_validPage(self):
         self.lp = LoginPage(self.driver)
-        self.lp.login("fatin.khan@w4solutions.com.au", "devexpresscargo@fatiN97")
+        self.lp.login("sabbir.sristy@w4solutions.com.au", "Iamsristy@36")
         self.cc = self.hp.gotoCurrentConsignment()
         time.sleep(2)
         result1 = self.cc.verifyCurrentConsignmentTitle()
         self.ts.markFinal("Current Consignment Title verification", result1, "Current Consignment page loaded")
 
     @pytest.mark.order(2)
-    @data(*getCSVData("D:\\work\\workspace_python\\wayne_express_cargo\\data\\currentconsignment_data.csv"))
+    @data(*getCSVData("C:\\work\\miwayneTestFront\\data\\newconsignment_data.csv"))
     @unpack
     def test_ccsv(self, connote, dateReadyFrom, dateReadyTo, datePickUpFrom, datePickUpTo, accountName, option, service, customerReference,
                   booked_by, pickup_city, delivery_city, sender, receiver, container_number, priority_level,

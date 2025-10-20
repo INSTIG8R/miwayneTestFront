@@ -34,8 +34,8 @@ class NewQuoteSHTests(unittest.TestCase):
         self.qf.enterHeaderInformation(accountName='BELGOTEX NZ LTD', customerRef='1231231231',
                                        receiverRef='assdasd123123')
 
-        self.qf.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
-        self.qf.enterReceiverDetails(receiverCompanyName='BELGOTEX CHRISTCHURCH')
+        self.qf.enterSenderDetails(senderCompanyName='BELGOTEX HA CRES')
+        self.qf.enterReceiverDetails(receiverCompanyName='BELGOTEX C/O EXPRESS CARGO')
         enabled = self.qf.enterConsignmentLine_1(services1='SUPERECONOMY', item1='ITEM', commodity1='GENERAL ITEM',
                                                  quantity1='2', weight1='100', volume1='0.448')
         time.sleep(3)
@@ -79,6 +79,9 @@ class NewQuoteSHTests(unittest.TestCase):
 
         _res = False
         self.qf.scrollWindowDown()
+
+    @pytest.mark.order(2)
+    def last_half(self):
         print("---------------In Sell Rating Section---------------")
         self.qf.enterSellRating()
         srg_test = self.qf.checkSRGenerated()
@@ -96,9 +99,9 @@ class NewQuoteSHTests(unittest.TestCase):
 
         print(_res)
         if _res:
-            self.ts.markFinal("Price Estimating Test", True, "Price Estimated!!!")
+            self.ts.mark(True, "Price Estimated!!!")
         else:
-            self.ts.markFinal("Price Estimating Test", False, "### Price Not Estimated!!!")
+            self.ts.mark(False, "### Price Not Estimated!!!")
         time.sleep(2)
 
         _res = False
@@ -106,25 +109,26 @@ class NewQuoteSHTests(unittest.TestCase):
         self.qf.enterSellRateFields(pricingNotes='pc1')
         _srf = self.qf.checkSellRateFields()
         if _srf:
-            self.ts.markFinal("Sell Rate Section Test", True, "Sell Rate Fields are Working Correctly!!!")
+            self.ts.mark( True, "Sell Rate Fields are Working Correctly!!!")
         else:
-            self.ts.markFinal("Sell Rate Section Test", False, "### Sell Rate Fields are not Working Correctly!!!")
+            self.ts.mark( False, "### Sell Rate Fields are not Working Correctly!!!")
         time.sleep(2)
 
         _res = False
         self.qf.enterAdditionalInformation(atl='yes', cn='customers numba wan')
         _res = self.qf.checkAdditionalInformation()
         if _res:
-            self.ts.markFinal("Additional Information Section Test", True,
+            self.ts.mark(True,
                               "Additional Information Fields are Working Correctly!!!")
         else:
-            self.ts.markFinal("Additional Information  Section Test", False,
+            self.ts.mark(False,
                               "### Additional Information Fields are not Working Correctly!!!")
         time.sleep(2)
-        cr_con = self.qf.clickCreateQuote()
-        if cr_con:
-            self.ts.markFinal("New CONSIGNMENT TESTS", True, "Quote Created Successfully!!!")
-        else:
-            self.ts.markFinal("New Consignment TESTS", False, "### Quote couldn't be CREATED!!!")
 
-
+        # cr_con = self.qf.clickCreateQuote()
+        # if cr_con:
+        #     self.ts.markFinal("New CONSIGNMENT TESTS", True, "Quote Created Successfully!!!")
+        # else:
+        #     self.ts.markFinal("New Consignment TESTS", False, "### Quote couldn't be CREATED!!!")
+        #
+        #

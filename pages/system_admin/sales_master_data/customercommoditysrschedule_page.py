@@ -13,11 +13,11 @@ class CustomerCommodityCRSchedulePage(BasePage):
     filter_field= []
     filter_field_val = None
     mapps = {
-            "accountName": 2,
-            "origin": 3,
-            "destination": 4,
-            "service": 6,
-            "effective_date": 11,
+            "accountName": 3,
+            "origin": 4,
+            "destination": 5,
+            "service": 7,
+            "effective_date": 12,
     }
     def __init__(self, driver):
         super().__init__(driver)
@@ -28,7 +28,7 @@ class CustomerCommodityCRSchedulePage(BasePage):
     _origin = "//input[@id='wayne_id_ORIGIN']"
     _destination = "//input[@id='wayne_id_DESTINATION']"
     _service_type = "//input[@id='wayne_id_SERVICE TYPE']"
-    _applied_charge = "//input[@id = 'wwayne_id_APPLIED CHARGES']"
+    _applied_charge = "//input[@id = 'wayne_id_APPLIED CHARGES']"
     _effective_date = "//input[@id='wayne_id_EFFECTIVE DATE']"
     _gri_applied = "//div[@id='wayne_id_GRI APPLIED']"
     _inactive_schedule = "//input[@id='wayne_id_INACTIVE SCHEDULES']"
@@ -47,7 +47,7 @@ class CustomerCommodityCRSchedulePage(BasePage):
 
 
     def verifyCustomerCommodityCRScheduleTitle(self):
-        self.driver.execute_script("document.body.style.zoom='70%'")
+        self.driver.execute_script("document.documentElement.style.zoom='72%'")
         return self.verifyPageTitle("Express Cargo Ltd. | Customer Commodity Sell Rate Schedule")
 
     def enterAccountName(self, accountName):
@@ -116,7 +116,7 @@ class CustomerCommodityCRSchedulePage(BasePage):
         self.waitForElement(self._origin, "xpath")
         self.elementClick(self._origin, "xpath")
         self.sendKeys(origin, self._origin, "xpath")
-        time.sleep(3)
+        # time.sleep(3)
         pc = self.getElement(self._origin, "xpath")
         pc.send_keys(Keys.ENTER)
 
@@ -195,20 +195,31 @@ class CustomerCommodityCRSchedulePage(BasePage):
             return True
         if int(col) > 7:
             self.scrollTableHorizontally()
+
+
         first_row = self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr/td["+str(col)+"]", "xpath")
+
         col_values.append(first_row.text)
-        sevnth_row = self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td["+str(col)+"]", "xpath")
+        if self.isElementPresent("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td["+str(col)+"]", "xpath"):
+            sevnth_row = self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td["+str(col)+"]", "xpath")
+        else:
+            sevnth_row= self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[2]/td["+str(col)+"]", "xpath")
         col_values.append(sevnth_row.text)
-        fiftnth_row = self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td["+str(col)+"]", "xpath")
-        col_values.append(fiftnth_row.text)
+        if self.isElementPresent("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td["+str(col)+"]", "xpath"):
+            fiftnth_row = self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td["+str(col)+"]", "xpath")
+            col_values.append(fiftnth_row.text)
+        elif self.isElementPresent("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[3]/td["+str(col)+"]", "xpath"):
+            fiftnth_row = self.getElement("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[3]/td["+str(col)+"]", "xpath")
+            col_values.append(fiftnth_row.text)
         # print(col_values)
 
-        twntith_row = self.getElement(
+        if self.isElementPresent("//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[20]/td[" + str(col) + "]", "xpath"):
+            twntith_row = self.getElement(
             "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[20]/td[" + str(col) + "]", "xpath")
-        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", twntith_row)
-        twntith_row_val = twntith_row.get_attribute("innerHTML")
-        # print(twntith_row_val)
-        col_values.append(twntith_row_val)
+            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", twntith_row)
+            col_values.append(twntith_row.text)
+        # twntith_row_val = twntith_row.get_attribute("innerHTML")
+
 
         print(col_values, self.filter_field_val)
 
@@ -241,7 +252,8 @@ class CustomerCommodityCRSchedulePage(BasePage):
 
     def edit(self):
 # store the values and rewrite on fields. save after, then check the toast
-        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND'])[2]/preceding::*[name()='svg'][4]"
+        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND'])[2]/preceding::*[name()='svg'][6]"
+        edit_list= []
 
         self.waitForElement(self._total_count)
         self.elementClick(edit_btn, "xpath")
@@ -271,7 +283,19 @@ class CustomerCommodityCRSchedulePage(BasePage):
         time.sleep(2)
         self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_rate']", "xpath"))
         self.sendKeys(rate_val, "//input[@id='wayne_id_rate']", "xpath")
-        time.sleep(5)
+        time.sleep(3)
+        schedule_type = self.getElement("//input[@id='wayne_id_SCHEDULE TYPE']", "xpath")
+        s_t_d = schedule_type.get_attribute("disabled")
+        if s_t_d == "true" or s_t_d == "disabled":
+            edit_list.append(True)
+        else:
+            edit_list.append(False)
+        account_name = self.getElement("//input[@id='wayne_id_account name']", "xpath")
+        a_n_d = account_name.get_attribute("disabled")
+        if s_t_d == "true" or s_t_d == "disabled":
+            edit_list.append(True)
+        else:
+            edit_list.append(False)
         min_hrs_asterisk = self.isElementPresent("//div/label[@id='wayne_id_min hours-label']/span", "xpath")
         if min_hrs_asterisk:
             # self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_min hours']", "xpath"))
@@ -279,6 +303,11 @@ class CustomerCommodityCRSchedulePage(BasePage):
             self.sendKeys(2, "//input[@id='wayne_id_min hours']", "xpath")
 
         self.elementClick("//button[@id='wayne_id_Save, ']", "xpath")
-        edit_successfull: bool = self.isElementPresent("//div[contains(normalize-space(text()), 'AccountCommodity Schedule updated')]/parent::*/parent::*", "xpath")
-        return edit_successfull
+
+
+        edit_successfull: bool = self.isElementPresent("//div[contains(normalize-space(text()), 'AccountCommodity Schedule updated successfully')]/parent::*/parent::*", "xpath")
+        edit_list.append(edit_successfull)
+        if False in edit_list:
+            return False
+        return True
 
