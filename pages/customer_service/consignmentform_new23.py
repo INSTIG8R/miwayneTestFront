@@ -24,14 +24,14 @@ class ConsignmentForm(BasePage):
     # Locators
 
     # Headers
-    _connote = "//input[@tabindex = 1]"
-    _account_name = "//input[@tabindex = 2]"
-    _status = "//input[@tabindex = 4]"
-    _date_allocated = "//input[@id = 'wayne_id_Date Allocated']"
-    _customer_ref = "//input[@tabindex = 7]"
-    _receiver_ref = "//input[@tabindex = 8]"
+    _connote = "//input[@tabindex = 1001]"
+    _account_name = "//input[@tabindex = 1002]"
+    _status = "//input[@tabindex = 1004]"
+    _date_allocated = "//input[@tabindex = 1005]"
+    _customer_ref = "//input[@tabindex = 1006]"
+    _receiver_ref = "//input[@tabindex = 1007]"
     _date_ready = "//input[@id = 'wayne_id_Date Ready']"
-    _estimated_delivery_date = "//input[@id = 'wayne_id_Estimated Delivery Date']"
+    _estimated_delivery_date = "//input[@tabindex = 1011]"
     _assigned_to = "//input[@id = 'wayne_id_Assigned To']"
     _priority_level = "//input[@id = 'wayne_id_Priority Level']"
 
@@ -44,116 +44,116 @@ class ConsignmentForm(BasePage):
     _business_at = " //li[normalize-space()='BUSINESS']"
     _residential_business_at = " //li[normalize-space()='RESIDENTIAL BUSINESS']"
 
-    _enter_addr_l = "//input[@tabindex = '16']"
-    _company_l = "//input[@tabindex='17'][@id='wayne_id_company Name']"
-    _addr_type_l = "//div[@id ='wayne_id_address type'][@tabindex='18']"
-    _lot_l = "//input[@tabindex='19']"
-    _road_l = "//input[@tabindex='20']"
-    _street_l = "//input[@tabindex='21']"
-    _suburb_l = "//input[@tabindex='22']"
-    _city_l = "//input[@tabindex='23']"
-    _state_l = "//input[@tabindex='24']"
-    _post_code_l = "//input[@tabindex='25']"
-    _forklift_l = "//input[@tabindex='30']"
-    _driver_l = "//input[@tabindex='31']"
-    _open_time_l = "//input[@tabindex='27']"  # [0]
-    _close_time_l = "//input[@tabindex='28']"  # [0]
-    _vehicle_l = "//input[@tabindex =31]"
-    _ringbeforepickupordelivery_l = "//input[@tabindex =32]"
-    _charges_l = "//input[@tabindex='29']"
-    _taillift_l = "//input[@tabindex='35']"
-    _cfs_site_l = "//input[@tabindex =33]"
-    _unmannedsite_l = "//input[@tabindex = '34']"
-    _special_instruction_l = "//textarea[@tabindex = '36']"
-    _create_addr_l = "//button[@id = 'wayne_id_Create Address'][@tabindex =37]"  ##Not Used
+    _enter_addr_l = "//input[@tabindex = 2002]"
+    _company_l = "//input[@tabindex='2001']"
+    _addr_type_l = "//div[@tabindex='2003']"
+    _lot_l = "//input[@tabindex='2004']"
+    _road_l = "//input[@tabindex='2005']"
+    _street_l = "//input[@tabindex='2006']"
+    _suburb_l = "//input[@tabindex='2007']"
+    _city_l = "//input[@tabindex='2008']"
+    _state_l = "//input[@tabindex='2009']"
+    _post_code_l = "//input[@tabindex='2010']"
+    _forklift_l = "//input[@tabindex='2015']"
+    _driver_l = "//input[@tabindex='2019']"
+    _open_time_l = "//input[@tabindex='2012']"  # [0]
+    _close_time_l = "//input[@tabindex='2013']"  # [0]
+    # _vehicle_l = "//input[@tabindex =31]"
+    _ringbeforepickupordelivery_l = "//input[@tabindex =2017]"
+    _charges_l = "//input[@tabindex='2014']"
+    _taillift_l = "//input[@tabindex='2016']"
+    _cfs_site_l = "//input[@tabindex =2018]"
+    _unmannedsite_l = "//input[@tabindex = '2020']"
+    _special_instruction_l = "//textarea[@tabindex = '2021']"
+    _create_addr_l = "//button[@tabindex =2024]"  ##Not Used
 
     _charges_lst_f = "//div[@data-tag-index=0]/span"  # [0]
     _charges_rst_f = ""
 
     # Receiver details
 
-    _enter_addr_r = "//input[@tabindex = '36']"
-    _company_r = "//input[@tabindex = '37']"
-    _addr_type_r = "//div[@tabindex = '38']"
-    _lot_r = "//input[@tabindex = '39']"
-    _road_r = "//input[@tabindex = '40']"
-    _street_r = "//input[@tabindex = '41']"
-    _suburb_r = "//input[@tabindex = '42']"
-    _city_r = "//input[@tabindex = '43']"
-    _state_r = "//input[@tabindex = '44']"
-    _post_code_r = "//input[@tabindex = '45']"
-    _forklift_r = "//input[@tabindex = '50']"
-    _driver_r = "//input[@tabindex = '54']"
-    _open_time_r = "//input[@tabindex = '47']"  # [1]
-    _close_time_r = "//input[@tabindex = '48']"  # [1]
-    _taillift_r = "//input[@tabindex = '51']"
-    _ringbeforepickupordelivery_r = "//input[@tabindex = '52']"
-    _charges_r = "//input[@tabindex = '49']"
-    _cfs_site_r = "//input[@tabindex = '53']"
-    _unmannedsite_r = "//input[@tabindex = '55']"
-    _special_instruction_r = "//textarea[@tabindex = '56']"
-    _create_addr_r = "//button[@tabindex='57'][@id = 'wayne_id_Create Address']"  ##Not Used
+    _enter_addr_r = "//input[@tabindex = '3002']"
+    _company_r = "//input[@tabindex = '3001']"
+    _addr_type_r = "//div[@tabindex = '3003']"
+    _lot_r = "//input[@tabindex = '3004']"
+    _road_r = "//input[@tabindex = '3005']"
+    _street_r = "//input[@tabindex = '3006']"
+    _suburb_r = "//input[@tabindex = '3007']"
+    _city_r = "//input[@tabindex = '3008']"
+    _state_r = "//input[@tabindex = '3009']"
+    _post_code_r = "//input[@tabindex = '3010']"
+    _forklift_r = "//input[@tabindex = '3015']"
+    _driver_r = "//input[@tabindex = '3019']"
+    _open_time_r = "//input[@tabindex = '3012']"  # [1]
+    _close_time_r = "//input[@tabindex = '3013']"  # [1]
+    _taillift_r = "//input[@tabindex = '3016']"
+    _ringbeforepickupordelivery_r = "//input[@tabindex = '3017']"
+    _charges_r = "//input[@tabindex = '3014']"
+    _cfs_site_r = "//input[@tabindex = '3018']"
+    _unmannedsite_r = "//input[@tabindex = '3020']"
+    _special_instruction_r = "//textarea[@tabindex = '3021']"
+    _create_addr_r = "//button[@tabindex='3024']"  ##Not Used
 
     # Contact Details sender
 
-    _first_name_l = "//input[@tabindex = '56']"
-    _last_name_l = "//input[@tabindex = '57']"
-    _email_l = "//input[@tabindex = '58']"
-    _phone_number_l = "//input[@tabindex = '59']"
-    _mobile_number_l = "//input[@tabindex = '60']"
+    _first_name_l = "//input[@tabindex = '2025']"
+    _last_name_l = "//input[@tabindex = '2026']"
+    _email_l = "//input[@tabindex = '2027']"
+    _phone_number_l = "//input[@tabindex = '2028']"
+    _mobile_number_l = "//input[@tabindex = '2029']"
     _role_l = "//div[@tabindex = '61']"
     _create_contact_l = "//button[@tabindex='62']"
 
     # Contact Details receiver
 
-    _first_name_r = "//input[@tabindex='63']"
-    _last_name_r = "//input[@tabindex='64']"
-    _email_r = "//input[@tabindex='65']"
-    _phone_number_r = "//input[@tabindex='66']"
-    _mobile_number_r = "//input[@tabindex='67']"
+    _first_name_r = "//input[@tabindex='3025']"
+    _last_name_r = "//input[@tabindex='3026']"
+    _email_r = "//input[@tabindex='3027']"
+    _phone_number_r = "//input[@tabindex='3028']"
+    _mobile_number_r = "//input[@tabindex='3029']"
     _role_r = "//select[@tabindex = '68']"
     _create_contact_r = "//button[@tabindex='69']"
 
     # Consignment Lines ( CAN HAVE VARIOUS LINES)
 
     _line_number = "//strong[text() = 1]"  # [0]
-    _services1 = "//input[@tabindex='70']"
-    _weight_unit1 = "//div[@tabindex='71']"
-    _dimension_unit1 = "//div[@tabindex='72']"
-    _container_number1 = "//input[@tabindex='73']"
-    _agency1 = "//input[@tabindex='74']"
-    _item1 = "//input[@tabindex='75']"
-    _commodity1 = "//input[@tabindex='76'][@id ='wayne_id_Commodity0']"
-    _description1 = "//input[@tabindex='77'][@id ='wayne_id_Description0']"
-    _quantity1 = "//input[@tabindex='78'][@id ='wayne_id_Quantity0']"
-    _weight1 = "//input[@tabindex='79'][@id ='wayne_id_Weight0']"
-    _volume1 = "//input[@tabindex='80'][@id ='wayne_id_Volume0']"
-    _length1 = "//input[@tabindex='81'][@id ='wayne_id_Length0']"
-    _width1 = "//input[@tabindex='82'][@id='wayne_id_Width0']"
-    _height1 = "//input[@tabindex='83'][@id ='wayne_id_Height0']"
-    _dg1 = "//input[@tabindex='84'][@id ='wayne_id_dangerous goods ?0']"
+    _services1 = "//input[@tabindex='4001']"
+    _weight_unit1 = "//div[@tabindex='4002']"
+    _dimension_unit1 = "//div[@tabindex='4003']"
+    _container_number1 = "//input[@tabindex='4004']"
+    _agency1 = "//input[@tabindex='4005']"
+    _item1 = "//input[@tabindex='5001']"
+    _commodity1 = "//input[@tabindex='5002'][@id ='wayne_id_Commodity0']"
+    _description1 = "//input[@tabindex='5003'][@id ='wayne_id_Description0']"
+    _quantity1 = "//input[@tabindex='5004'][@id ='wayne_id_Quantity0']"
+    _weight1 = "//input[@tabindex='5005'][@id ='wayne_id_Weight0']"
+    _volume1 = "//input[@tabindex='5006'][@id ='wayne_id_Volume0']"
+    _length1 = "//input[@tabindex='5007'][@id ='wayne_id_Length0']"
+    _width1 = "//input[@tabindex='5008'][@id='wayne_id_Width0']"
+    _height1 = "//input[@tabindex='5009'][@id ='wayne_id_Height0']"
+    _dg1 = "//input[@tabindex='5010']"
     _add_line_btn = "//button[@id ='wayne_id_Add line']"
     _total_lines = "wayne_id_Total lines"
     _total_item_count = "wayne_id_Total item count"
     _total_weight = "wayne_id_Total weight"
     _total_volume = "wayne_id_Total volume"
 
-    _item2 = "//input[@tabindex='89'][@id='wayne_id_Item1']"
-    _commodity2 = "//input[@tabindex='90'][@id='wayne_id_Commodity1']"
-    _description2 = "//input[@tabindex='91'][@id='wayne_id_Description1']"
-    _quantity2 = "//input[@tabindex='92'][@id='wayne_id_Quantity1']"
-    _weight2 = "//input[@tabindex='93'][@id='wayne_id_Weight1']"
-    _volume2 = "//input[@tabindex='94'][@id='wayne_id_Volume1']"
-    _length2 = "//input[@tabindex='95'][@id='wayne_id_Length1']"
-    _width2 = "//input[@tabindex='96'][@id='wayne_id_Width1']"
-    _height2 = "//input[@tabindex='97'][@id='wayne_id_Height1']"
-    _dg2 = "//input[@tabindex='98'][@id='wayne_id_dangerous goods ?1']"
+    _item2 = "//input[@tabindex='5101'][@id='wayne_id_Item1']"
+    _commodity2 = "//input[@tabindex='5102'][@id='wayne_id_Commodity1']"
+    _description2 = "//input[@tabindex='5103'][@id='wayne_id_Description1']"
+    _quantity2 = "//input[@tabindex='5104'][@id='wayne_id_Quantity1']"
+    _weight2 = "//input[@tabindex='5105'][@id='wayne_id_Weight1']"
+    _volume2 = "//input[@tabindex='5106'][@id='wayne_id_Volume1']"
+    _length2 = "//input[@tabindex='5107'][@id='wayne_id_Length1']"
+    _width2 = "//input[@tabindex='5108'][@id='wayne_id_Width1']"
+    _height2 = "//input[@tabindex='5109'][@id='wayne_id_Height1']"
+    _dg2 = "//input[@tabindex='5110'][@id='wayne_id_dangerous goods ?1']"
 
     # delete button
     _delete_line_one = "//button[@tabindex = 88]"
     _delete_line_two = "button[@tabindex = 102]"
 
-    _date1 = "//input[@tabindex = 112]"
+    _date1 = "//input[@tabindex = 7001]"
     _carrier1 = "//input[@id='wayne_id_Carrier0']"
     _depot1 = "//input[@id='wayne_id_Depot0']"
     _type1 = "//div[@id='wayne_id_type0']"
@@ -190,16 +190,16 @@ class ConsignmentForm(BasePage):
     _general_sell_rate = "wayne_id_Generate Sell Rate"
     _total_sell_rate = "//input[@id='wayne_id_Total sell rate']"
     _connote_sr = "wayne_id_CONNOTE"
-    _account_name_sr = "//p[@id ='BELGOTEX NZ LTD']"
+    _account_name_sr = "//p[@id ='wayne_id_Account Name']"
     _total_sr_btn = "//button[@tabindex='141']"
     _total_sr_cancel_btn = "//button[@tabindex =0]"
     _quoted_price = "//input[@id='wayne_id_Quoted price']"
     _quoted_by = "//input[@id='wayne_id_Quoted By']"
     _no_charge = "wayne_id_No charge?"
     _pricing_notes = "wayne_id_Pricing Notes?"
-    _pricing_notes_description = "wayne_id_Pricing Notes"
-    _pricing_notes_desc_save_btn = "wayne_id_Save"
-    _pricing_notes_desc_close_btn = "wayne_id_Close"
+    _pricing_notes_description = "//textarea[@id='wayne_id_Pricing Notes']"
+    _pricing_notes_desc_save_btn = "//button[@id='wayne_id_Save']"
+    _pricing_notes_desc_close_btn = "//button[@id='wayne_id_Close']"
     _cancelled = "wayne_id_cancelled?"
 
     # Additional Information
@@ -223,9 +223,9 @@ class ConsignmentForm(BasePage):
 
     # Footer buttons
 
-    _create_consignment = "//button[contains(@id,'wayne_id_Create Consignment, ')]"  # //button[@tabindex='151']
-    _go_back = "wayne_id_Cancel Submit"
-    _save_draft = "wayne_id_Save Draft"
+    _create_consignment = "//div[1]/main[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[1]/button"  # //button[@tabindex='151']
+    _go_back = "wayne_id_Go Back, "
+    _save_draft = "wayne_id_Save As Draft, "
 
     # DEPOT REQUIRED ERROR CHECK
     _depot_required = "//p[@id='wayne_id_Depot0-helper-text']"
@@ -354,6 +354,17 @@ class ConsignmentForm(BasePage):
             self.sendKeys(senderNewAddress, self._enter_addr_l, "xpath")
             sa = self.getElement(self._enter_addr_l, "xpath")
             sa.send_keys(Keys.ENTER)
+
+    def enterSenderCompany(self, senderCompanyName):
+        self.waitForElement(self._company_l, "xpath")
+        sc = self.getElement(self._company_l, "xpath")
+        self.elementClick(self._company_l, "xpath")
+        self.sendKeys(senderCompanyName, self._company_l, "xpath")
+        time.sleep(5)
+        # sc.send_keys(Keys.ARROW_DOWN)
+        # sc.send_keys(Keys.ARROW_DOWN)
+        sc.send_keys(Keys.ENTER)
+        time.sleep(2)
 
     def editSenderCompany(self, senderCompanyName):
         # after filling the account name in HEADER values will be available due to api call
@@ -848,7 +859,7 @@ class ConsignmentForm(BasePage):
                            closedtime='', vehicle="",
                            vehicleType='', specialInstructions='', charges=''):
         self.enterSenderAddress(senderNewAddress)
-        self.editSenderCompany(senderCompanyName)
+        self.enterSenderCompany(senderCompanyName)
         self.enterSenderLot(lot)
         self.clickSenderForkLift(forkLift)
         self.clickSenderDriver(driver)
@@ -981,9 +992,9 @@ class ConsignmentForm(BasePage):
         rc = self.getElement(self._company_r, "xpath")
         self.driver.execute_script("arguments[0].value = ''", self.getElement(self._company_r, "xpath"))
         self.sendKeys(senderCompanyName, self._company_r, "xpath")
-        time.sleep(2)
-        rc.send_keys(Keys.ARROW_DOWN)
-        rc.send_keys(Keys.ARROW_DOWN)
+        time.sleep(5)
+        # rc.send_keys(Keys.ARROW_DOWN)
+        # rc.send_keys(Keys.ARROW_DOWN)
         rc.send_keys(Keys.ENTER)
 
     def checkReceiverAddressType(self):
@@ -2381,11 +2392,11 @@ class ConsignmentForm(BasePage):
     def enterSellRating(self):
         self.clickGenerateSR()
 
-    def enterSellRateFields(self, noCharge, quotedBy, pricingNotes, cancelled):
+    def enterSellRateFields(self, noCharge, quotedBy, pricingNotes):
         self.enterQuotedBy(quotedBy)
         self.clickPricingNotes(pricingNotes)
         self.clickNoCharge(noCharge)
-        self.clickCancelled(cancelled)
+
 
     def checkSellRateFields(self):
         return self._sr_f
@@ -2431,9 +2442,9 @@ class ConsignmentForm(BasePage):
     def clickChristellNotes(self, christellNotes):
         if christellNotes:
             self.elementClick(self._christel_notes, "xpath")
-            self.waitForElement("//div[2]/div/div/div/div/textarea", "xpath")
-            self.sendKeys(christellNotes, "//textarea[@id ='wayne_id_Christel Notes']", "xpath")
-            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Close'])[3]/preceding::button[1]", "xpath")
+            self.waitForElement("//textarea[@id='wayne_id_Christel Notes']", "xpath")
+            self.sendKeys(christellNotes, "//textarea[@id='wayne_id_Christel Notes']", "xpath")
+            self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/preceding::button[1]", "xpath")
             self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
 
     def enterSpecialInstructionsDescription(self, si):
@@ -2481,7 +2492,7 @@ class ConsignmentForm(BasePage):
     def checkATL(self):
         atl = self.getElement(self._authority_to_leave)
         if atl.is_selected:
-            self.elementClick("//button[@tabindex='106']", "xpath")
+            self.elementClick("//button[@tabindex=6002]", "xpath")
             chatl = self.elementPresenceCheck("(.//*[normalize-space(text()) and normalize-space(.)='Date Created'])[1]/following::td[2]","xpath")
             self.elementClick("(.//*[normalize-space(text()) and normalize-space(.)='Save'])[1]/following::button[1]", "xpath")
             if chatl:
@@ -2542,8 +2553,9 @@ class ConsignmentForm(BasePage):
     def clickCreateConsignment(self):
         self.waitForElement(self._create_consignment, "xpath")
         if self.isElementPresent(self._create_consignment, "xpath"):
-            ccb = self.getElement(self._create_consignment, "xpath")
-            self.driver.execute_script("arguments[0].click();", ccb)
+            # ccb = self.getElement(self._create_consignment, "xpath")
+            # self.driver.execute_script("arguments[0].click();", ccb)
+            self.elementClick(self._create_consignment, "xpath")
             time.sleep(2)
             self.waitForElement("//button[@id='wayne_id_Find']/parent::*", "xpath")
             cc = self.verifyPageTitle("Express Cargo Ltd. | Dashboard")

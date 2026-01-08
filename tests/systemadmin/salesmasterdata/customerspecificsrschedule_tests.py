@@ -31,12 +31,23 @@ class CustomerSSRScheduleTests(unittest.TestCase):
         time.sleep(1)
 
     @pytest.mark.order(2)
+    def test_edit(self):
+        edit_ok = self.ccsr.edit()
+        if edit_ok:
+            self.ts.markFinal("Test_Editing", True, "Editing is working properly")
+        else:
+            self.ts.markFinal("Test_Editing", False, "Editing is NOT!! working properly")
+
+    @pytest.mark.order(3)
     @data(*getCSVData("C:\\work\\miwayneTestFront\\data\\customerssrschedule_data.csv"))
     @unpack
-    def test_ccsv(self, accountName, origin, destination, service, scheduleType, effectiveDate, gri, activity):
-        working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination, service=service, scheduleType=scheduleType, effectiveDate=effectiveDate, gri=gri, activity=activity)
+    def test_ccsv(self, accountName, origin, destination, service, scheduleType, effectiveDateFrom, effectiveDateTo, activity):
+        working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination,
+                                          service=service, scheduleType=scheduleType, effectiveDateFrom=effectiveDateFrom,
+                                          effectiveDateTo=effectiveDateTo,
+                                          activity=activity)
         if self.ccsr.infonotpresent():
-            self.ts.markFinal("Test_dataPresence", False, "###What you are looking for doesn't exist###")
+            self.ts.mark(False, "###What you are looking for doesn't exist###")
         else:
             self.ts.mark(True, "Data Exist!!!")
         print(working)
@@ -44,11 +55,4 @@ class CustomerSSRScheduleTests(unittest.TestCase):
             self.ts.markFinal("Test_Filtering", True, "Filtering is working properly")
         else:
             self.ts.markFinal("Test_Filtering", False, "Filtering has ISSUES!!!")
-
-
-    def test_edit(self):
-        edit_ok = self.ccsr.edit()
-        if edit_ok:
-            self.ts.markFinal("Test_Editing", True, "Editing is working properly")
-        else:
-            self.ts.markFinal("Test_Editing", False, "Editing is NOT!! working properly")
+        time.sleep(2)

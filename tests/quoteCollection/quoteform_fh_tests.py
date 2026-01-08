@@ -43,7 +43,7 @@ class NewQuoteFHTests(unittest.TestCase):
             self.ts.markFinal("Header Test", False, "Data Could not be fetched")
 
         _sd_val = False
-        self.qf.enterSenderDetails(senderCompanyName='BELGOTEX HA CRES')
+        self.qf.enterSenderDetails(senderCompanyName='BELGOTEX NZ LTD')
         # data_fetched_test = self.qf.checkDataFetchedPopUp()
         # print(data_fetched_test)
         # if data_fetched_test:
@@ -109,7 +109,7 @@ class NewQuoteFHTests(unittest.TestCase):
     def test_checkReceiverDetails(self):
         _rd_val = False
         # noinspection SpellCheckingInspection
-        self.qf.enterReceiverDetails(receiverCompanyName="BELGOTEX C/O EXPRESS CARGO") #CARPET COURT MT ROSKILL
+        self.qf.enterReceiverDetails(receiverCompanyName="BELGOTEX CHRISTCHURCH") #CARPET COURT MT ROSKILL
         time.sleep(3)
         print(self.qf.checkReceiverAddressType())
         if self.qf.checkReceiverAddressType():

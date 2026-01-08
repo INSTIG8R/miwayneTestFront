@@ -127,21 +127,17 @@ class NewConsignmentSHTests(unittest.TestCase):
     def test_sellRateSection(self):
         _res = False
 
-        self.nc.enterSellRateFields(noCharge='yes', quotedBy='SARAHGL', pricingNotes='pc1',
-                                        cancelled='yes')
+        self.nc.enterSellRateFields(noCharge='yes', quotedBy='SARAHGL', pricingNotes='pc1')
         _srf = self.nc.checkSellRateFields()
         in_list = False in _srf
         if not in_list:
             _res = True
 
         if _res:
-            self.ts.markFinal("Sell Rate Section Test", True, "Sell Rate Fields are Working Correctly!!!")
+            self.ts.mark( True, "Sell Rate Fields are Working Correctly!!!")
         else:
-            self.ts.markFinal("Sell Rate Section Test", False, "### Sell Rate Fields are not Working Correctly!!!")
-        time.sleep(3)
-    #
-    @pytest.mark.order(7)
-    def test_createconsignment(self):
+            self.ts.mark( False, "### Sell Rate Fields are not Working Correctly!!!")
+        time.sleep(2)
         if self.nc.isElementPresent("//p[contains(normalize-space(), 'already exist')]", "xpath"):
             self.nc.editConsignmentNumber()
         # if self.nc.checkGSR():
@@ -152,4 +148,3 @@ class NewConsignmentSHTests(unittest.TestCase):
             self.ts.markFinal("New CONSIGNMENT TESTS", True, "Consignment Created Successfully!!!")
         else:
             self.ts.markFinal("New Consignment TESTS", False, "### Consignment couldn't be CREATED!!!")
-

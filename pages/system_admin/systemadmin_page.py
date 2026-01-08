@@ -89,7 +89,7 @@ class MasterDataPage(BasePage):
     #SALES MASTER DATA
 
     _general_cr_schedule = "wayne_id_General Cost Rate Schedules"
-    _metro_general_r_schedule = "wayne_id_Metro General Rate Schedule"
+    _metro_general_r_schedule = "wayne_id_Metro General Cost Rate Schedule"
     _customer_metro_sr_schedule = "wayne_id_Customer Metro Sell Rate Schedule"
     _customer_ssr_schedule = "wayne_id_Customer Specific Sell Rate Schedule"
     _customer_commodity_sr_schedule = "wayne_id_Customer Commodity Sell Rate Schedule"

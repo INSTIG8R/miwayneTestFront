@@ -31,10 +31,20 @@ class CustomerCommoditySRScheduleTests(unittest.TestCase):
         time.sleep(1)
 
     @pytest.mark.order(2)
+    def test_edit(self):
+        edit_ok = self.ccsr.edit()
+        if edit_ok:
+            self.ts.markFinal("Test_Editing", True, "Editing is working properly")
+        else:
+            self.ts.markFinal("Test_Editing", False, "Editing is NOT!! working properly")
+
+    @pytest.mark.order(3)
     @data(*getCSVData("C:\\work\\miwayneTestFront\\data\\customercommoditysrschedule_data.csv"))
     @unpack
-    def test_ccsv(self, accountName, origin, destination, service, effectiveDate, gri, activity):
-        working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination, service=service, effectiveDate=effectiveDate, gri=gri, activity=activity)
+    def test_ccsv(self, accountName, origin, destination, service, effectiveDate, effectiveDateTo, activity):
+        working = self.ccsr.find_schedule(accountName=accountName, origin=origin, destination=destination,
+                                          service=service, effectiveDate=effectiveDate, effectiveDateTo=effectiveDateTo,
+                                          activity=activity)
         if self.ccsr.infonotpresent():
             self.ts.mark(False, "###What you are looking for doesn't exist###")
         else:
@@ -44,11 +54,4 @@ class CustomerCommoditySRScheduleTests(unittest.TestCase):
             self.ts.markFinal("Test_Filtering", True, "Filtering is working properly")
         else:
             self.ts.markFinal("Test_Filtering", False, "Filtering has ISSUES!!!")
-
-    @pytest.mark.order(3)
-    def test_edit(self):
-        edit_ok = self.ccsr.edit()
-        if edit_ok:
-            self.ts.markFinal("Test_Editing", True, "Editing is working properly")
-        else:
-            self.ts.markFinal("Test_Editing", False, "Editing is NOT!! working properly")
+        time.sleep(2)

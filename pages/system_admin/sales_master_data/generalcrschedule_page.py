@@ -30,7 +30,8 @@ class GeneralCRSchedulePage(BasePage):
     _service_type = "//input[@id='wayne_id_SERVICE TYPE']"
     _schedule_type = "//input[@id='wayne_id_SCHEDULE Type']"
     _applied_charge = "//input[@id = 'wwayne_id_APPLIED CHARGES']"
-    _effective_date = "//input[@id='wayne_id_EFFECTIVE DATE']"
+    _effective_date = "//input[@id='wayne_id_EFFECTIVE DATE FROM']"
+    _effective_date_to = "//input[@id='wayne_id_EFFECTIVE DATE TO']"
     _gri_applied = "//div[@id='wayne_id_GRI APPLIED']"
     _inactive_schedule = "//input[@id='wayne_id_INACTIVE SCHEDULES']"
 
@@ -59,8 +60,9 @@ class GeneralCRSchedulePage(BasePage):
         self.elementClick(self._service_type, "xpath")
         self.sendKeys(service, self._service_type, "xpath")
         time.sleep(2)
-        sel.send_keys(Keys.ARROW_DOWN)
-        sel.send_keys(Keys.ARROW_DOWN)
+        if service =="ECONOMY":
+            sel.send_keys(Keys.UP)
+            sel.send_keys(Keys.UP)
         sel.send_keys(Keys.ENTER)
 
 
@@ -90,6 +92,18 @@ class GeneralCRSchedulePage(BasePage):
         ca = self.getElement(self._effective_date, "xpath")
         ca.send_keys(Keys.ENTER)
 
+    def enterEffectiveDateTo(self, effectiveDateTo):
+        if not effectiveDateTo:
+            return
+        self.filter_field.append("effective_date to")
+        self.filter_field_val = effectiveDateTo
+        self.waitForElement(self._effective_date_to, "xpath")
+        self.elementClick(self._effective_date_to, "xpath")
+        self.sendKeys(effectiveDateTo, self._effective_date_to, "xpath")
+        time.sleep(3)
+        ca = self.getElement(self._effective_date_to, "xpath")
+        ca.send_keys(Keys.ENTER)
+
     def find(self):
         self.waitForElement(self._find_btn, "xpath")
         self.elementClick(self._find_btn, "xpath")
@@ -104,6 +118,8 @@ class GeneralCRSchedulePage(BasePage):
         self.sendKeys(origin, self._origin, "xpath")
         time.sleep(3)
         pc = self.getElement(self._origin, "xpath")
+        pc.send_keys(Keys.UP)
+        pc.send_keys(Keys.UP)
         pc.send_keys(Keys.ENTER)
 
     def enterDestination(self, destination):
@@ -116,6 +132,8 @@ class GeneralCRSchedulePage(BasePage):
         self.sendKeys(destination, self._destination, "xpath")
         time.sleep(3)
         dc = self.getElement(self._destination, "xpath")
+        dc.send_keys(Keys.UP)
+        dc.send_keys(Keys.UP)
         dc.send_keys(Keys.ENTER)
 
     # //*/text()[normalize-space(.)='YES']/parent::*
@@ -138,7 +156,7 @@ class GeneralCRSchedulePage(BasePage):
         self.filter_field_val = "activity"
         self.elementClick(self._inactive_schedule, "xpath")
 
-    def find_schedule(self, origin='', destination='', service='', schedule='', effectiveDate='', gri='',
+    def find_schedule(self, origin='', destination='', service='', schedule='', effectiveDate='', effectiveDateTo='',
                       activity='' ):
         # remove filters first
         working = True
@@ -150,7 +168,7 @@ class GeneralCRSchedulePage(BasePage):
         self.clickService(service)
         self.clickSchedule(schedule)
         self.enterEffectiveDate(effectiveDate)
-        self.enterGRIApplied(gri)
+        self.enterEffectiveDateTo(effectiveDateTo)
         self.clickInactiveSchedule(activity)
         time.sleep(2)
         # self.find()
@@ -182,25 +200,31 @@ class GeneralCRSchedulePage(BasePage):
             return True
         if int(col) > 7:
             self.scrollTableHorizontally()
+        if self.isElementPresent("//p[normalize-space()='No records to display']", "xpath"):
+            self.log.info("#### SEARCHED ITEM IS NOT FOUND!!! ####")
+            return False
         first_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr/td[" + str(col) + "]", "xpath")
+            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr/td[" + str(col) + "]/span", "xpath")
         col_values.append(first_row.text)
-        sevnth_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td[" + str(col) + "]", "xpath")
+        if self.isElementPresent(
+                "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td[" + str(col) + "]/span", "xpath"):
+            sevnth_row = self.getElement(
+                "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td[" + str(col) + "]/span", "xpath")
+        else:
+            sevnth_row = self.getElement(
+                "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[2]/td[" + str(col) + "]/span", "xpath")
         col_values.append(sevnth_row.text)
-        fiftnth_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td[" + str(col) + "]", "xpath")
+        if self.isElementPresent(
+                "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td[" + str(col) + "]/span", "xpath"):
+            fiftnth_row = self.getElement(
+                "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td[" + str(col) + "]/span", "xpath")
+        else:
+            fiftnth_row = self.getElement(
+                "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[1]/td[" + str(col) + "]/span", "xpath")
         col_values.append(fiftnth_row.text)
-        # print(col_values)
-
-        twntith_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[20]/td[" + str(col) + "]", "xpath")
-        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", twntith_row)
-        twntith_row_val = twntith_row.get_attribute("innerHTML")
-        # print(twntith_row_val)
-        col_values.append(twntith_row_val)
 
         print(col_values, self.filter_field_val)
+
 
         def is_date(string):
             try:
@@ -231,7 +255,7 @@ class GeneralCRSchedulePage(BasePage):
 
     def edit(self):
         # store the values and rewrite on fields. save after, then check the toast
-        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='ACACIA BAY'])[1]/preceding::*[name()='svg'][5]"
+        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND'])[2]/preceding::*[name()='svg'][6]"
         edit_ok = []
 
         schedule_field = "//input[@id='wayne_id_SCHEDULE Type']"
@@ -272,14 +296,29 @@ class GeneralCRSchedulePage(BasePage):
         rate2_asterisk = self.isElementPresent("(//div/label[@id='wayne_id_RATE-label']/span)[2]", "xpath")
 
         # ADD NOTES SECTION AND DATES SECTION.
-        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._origin, "xpath"))
+        self.elementClick(self._origin, "xpath")
+        time.sleep(2)
+        self.elementClick("//div[@name='originLocation']//button[@title='Clear']//*[name()='svg']", "xpath")
         self.sendKeys(origin_val, self._origin, "xpath")
-        time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._destination, "xpath"))
+        self.getElement(self._origin, "xpath").send_keys(Keys.UP)
+        self.getElement(self._origin, "xpath").send_keys(Keys.UP)
+        self.getElement(self._origin, "xpath").send_keys(Keys.ENTER)
+        time.sleep(1.5)
+        self.elementClick(self._destination, "xpath")
+        time.sleep(1.25)
+        self.elementClick("//div[@name='destinationLocation']//button[@title='Clear']//*[name()='svg']", "xpath")
         self.sendKeys(destination_val, self._destination, "xpath")
+        self.getElement(self._destination, "xpath").send_keys(Keys.UP)
+        self.getElement(self._destination, "xpath").send_keys(Keys.UP)
+        self.getElement(self._destination, "xpath").send_keys(Keys.ENTER)
+        time.sleep(1.25)
+        self.elementClick(self._service_type, "xpath")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._service_type, "xpath"))
+        self.elementClick(
+            "//div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[1]/*[name()='svg'][1]/*[name()='path'][1]",
+            "xpath")
         self.sendKeys(service_val, self._service_type, "xpath")
+        self.getElement(self._service_type, "xpath").send_keys(Keys.ENTER)
         time.sleep(2)
         self.driver.execute_script("arguments[0].value = ''",
                                    self.getElement("//input[@id='wayne_id_EFFECTIVE DATE']", "xpath"))

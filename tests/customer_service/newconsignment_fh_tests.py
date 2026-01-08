@@ -47,7 +47,7 @@ class NewConsignmentFHTests(unittest.TestCase):
         #     self.ts.mark(True, "Data Fetched Without Issues")
         # else:
         #     self.ts.mark(False, "Data Could not be fetched")
-        # time.sleep(2)
+        time.sleep(2)
         print(self.nc.checkSenderAddressType())
         if self.nc.checkSenderAddressType():
             self.ts.mark(True, "Sender Address Type has field value")
@@ -102,7 +102,7 @@ class NewConsignmentFHTests(unittest.TestCase):
     def test_checkReceiverDetails(self):
         _rd_val = False
         # noinspection SpellCheckingInspection
-        self.nc.enterReceiverDetails(receiverCompanyName="BELGOTEX HA CRES")
+        self.nc.enterReceiverDetails(receiverCompanyName="BELGOTEX CHRISTCHURCH")
         # time.sleep(5)
         print(self.nc.checkReceiverAddressType())
         if self.nc.checkReceiverAddressType():

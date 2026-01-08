@@ -28,7 +28,8 @@ class MetroGeneralRSchedulePage(BasePage):
     _destination = "//input[@id='wayne_id_DESTINATION']"
     _service_type = "//input[@id='wayne_id_SERVICE TYPE']"
     _applied_charge = "//input[@id = 'wwayne_id_APPLIED CHARGES']"
-    _effective_date = "//input[@id='wayne_id_EFFECTIVE DATE']"
+    _effective_date = "//input[@id='wayne_id_EFFECTIVE DATE FROM']"
+    _effective_date_to = "//input[@id='wayne_id_EFFECTIVE DATE TO']"
     _gri_applied = "//div[@id='wayne_id_GRI APPLIED']"
     _inactive_schedule = "//input[@id='wayne_id_INACTIVE SCHEDULES']"
 
@@ -47,7 +48,7 @@ class MetroGeneralRSchedulePage(BasePage):
 
     def verifyMetroGeneralRScheduleTitle(self):
         self.driver.execute_script("document.body.style.zoom='70%'")
-        return self.verifyPageTitle("Express Cargo Ltd. | Metro General Rate Schedule")
+        return self.verifyPageTitle("Express Cargo Ltd. | Metro General Cost Rate Schedule")
 
     def clickService(self, service):
         if not service:
@@ -73,6 +74,18 @@ class MetroGeneralRSchedulePage(BasePage):
         self.sendKeys(effectiveDate, self._effective_date, "xpath")
         time.sleep(3)
         ca = self.getElement(self._effective_date, "xpath")
+        ca.send_keys(Keys.ENTER)
+
+    def enterEffectiveDateTo(self, effectiveDateTo):
+        if not effectiveDateTo:
+            return
+        self.filter_field.append("effective_date to")
+        self.filter_field_val = effectiveDateTo
+        self.waitForElement(self._effective_date_to, "xpath")
+        self.elementClick(self._effective_date_to, "xpath")
+        self.sendKeys(effectiveDateTo, self._effective_date_to, "xpath")
+        time.sleep(3)
+        ca = self.getElement(self._effective_date_to, "xpath")
         ca.send_keys(Keys.ENTER)
 
     def find(self):
@@ -122,9 +135,10 @@ class MetroGeneralRSchedulePage(BasePage):
             return
         self.filter_field_val = "activity"
         self.elementClick(self._inactive_schedule, "xpath")
+        self.find()
 
-    def find_schedule(self, accountName='', origin='', destination='', service='', effectiveDate='', gri='',
-                      activity='', ):
+    def find_schedule(self, accountName='', origin='', destination='', service='', effectiveDate='',
+                      effectiveDateTo='', activity='', ):
         # remove filters first
         working = True
         self.waitForElement(self._clear_filter_btn, "xpath")
@@ -134,7 +148,7 @@ class MetroGeneralRSchedulePage(BasePage):
         self.enterDestination(destination)
         self.clickService(service)
         self.enterEffectiveDate(effectiveDate)
-        self.enterGRIApplied(gri)
+        self.enterEffectiveDateTo(effectiveDateTo)
         self.clickInactiveSchedule(activity)
         time.sleep(2)
         # self.find()
@@ -166,24 +180,35 @@ class MetroGeneralRSchedulePage(BasePage):
             return True
         if int(col) > 7:
             self.scrollTableHorizontally()
+        if self.isElementPresent("//p[normalize-space()='No records to display']", "xpath"):
+            self.log.info("#### SEARCHED ITEM IS NOT FOUND!!! ####")
+            return False
         first_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr/td[" + str(col) + "]", "xpath")
+            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr/td[" + str(col) + "]/span", "xpath")
         col_values.append(first_row.text)
-        sevnth_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td[" + str(col) + "]", "xpath")
-        col_values.append(sevnth_row.text)
-        fiftnth_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td[" + str(col) + "]", "xpath")
-        col_values.append(fiftnth_row.text)
+        # if self.isElementPresent(
+        #         "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td[" + str(col) + "]/span",
+        #         "xpath"):
+        #     sevnth_row = self.getElement(
+        #         "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[7]/td[" + str(col) + "]/span",
+        #         "xpath")
+        # else:
+        #     sevnth_row = self.getElement(
+        #         "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[2]/td[" + str(col) + "]/span",
+        #         "xpath")
+        # col_values.append(sevnth_row.text)
+        # if self.isElementPresent(
+        #         "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td[" + str(col) + "]/span",
+        #         "xpath"):
+        #     fiftnth_row = self.getElement(
+        #         "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[15]/td[" + str(col) + "]/span",
+        #         "xpath")
+        # else:
+        #     fiftnth_row = self.getElement(
+        #         "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[1]/td[" + str(col) + "]/span",
+        #         "xpath")
+        # col_values.append(fiftnth_row.text)
         # print(col_values)
-
-        twntith_row = self.getElement(
-            "//div[@id='root']/div/main/div[2]/div[2]/div[2]/div/table/tbody/tr[20]/td[" + str(col) + "]", "xpath")
-        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", twntith_row)
-        twntith_row_val = twntith_row.get_attribute("innerHTML")
-        # print(twntith_row_val)
-        col_values.append(twntith_row_val)
-
         print(col_values, self.filter_field_val)
 
         def is_date(string):
@@ -215,7 +240,7 @@ class MetroGeneralRSchedulePage(BasePage):
 
     def edit(self):
 # store the values and rewrite on fields. save after, then check the toast
-        edit_btn = "(.//*[normalize-space(text()) and normalize-space(.)='AUCKLAND-AREA 2'])[1]/preceding::*[name()='svg'][2]"
+        edit_btn = "//div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/div[1]/button[1]/*[name()='svg'][1]"
 
         edit_ok = []
         calc_method_field = "//input[@id='wayne_id_CALCULATION METHOD']"
@@ -237,28 +262,49 @@ class MetroGeneralRSchedulePage(BasePage):
         rate_val = self.getElement("//input[@id='wayne_id_Rate']", "xpath").text
 
 # ADD NOTES SECTION AND DATES SECTION.
-        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._origin, "xpath"))
+        self.elementClick(self._origin, "xpath")
+        time.sleep(2)
+        self.elementClick("//div[@name='originLocation']//button[@title='Clear']//*[name()='svg']", "xpath")
         self.sendKeys(origin_val, self._origin, "xpath")
-        time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._destination, "xpath"))
+        self.getElement(self._origin, "xpath").send_keys(Keys.UP)
+        self.getElement(self._origin, "xpath").send_keys(Keys.UP)
+        self.getElement(self._origin, "xpath").send_keys(Keys.ENTER)
+        time.sleep(1.5)
+        self.elementClick(self._destination, "xpath")
+        time.sleep(1.25)
+        self.elementClick("//div[@name='destinationLocation']//button[@title='Clear']//*[name()='svg']", "xpath")
         self.sendKeys(destination_val, self._destination, "xpath")
+        self.getElement(self._destination, "xpath").send_keys(Keys.UP)
+        self.getElement(self._destination, "xpath").send_keys(Keys.UP)
+        self.getElement(self._destination, "xpath").send_keys(Keys.ENTER)
+        time.sleep(1.25)
+        self.elementClick(self._service_type, "xpath")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement(self._service_type, "xpath"))
+        self.elementClick(
+            "//div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/button[1]/*[name()='svg'][1]",
+            "xpath")
         self.sendKeys(service_val, self._service_type, "xpath")
+        self.getElement(self._service_type, "xpath").send_keys(Keys.ENTER)
         time.sleep(2)
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//input[@id='wayne_id_schedule type']", "xpath"))
+        self.elementClick("//input[@id='wayne_id_schedule type']", "xpath")
+        self.elementClick(
+            "//div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[1]/*[name()='svg'][1]",
+            "xpath")
         self.sendKeys(schedule_val, "//input[@id='wayne_id_schedule type']", "xpath")
+        self.getElement("//input[@id='wayne_id_schedule type']", "xpath").send_keys(Keys.ENTER)
         time.sleep(2)
+
         # self.driver.execute_script("arguments[0].value = ''", self.getElement("//div[@id='wayne_id_RATIO (W/V)']", "xpath"))
         # self.sendKeys(ratio_w_v_val, "//div[@id='wayne_id_RATIO (W/V)']", "xpath")
         # time.sleep(2)
-        self.elementClick("//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]", "xpath")
-        self.driver.execute_script("arguments[0].value = '';", self.getElement("//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]", "xpath"))
-        self.sendKeys(vol_val, "//div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]", "xpath")
+        vol:str = "//input[@id='wayne_id_MINIMUM VOLUME']"
+        self.elementClick("//input[@id='wayne_id_MINIMUM VOLUME']", "xpath")
+        self.driver.execute_script("arguments[0].value = '';", self.getElement("//input[@id='wayne_id_MINIMUM VOLUME']", "xpath"))
+        self.sendKeys(vol_val, "//input[@id='wayne_id_schedule type']", "xpath")
 
-        self.elementClick("//div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]", "xpath")
-        self.driver.execute_script("arguments[0].value = ''", self.getElement("//div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]", "xpath"))
-        self.sendKeys(rate_val, "//div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]", "xpath")
+        self.elementClick("//input[@id='wayne_id_Rate']", "xpath")
+        self.driver.execute_script("arguments[0].value = '';", self.getElement("//input[@id='wayne_id_Rate']", "xpath"))
+        self.sendKeys(rate_val, "//input[@id='wayne_id_Rate']", "xpath")
         time.sleep(2)
         # min_hrs_asterisk = self.isElementPresent("//div/label[@id='wayne_id_min hours-label']/span", "xpath")
         # if min_hrs_asterisk:
@@ -266,11 +312,8 @@ class MetroGeneralRSchedulePage(BasePage):
         #     self.getElement("//input[@id='wayne_id_min hours']", "xpath").clear()
         #     self.sendKeys(2, "//input[@id='wayne_id_min hours']", "xpath")
         edit_ok.append(not self.getElement("//input[@id='wayne_id_MINIMUM RATE']", "xpath").is_enabled())
-
-        self.elementClick("//button[@id='wayne_id_Edit, ']", "xpath")
+        self.elementClick("//button[@id='wayne_id_Save, ']", "xpath")
         edit_ok.append(self.isElementPresent("//div[contains(normalize-space(text()), 'Metro Schedule updated Successfully')]/parent::*/parent::*", "xpath"))
-
         print(edit_ok, all(edit_ok))
-
         return all(edit_ok)
 
